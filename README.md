@@ -20,7 +20,7 @@ to the Telegram group.
 
 ## The one file the admin edits
 
-`src/config/track-record.ts` holds every CT-1 figure. Update it weekly from the
+`src/config/track-record.ts` holds every AishCopytrade figure. Update it weekly from the
 broker dashboard, commit, deploy. The hero renders every field in that object;
 there is no way to hide one. The day counter and account age are derived from
 `openedAt` and are never typed by hand.
@@ -28,7 +28,7 @@ there is no way to hide one. The day counter and account age are derived from
 ## The other file the admin edits
 
 `src/config/community.ts` holds the Telegram group's member count and the date
-it was counted, read from the group header. Update it when you update the CT-1
+it was counted, read from the group header. Update it when you update the AishCopytrade
 figures. The date renders publicly, so never estimate or round up.
 
 ## Testimonials
@@ -68,7 +68,7 @@ Brand assets: masters live in `/brand` (never deployed). Run `npm run brand:asse
 to regenerate `public/images/logo.png` and the two photographs the site uses
 (`aish-portrait-*.jpg`, city window; `aish-laptop-*.jpg`, laptop by the window).
 The car photographs in `/brand/reference` must never be copied into `public/`.
-`brand/reference/ct-dashboard-*.jpg` is the broker screenshot the CT-1 figures
+`brand/reference/ct-dashboard-*.jpg` is the broker screenshot the AishCopytrade figures
 were copied from.
 
 Have a native Malay speaker review `src/locales/ms.json` before launch,
