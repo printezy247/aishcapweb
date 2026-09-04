@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy-deep: #0a1b3d;
+    --navy-midnight: #061229;
+    --navy-raised: #12294f;
+    --gold: #d4a017;
+    --gold-bright: #f5d061;
+    --platinum: #e8e8e8;
+    --slate: #8fa3c4;
+    --bull: #2ecc71;
+    --bear: #e74c3c;
+    color-scheme: dark;
+  }
+
+  html {
+    background-color: var(--navy-deep);
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-deep text-platinum font-sans text-body-m md:text-body-d antialiased;
+    font-variation-settings: "wdth" 100;
+    min-height: 100dvh;
+  }
+
+  /* One family; width and weight axes carry the hierarchy. */
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-platinum;
+    text-wrap: balance;
+  }
+
+  a {
+    @apply underline-offset-4;
+  }
+
+  /* Visible keyboard focus everywhere, using gold-bright. */
+  :focus-visible {
+    outline: 2px solid var(--gold-bright);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: var(--gold);
+    color: var(--navy-midnight);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Archivo width axis: 100 = normal, 112.5 = semi-expanded, 125 = expanded. */
+  .wdth-expanded {
+    font-stretch: 125%;
+    font-variation-settings: "wdth" 125;
+  }
+  .wdth-semi {
+    font-stretch: 112.5%;
+    font-variation-settings: "wdth" 112.5;
+  }
+  .wdth-normal {
+    font-stretch: 100%;
+    font-variation-settings: "wdth" 100;
+  }
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+  .text-display {
+    @apply wdth-expanded font-bold text-hero-m md:text-hero-d;
+  }
+  .text-section {
+    @apply wdth-semi font-semibold text-section-m md:text-section-d;
+  }
+  .text-stat {
+    @apply tabular font-semibold text-stat-m md:text-stat-d;
+  }
+  .text-meta {
+    @apply text-label text-slate;
+  }
+  .hairline-gold {
+    border-color: var(--gold);
+    border-width: 1px 0 0 0;
+    border-style: solid;
+  }
+  .hairline {
+    border-color: rgba(143, 163, 196, 0.25);
+  }
+}
