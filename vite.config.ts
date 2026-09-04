@@ -16,10 +16,15 @@ function devApi(mode: string): Plugin {
       for (const key of ["QUOTES_API_KEY", "QUOTES_PROVIDER"]) {
         if (env[key] && !process.env[key]) process.env[key] = env[key];
       }
-      server.middlewares.use("/api/quotes", async (_req, res) => {
+      server.middlewares.use("/api", async (req, res) => {
         try {
-          const mod = (await server.ssrLoadModule("/api/quotes.ts")) as { GET: () => Promise<Response> };
-          const r = await mod.GET();
+          const name = (req.url ?? "/").replace(/^\//, "").split(/[/?]/)[0];
+          if (!/^[a-z0-9-]+$/.test(name)) {
+            res.statusCode = 404;
+            return res.end("not found");
+          }
+          const mod = (await server.ssrLoadModule(`/api/${name}.ts`)) as { GET: (request: Request) => Promise<Response> };
+          const r = await mod.GET(new Request(`http://localhost${req.originalUrl ?? req.url}`));
           res.statusCode = r.status;
           r.headers.forEach((v, k) => res.setHeader(k, v));
           res.end(await r.text());

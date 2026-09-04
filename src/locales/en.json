@@ -54,7 +54,9 @@
     "live": "live",
     "days_one": "{{count}} day",
     "days_other": "{{count}} days",
-    "accountId": "Account number"
+    "accountId": "Account number",
+    "currencyIn": "Currency in {{currency}}",
+    "source": "Source: broker dashboard"
   },
   "buttons": {
     "joinTelegram": "Join the Telegram",
@@ -485,5 +487,19 @@
       "Member count is read from the Telegram group header on the date shown. It is not an estimate.",
       "Quotes are published with each member's written permission, held outside this site. Members are not paid and receive nothing for them."
     ]
+  },
+  "gold": {
+    "eyebrow": "Market context",
+    "heading": "Gold, the market Aish trades",
+    "intro": "Indicative XAU/USD price from a third-party data provider, delayed. Context only, not a recommendation.",
+    "ranges": {
+      "1d": "1D",
+      "1w": "1W",
+      "1m": "1M"
+    },
+    "rangeLabel": "Time range",
+    "overRange": "over {{range}}",
+    "loading": "Loading chart…",
+    "source": "Data: Twelve Data"
   }
 }

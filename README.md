@@ -100,8 +100,12 @@ key the route returns 503 and the site renders no ticker at all. Prices are
 labelled indicative and delayed, with a Malaysia-time stamp. No third-party
 scripts run on the page.
 
-`npm run dev` serves the same handler at `/api/quotes` via a Vite middleware and
-reads `QUOTES_API_KEY` from `.env`.
+`api/series.ts` serves the XAU/USD chart history (`?range=1d|1w|1m`, 15-minute
+cache, one credit per call) and the chart is TradingView Lightweight Charts
+(Apache-2.0, attribution logo kept on), lazy-loaded below the fold.
+
+`npm run dev` serves every `api/*.ts` handler under `/api/` via a Vite
+middleware and reads `QUOTES_API_KEY` from `.env`.
 
 ## Roadmap
 

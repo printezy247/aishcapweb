@@ -54,7 +54,9 @@
     "live": "langsung",
     "days_one": "{{count}} hari",
     "days_other": "{{count}} hari",
-    "accountId": "Nombor akaun"
+    "accountId": "Nombor akaun",
+    "currencyIn": "Mata wang dalam {{currency}}",
+    "source": "Sumber: papan pemuka broker"
   },
   "buttons": {
     "joinTelegram": "Sertai Telegram",
@@ -485,5 +487,19 @@
       "Jumlah ahli dibaca daripada pengepala kumpulan Telegram pada tarikh yang ditunjukkan. Ia bukan anggaran.",
       "Petikan disiarkan dengan kebenaran bertulis setiap ahli, disimpan di luar laman ini. Ahli tidak dibayar dan tidak menerima apa-apa untuknya."
     ]
+  },
+  "gold": {
+    "eyebrow": "Konteks pasaran",
+    "heading": "Emas, pasaran yang Aish dagangkan",
+    "intro": "Harga XAU/USD indikatif daripada penyedia data pihak ketiga, tertangguh. Konteks sahaja, bukan cadangan.",
+    "ranges": {
+      "1d": "1H",
+      "1w": "1M",
+      "1m": "1B"
+    },
+    "rangeLabel": "Julat masa",
+    "overRange": "sepanjang {{range}}",
+    "loading": "Memuatkan carta…",
+    "source": "Data: Twelve Data"
   }
 }

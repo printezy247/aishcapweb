@@ -80,6 +80,7 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
             <Fn n={1} />
           </dt>
           <dd className={cn("num mt-1 text-[44px] font-medium leading-none tracking-tight md:text-[52px]", gainTone)}>
+            {record.gainPct > 0 ? "▲ " : record.gainPct < 0 ? "▼ " : ""}
             {formatPct(gain, locale, true)}
           </dd>
         </div>
@@ -108,12 +109,18 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
         ))}
       </dl>
 
-      <p className="mt-5 flex items-center justify-between gap-3 border-t pt-3 text-[12px] text-slate" style={{ borderColor: "rgba(212,160,23,0.35)" }}>
-        <span>{t("stats.lastUpdated")}</span>
-        <time dateTime={record.lastUpdated} className="num text-platinum/85">
-          {formatDate(record.lastUpdated, locale)}
-        </time>
-      </p>
+      <div className="mt-5 border-t pt-3 text-[12px] text-slate" style={{ borderColor: "rgba(212,160,23,0.35)" }}>
+        <p className="flex items-center justify-between gap-3">
+          <span>{t("stats.lastUpdated")}</span>
+          <time dateTime={record.lastUpdated} className="num text-platinum/85">
+            {formatDate(record.lastUpdated, locale)}
+          </time>
+        </p>
+        <p className="mt-1 flex items-center justify-between gap-3">
+          <span>{t("stats.currencyIn", { currency: record.currency })}</span>
+          <span>{t("stats.source")}</span>
+        </p>
+      </div>
     </section>
   );
 }
