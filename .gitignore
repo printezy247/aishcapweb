@@ -217,6 +217,9 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+# The Python rules above ignore lib/; this project's source lives in src/lib.
+!src/lib/
+
 # Node / Vite
 node_modules/
 dist/
