@@ -50,7 +50,7 @@ file; the collection procedure and the consent messages for the admin are in
 - `npm run check:copy` rejects the forbidden phrases in both languages.
 - Bull/bear colour is applied only to the signed total-gain value.
 - No testimonials, logo strips, chart embeds, chat widget, or placeholder posts.
-- No analytics unless `VITE_PLAUSIBLE_DOMAIN` is set (cookieless pageviews only).
+- Analytics: Vercel Web Analytics (cookieless, same-origin; enable once in the Vercel dashboard) with click goals `telegram_click`, `community_click`, `offering_click`, `language_switch`. Optional Plausible via `VITE_PLAUSIBLE_DOMAIN`. No pixels.
 
 ## Placeholders to replace before launch
 
@@ -106,7 +106,8 @@ reads `QUOTES_API_KEY` from `.env`.
 ## Roadmap
 
 The ranked improvement list, with vetted UI repos and sources, is in
-[`docs/improvement-roadmap.md`](docs/improvement-roadmap.md).
+[`docs/improvement-roadmap.md`](docs/improvement-roadmap.md). Repos worth
+using for future builds, with licences: [`docs/reference-repos.md`](docs/reference-repos.md).
 
 ## Hosting
 

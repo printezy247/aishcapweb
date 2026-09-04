@@ -20,6 +20,8 @@ export function LanguageToggle({ className }: { className?: string }) {
             aria-label={fullNames[l]}
             aria-pressed={l === locale}
             onClick={() => l !== locale && setLocale(l)}
+            data-track="language_switch"
+            data-location={l}
             className={cn(
               "min-h-[44px] min-w-[36px] px-1 font-semibold",
               l === locale ? "text-gold" : "text-slate hover:text-platinum",

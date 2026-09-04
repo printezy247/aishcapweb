@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Container } from "@/components/layout/Container";
 import { ButtonLink } from "@/components/ui/button";
@@ -38,16 +39,23 @@ export function Hero() {
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               {/* Mobile/tablet: gold lives here. On lg+ the header carries it. */}
-              <ButtonLink to={SITE.telegramUrl} variant="primary" className="lg:hidden">
+              <ButtonLink to={SITE.telegramUrl} variant="primary" className="lg:hidden" data-track="telegram_click" data-location="hero">
                 {t("buttons.joinTelegram")}
               </ButtonLink>
-              <ButtonLink to={SITE.telegramUrl} variant="secondary" className="hidden lg:inline-flex">
+              <ButtonLink to={SITE.telegramUrl} variant="secondary" className="hidden lg:inline-flex" data-track="telegram_click" data-location="hero">
                 {t("buttons.joinTelegram")}
               </ButtonLink>
               <ButtonLink to={href("/how-it-works")} variant="secondary">
                 {t("buttons.howItWorks")}
               </ButtonLink>
             </div>
+
+            <p className="mt-4 max-w-prose text-legal text-slate">
+              {t("hero.riskLine")}{" "}
+              <Link to={href("/legal/risk")} className="text-slate underline hover:text-platinum">
+                {t("buttons.readRisks")}
+              </Link>
+            </p>
 
             <ul className="mt-8 grid gap-2 text-[14px] text-platinum/85 sm:grid-cols-3 sm:gap-4">
               {proof.map((item) => (

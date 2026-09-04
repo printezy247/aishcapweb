@@ -36,6 +36,7 @@ export default {
     fontFamily: {
       mono: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       sans: [
+        "Archivo Variable",
         "Archivo",
         "ui-sans-serif",
         "system-ui",

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en</loc><xhtml:link rel="alternate" hreflang="en" href="https://aishweb-ezy-ai.vercel.app/en"/><xhtml:link rel="alternate" hreflang="ms" href="https://aishweb-ezy-ai.vercel.app/ms"/></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms</loc><xhtml:link rel="alternate" hreflang="en" href="https://aishweb-ezy-ai.vercel.app/en"/><xhtml:link rel="alternate" hreflang="ms" href="https://aishweb-ezy-ai.vercel.app/ms"/></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/how-it-works</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/how-it-works</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/learn</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/learn</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/about</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/about</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/legal/risk</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/legal/risk</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/legal/affiliate</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/legal/affiliate</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/legal/terms</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/legal/terms</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/en/legal/privacy</loc></url>
+  <url><loc>https://aishweb-ezy-ai.vercel.app/ms/legal/privacy</loc></url>
+</urlset>

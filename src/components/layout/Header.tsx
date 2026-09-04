@@ -58,7 +58,7 @@ export function Header() {
         <div className="flex items-center gap-2 md:gap-4">
           <LanguageToggle />
           {/* Desktop: the single gold button lives in the header. Mobile keeps it in the hero. */}
-          <ButtonLink to={SITE.telegramUrl} variant="primary" className="hidden min-h-[40px] px-4 text-[14px] lg:inline-flex">
+          <ButtonLink to={SITE.telegramUrl} variant="primary" className="hidden min-h-[40px] px-4 text-[14px] lg:inline-flex" data-track="telegram_click" data-location="header">
             {t("buttons.joinTelegram")}
           </ButtonLink>
           <button

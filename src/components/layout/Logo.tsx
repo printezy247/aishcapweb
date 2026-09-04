@@ -21,6 +21,9 @@ export function Logo({ className = "h-8 md:h-9" }: { className?: string }) {
       width={200}
       height={78}
       className={`${className} w-auto`}
+      // @ts-expect-error React 18 types lack fetchpriority; browsers honour the attribute.
+      fetchpriority="high"
+      decoding="async"
       onError={() => setFailed(true)}
     />
   );

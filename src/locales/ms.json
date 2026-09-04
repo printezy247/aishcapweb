@@ -37,7 +37,8 @@
       "Akaun atas nama anda",
       "Putuskan sambungan bila-bila masa",
       "Yuran 20% ke atas keuntungan sahaja"
-    ]
+    ],
+    "riskLine": "Dagangan produk berleveraj membawa risiko kerugian yang tinggi. Anda boleh kehilangan lebih daripada deposit anda."
   },
   "stats": {
     "totalGain": "Jumlah keuntungan",
@@ -474,5 +475,15 @@
     "memberSince": "ahli sejak {{date}}",
     "note": "Petikan disiarkan dengan kebenaran setiap ahli. Ahli tidak dibayar dan tidak menerima apa-apa untuknya.",
     "rating": "{{n}} daripada 5 bintang"
+  },
+  "footnotes": {
+    "heading": "Nota",
+    "back": "Kembali ke rujukan",
+    "items": [
+      "Angka disalin secara manual daripada papan pemuka broker pada tarikh yang ditunjukkan dan belum disahkan secara bebas. Pengesahan pihak ketiga dirancang selepas tempoh 90 hari.",
+      "Yuran prestasi dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian. Mekanismenya ditetapkan oleh sistem copy trading broker; baca termanya sebelum menyambung.",
+      "Jumlah ahli dibaca daripada pengepala kumpulan Telegram pada tarikh yang ditunjukkan. Ia bukan anggaran.",
+      "Petikan disiarkan dengan kebenaran bertulis setiap ahli, disimpan di luar laman ini. Ahli tidak dibayar dan tidak menerima apa-apa untuknya."
+    ]
   }
 }

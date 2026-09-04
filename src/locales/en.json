@@ -37,7 +37,8 @@
       "Account in your name",
       "Disconnect at any time",
       "20% fee on gains only"
-    ]
+    ],
+    "riskLine": "Trading leveraged products carries a high risk of loss. You may lose more than you deposit."
   },
   "stats": {
     "totalGain": "Total gain",
@@ -474,5 +475,15 @@
     "memberSince": "member since {{date}}",
     "note": "Quotes are published with each member's permission. Members are not paid and receive nothing for them.",
     "rating": "{{n}} out of 5 stars"
+  },
+  "footnotes": {
+    "heading": "Notes",
+    "back": "Back to reference",
+    "items": [
+      "Figures are copied by hand from the broker dashboard on the date shown and have not been independently verified. Third-party verification is planned after the 90-day window.",
+      "The performance fee applies to gains only, never to losses. Its exact mechanics are set by the broker's copy-trading system; read its terms before connecting.",
+      "Member count is read from the Telegram group header on the date shown. It is not an estimate.",
+      "Quotes are published with each member's written permission, held outside this site. Members are not paid and receive nothing for them."
+    ]
   }
 }

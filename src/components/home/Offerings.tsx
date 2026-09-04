@@ -60,7 +60,7 @@ export function Offerings() {
                 {item.body}
               </p>
               <div className="mt-6">
-                <ButtonLink to={href} variant="secondary">
+                <ButtonLink to={href} variant="secondary" data-track="offering_click" data-location={`offering-${i}`}>
                   {isPlaceholder ? t("offerings.askAdmin") : t("offerings.open")}
                 </ButtonLink>
               </div>
