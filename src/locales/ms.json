@@ -56,7 +56,9 @@
     "days_other": "{{count}} hari",
     "accountId": "Nombor akaun",
     "currencyIn": "Mata wang dalam {{currency}}",
-    "source": "Sumber: papan pemuka broker"
+    "source": "Sumber: papan pemuka broker",
+    "daysUnit_one": "hari",
+    "daysUnit_other": "hari"
   },
   "buttons": {
     "joinTelegram": "Sertai Telegram",
@@ -501,5 +503,66 @@
     "overRange": "sepanjang {{range}}",
     "loading": "Memuatkan carta…",
     "source": "Data: Twelve Data"
+  },
+  "proof": {
+    "eyebrow": "Bukti",
+    "heading": "Apa yang sudah wujud",
+    "intro": "AishCopytrade masih baharu. Kumpulan dan ahlinya tidak."
+  },
+  "aish": {
+    "eyebrow": "Orangnya",
+    "heading": "Aish, dan di mana untuk menemuinya"
+  },
+  "join": {
+    "eyebrow": "Kekal dekat",
+    "heading": "Ikuti perkembangan, mengikut cara anda",
+    "intro": "E-mel mingguan jika anda mahu, dan jawapan terus kepada soalan yang benar-benar ditanya orang."
+  },
+  "compare": {
+    "heading": "Tiga cara untuk berada dalam pasaran",
+    "intro": "Bersebelahan, supaya perbezaannya jelas.",
+    "columns": [
+      "Menyalin AishCopytrade",
+      "Berdagang sendiri",
+      "Menyerahkan wang kepada seseorang"
+    ],
+    "rows": [
+      {
+        "label": "Siapa memegang wang",
+        "copy": "Anda, di broker, atas nama anda sendiri",
+        "self": "Anda",
+        "other": "Mereka"
+      },
+      {
+        "label": "Siapa membuat dagangan",
+        "copy": "Sistem broker menyalin AishCopytrade ke dalam akaun anda",
+        "self": "Anda",
+        "other": "Mereka"
+      },
+      {
+        "label": "Apa yang anda boleh lihat",
+        "copy": "Setiap angka, bercap tarikh, dikemas kini setiap minggu",
+        "self": "Semuanya",
+        "other": "Apa sahaja yang mereka pilih untuk tunjukkan"
+      },
+      {
+        "label": "Yuran",
+        "copy": "Spread broker, tambah 20% daripada keuntungan sahaja",
+        "self": "Spread broker",
+        "other": "Biasanya potongan daripada segalanya"
+      },
+      {
+        "label": "Boleh berhenti?",
+        "copy": "Bila-bila masa, daripada akaun anda sendiri, tanpa bertanya kami",
+        "self": "Bila-bila masa",
+        "other": "Bergantung kepada terma mereka"
+      },
+      {
+        "label": "Risiko kerugian",
+        "copy": "Tinggi. Anda boleh kehilangan lebih daripada deposit",
+        "self": "Tinggi",
+        "other": "Tinggi, ditambah risiko mereka tidak memulangkannya"
+      }
+    ]
   }
 }

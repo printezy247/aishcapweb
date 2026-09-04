@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/Reveal";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { useLocale } from "@/hooks/useLocale";
@@ -11,7 +10,7 @@ interface Item {
   a: string;
 }
 
-export function Faq() {
+export function FaqBlock() {
   const { t } = useTranslation();
   const { locale } = useLocale();
   const record = trackRecordSource.getTrackRecord();
@@ -23,8 +22,11 @@ export function Faq() {
   }) as Item[];
 
   return (
-    <Section id="faq" eyebrow={t("faq.eyebrow")} heading={t("faq.heading")}>
-      <Accordion type="single" collapsible className="grid max-w-[760px] gap-3">
+    <div id="faq">
+      <Reveal>
+        <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">{t("faq.heading")}</h3>
+      </Reveal>
+      <Accordion type="single" collapsible className="mt-6 grid max-w-[760px] gap-3">
         {items.map((item, i) => (
           <Reveal key={item.q} index={i}>
             <AccordionItem value={`faq-${i}`} className="metal-card rounded-lg border-0 px-5 md:px-6">
@@ -35,6 +37,6 @@ export function Faq() {
           </Reveal>
         ))}
       </Accordion>
-    </Section>
+    </div>
   );
 }

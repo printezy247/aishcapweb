@@ -6,7 +6,7 @@ type Variant = "primary" | "secondary";
 
 const base =
   "inline-flex items-center justify-center whitespace-nowrap rounded-card " +
-  "font-semibold leading-none no-underline select-none active:scale-[0.98]";
+  "font-semibold leading-none no-underline select-none active:scale-[0.96] transition-transform duration-[60ms]";
 
 // Only the primary (gold) action is large. Everything else is compact.
 const variants: Record<Variant, string> = {

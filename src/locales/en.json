@@ -56,7 +56,9 @@
     "days_other": "{{count}} days",
     "accountId": "Account number",
     "currencyIn": "Currency in {{currency}}",
-    "source": "Source: broker dashboard"
+    "source": "Source: broker dashboard",
+    "daysUnit_one": "day",
+    "daysUnit_other": "days"
   },
   "buttons": {
     "joinTelegram": "Join the Telegram",
@@ -501,5 +503,66 @@
     "overRange": "over {{range}}",
     "loading": "Loading chart…",
     "source": "Data: Twelve Data"
+  },
+  "proof": {
+    "eyebrow": "Proof",
+    "heading": "What already exists",
+    "intro": "AishCopytrade is new. The group and its members are not."
+  },
+  "aish": {
+    "eyebrow": "The person",
+    "heading": "Aish, and where to find him"
+  },
+  "join": {
+    "eyebrow": "Stay close",
+    "heading": "Follow along, on your terms",
+    "intro": "A weekly email if you want it, and straight answers to the questions people actually ask."
+  },
+  "compare": {
+    "heading": "Three ways to be in the market",
+    "intro": "Side by side, so the differences are plain.",
+    "columns": [
+      "Copying AishCopytrade",
+      "Trading it yourself",
+      "Handing money to someone"
+    ],
+    "rows": [
+      {
+        "label": "Who holds the money",
+        "copy": "You, at the broker, in your own name",
+        "self": "You",
+        "other": "They do"
+      },
+      {
+        "label": "Who places the trades",
+        "copy": "The broker's system mirrors AishCopytrade into your account",
+        "self": "You",
+        "other": "They do"
+      },
+      {
+        "label": "What you can see",
+        "copy": "Every figure, date-stamped, updated weekly",
+        "self": "Everything",
+        "other": "Whatever they choose to show"
+      },
+      {
+        "label": "Fees",
+        "copy": "Broker spread, plus 20% of gains only",
+        "self": "Broker spread",
+        "other": "Usually a cut of everything"
+      },
+      {
+        "label": "Can you stop?",
+        "copy": "Any time, from your own account, without asking us",
+        "self": "Any time",
+        "other": "Depends on their terms"
+      },
+      {
+        "label": "Risk of loss",
+        "copy": "High. You can lose more than you deposit",
+        "self": "High",
+        "other": "High, plus the risk they never give it back"
+      }
+    ]
   }
 }

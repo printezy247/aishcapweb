@@ -43,10 +43,10 @@ export function StickyCta() {
     <div
       aria-hidden={!visible}
       className={
-        "fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/85 transition-transform duration-300 lg:hidden " +
+        "glass-bar fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/80 transition-transform duration-300 lg:hidden " +
         (visible ? "translate-y-0" : "translate-y-full")
       }
-      style={{ paddingBottom: "env(safe-area-inset-bottom)", WebkitBackdropFilter: "saturate(180%) blur(20px)", backdropFilter: "saturate(180%) blur(20px)" }}
+      style={{ paddingBottom: "env(safe-area-inset-bottom)" }}
     >
       <div className="mx-auto flex max-w-site items-center justify-between gap-3 px-5 py-2.5">
         <div className="min-w-0">
