@@ -63,14 +63,6 @@
     "messageAdmin": "Hubungi admin di Telegram",
     "backHome": "Kembali ke utama"
   },
-  "whatWeAre": {
-    "heading": "Siapa kami, dan siapa kami bukan",
-    "areTitle": "Siapa kami",
-    "are": "Aish Capital ialah jenama pendidikan dan komuniti yang dikendalikan oleh seorang pedagang dan seorang admin. Kami memaparkan satu akaun copy trading langsung, CT-1, dengan setiap angka ditunjukkan tanpa suntingan daripada papan pemuka broker. Kami menerangkan cara copy trading berfungsi, kosnya, dan bagaimana ia boleh gagal. Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas CT-1, dan kami menyatakannya di sebelah setiap pautan.",
-    "areNotTitle": "Siapa kami bukan",
-    "areNot": "Kami bukan dana. Kami bukan penasihat berlesen. Kami tidak menjamin keuntungan. Kami tidak meminta anda menghantar wang kepada kami. Setiap akaun adalah milik anda, atas nama anda, di bawah kawalan anda, dan anda boleh memutuskan sambungan pada bila-bila masa.",
-    "eyebrow": "Secara terus terang"
-  },
   "howItWorks": {
     "heading": "Cara copy trading berfungsi",
     "intro": "Empat langkah. Tiada apa-apa berlaku kepada wang anda tanpa anda melakukannya sendiri.",
@@ -110,7 +102,7 @@
   },
   "email": {
     "heading": "Ulasan mingguan CT-1",
-    "body": "Satu e-mel seminggu, pada hari Ahad, tentang apa yang CT-1 lakukan minggu itu dan mengapa. Ia bukan senarai isyarat dan tidak akan memberitahu anda apa yang perlu dibeli.",
+    "body": "Satu e-mel seminggu, pada hari Ahad, tentang apa yang CT-1 lakukan minggu itu dan mengapa. Ia bukan senarai dagangan untuk disalin, dan tidak akan memberitahu anda apa yang perlu dibeli.",
     "label": "Alamat e-mel",
     "placeholder": "anda@contoh.com",
     "frequency": "Mingguan. Berhenti melanggan dengan satu klik dalam setiap e-mel. Kami mengesahkan alamat anda sebelum menghantar apa-apa.",
@@ -132,7 +124,7 @@
   "about": {
     "heading": "Tentang Aish",
     "portraitAlt": "Aish di tepi tingkap bandar, menyemak telefonnya",
-    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak berlesen, saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
+    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
     "readMore": "Lebih lanjut tentang Aish",
     "eyebrow": "Orangnya",
     "facts": [
@@ -154,10 +146,6 @@
   "faq": {
     "heading": "Soalan yang sering ditanya",
     "items": [
-      {
-        "q": "Adakah anda berlesen?",
-        "a": "Tidak. Aish Capital tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan kami tidak mendakwa sedemikian. Kami ialah jenama pendidikan dan komuniti. Kami tidak memberi nasihat kewangan peribadi, tidak menguruskan wang, dan tidak memegang dana. Baca pendedahan risiko sebelum membuat sebarang keputusan."
-      },
       {
         "q": "Bagaimana anda mendapat wang daripada saya?",
         "a": "Dua cara. Pertama, jika anda membuka akaun broker melalui pautan rujukan kami, broker membayar komisen kepada kami berdasarkan aktiviti dagangan anda. Kedua, jika anda menyalin CT-1, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda. Kedua-duanya didedahkan di sebelah setiap pautan di laman ini. Kedua-duanya mewujudkan insentif kewangan untuk kami, dan anda perlu menimbangkannya."
@@ -183,8 +171,12 @@
         "a": "Ya. Anda memutuskan sambungan daripada CT-1 di dalam ruang copy trading broker anda bila-bila masa yang anda mahu. Dagangan yang masih terbuka dikendalikan mengikut peraturan broker, biasanya ditutup atau dibiarkan untuk anda uruskan sendiri. Akaun anda kekal atas nama anda sepanjang masa. Anda tidak memerlukan kebenaran kami dan kami tidak boleh menghalang anda."
       },
       {
-        "q": "Broker apa yang anda gunakan dan adakah mereka dikawal selia?",
-        "a": "Kami menggunakan [BROKER]. Seperti hampir semua broker forex antarabangsa, ia tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan ia mungkin tersenarai dalam senarai amaran pelabur mereka. Sebarang kawal selia yang dipegangnya adalah daripada negara lain dan tidak memberi anda perlindungan di bawah undang-undang Malaysia. Semak sendiri senarai amaran SC dan BNM sebelum membuka akaun."
+        "q": "Broker apa yang anda gunakan?",
+        "a": "Kami menggunakan [BROKER]. Baca terma broker itu sendiri dan pendedahan risiko kami sebelum membuka akaun. Jika anda membukanya melalui pautan kami, broker membayar komisen kepada kami berdasarkan aktiviti dagangan anda; perkara itu didedahkan di sebelah pautan dan di halaman pendedahan afiliasi."
+      },
+      {
+        "q": "Adakah saya perlu membuka akaun broker untuk menyertai?",
+        "a": "Tidak untuk semuanya. Saluran analisis awam dan siaran langsung TikTok terbuka kepada sesiapa sahaja. Kumpulan komuniti dan bilik analisis peribadi memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami, kerana komisen broker itulah cara kami dibayar. Komisen itu didedahkan di sebelah setiap pautan di laman ini."
       }
     ],
     "eyebrow": "Jawapan terus"
@@ -196,14 +188,15 @@
   },
   "footer": {
     "riskTitle": "Amaran risiko",
-    "risk": "Aish Capital ialah jenama pendidikan dan komuniti. Kami tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan kami tidak menyediakan nasihat pelaburan, pengurusan portfolio, atau perkhidmatan perancangan kewangan. Kami tidak menerima, memegang, atau menguruskan dana pelanggan. Dagangan produk berleveraj membawa risiko kerugian yang tinggi dan tidak sesuai untuk semua orang. Anda boleh kehilangan lebih daripada deposit awal anda. Prestasi lampau tidak menunjukkan keputusan masa hadapan.",
+    "risk": "Dagangan produk berleveraj membawa risiko kerugian yang tinggi dan tidak sesuai untuk semua orang. Anda boleh kehilangan lebih daripada deposit awal anda. Prestasi lampau tidak menunjukkan keputusan masa hadapan.",
     "affiliateSummary": "Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas CT-1. Kedua-duanya tidak ditambah kepada kos dagangan anda, dan kedua-duanya memberi kami insentif.",
     "affiliateLink": "Pendedahan afiliasi penuh",
     "legalHeading": "Undang-undang",
     "contactHeading": "Hubungi",
     "telegramAdmin": "Admin Telegram",
     "copyright": "© {{year}} {{name}}. Hak cipta terpelihara.",
-    "languageHeading": "Bahasa"
+    "languageHeading": "Bahasa",
+    "riskLink": "Baca pendedahan risiko penuh"
   },
   "legalNav": {
     "risk": "Pendedahan risiko",
@@ -250,7 +243,7 @@
     },
     "learn": {
       "heading": "Belajar",
-      "intro": "Penerangan bertulis, dalam bahasa yang mudah, tentang apa itu copy trading, kosnya, dan bagaimana ia boleh gagal. Tiada isyarat, tiada seruan, tiada gempak.",
+      "intro": "Penerangan bertulis, dalam bahasa yang mudah, tentang apa itu copy trading, kosnya, dan bagaimana ia boleh gagal. Tiada seruan, tiada gempak.",
       "emptyTitle": "Belum ada yang diterbitkan, dengan sengaja",
       "emptyBody": "Kami lebih rela tidak menerbitkan apa-apa daripada mengisi halaman ini dengan tulisan kosong. Artikel bermula apabila CT-1 mempunyai sejarah yang cukup untuk ditulis secara jujur. Ulasan mingguan tentang apa yang CT-1 lakukan, dan mengapa, sudah disiarkan dalam kumpulan Telegram.",
       "latest": "Terkini"
@@ -270,13 +263,6 @@
           "body": [
             "Saya membuka CT-1 dengan {{start}} dan saya menjalankannya secara terbuka selama {{total}} hari. Setiap angka di halaman utama disalin daripada papan pemuka broker seminggu sekali, tanpa diubah. Jika ia berjalan buruk, itu juga kekal di halaman ini.",
             "Selepas {{total}} hari itu, saya merancang untuk memindahkan angka-angka ini ke perkhidmatan pengesahan pihak ketiga supaya anda tidak perlu percaya kata-kata saya semata-mata."
-          ]
-        },
-        {
-          "title": "Siapa saya bukan",
-          "body": [
-            "Saya tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia. Saya tidak memberi nasihat kewangan peribadi. Saya tidak pernah memegang wang sesiapa, dan jika seseorang yang mendakwa sebagai saya meminta anda menghantar wang, itu bukan saya.",
-            "Seorang admin membantu saya menguruskan kumpulan Telegram dan membalas mesej. Itulah keseluruhan syarikat ini."
           ]
         }
       ]
@@ -446,5 +432,37 @@
     "aria": "Harga pasaran",
     "indicative": "Harga indikatif, tertangguh",
     "asOf": "setakat {{time}} MYT"
+  },
+  "offerings": {
+    "eyebrow": "Selain copy trading",
+    "heading": "Di mana untuk menemui Aish",
+    "intro": "Copy trading ialah perkara utama. Ini tempat-tempat lain Aish menunjukkan hasil kerjanya, dan apa yang setiap satu perlukan daripada anda.",
+    "free": "Percuma",
+    "gated": "Perlu akaun broker berdeposit",
+    "askAdmin": "Hubungi admin di Telegram",
+    "open": "Buka",
+    "gatedNote": "Akses kepada kumpulan komuniti dan bilik analisis peribadi memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami. Broker membayar komisen kepada kami untuk akaun tersebut; itulah cara kami dibayar.",
+    "items": [
+      {
+        "title": "Analisis XAUUSD harian, saluran awam",
+        "body": "Pembacaan Aish terhadap carta emas pada kebanyakan hari dagangan: paras yang diperhatikannya dan mengapa. Kemas kini lebih jarang berbanding bilik peribadi. Pendidikan, bukan arahan.",
+        "platform": "Telegram"
+      },
+      {
+        "title": "Dagangan langsung di TikTok",
+        "body": "Aish berdagang akaunnya sendiri secara langsung hampir setiap hari. Saksikan keputusan, dan kesilapan, secara masa nyata.",
+        "platform": "TikTok"
+      },
+      {
+        "title": "Kumpulan sokongan komuniti",
+        "body": "Soalan dijawab oleh Aish dan admin, bersama ahli lain. Akses memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami, kerana komisen broker itulah cara kami dibayar.",
+        "platform": "Telegram"
+      },
+      {
+        "title": "Bilik analisis peribadi",
+        "body": "Analisis harian terperinci dan ulasan dagangan Aish, dikemas kini lebih kerap berbanding saluran awam. Akses memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami, kerana itulah cara kami dibayar.",
+        "platform": "Telegram"
+      }
+    ]
   }
 }

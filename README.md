@@ -27,7 +27,8 @@ there is no way to hide one. The day counter and account age are derived from
 
 ## Compliance controls built into the code
 
-- Risk warning is real text in the footer of every page (`Footer.tsx`).
+- A short risk warning is real text in the footer of every page (`Footer.tsx`), linking to the full disclosure. At the client's request the licensing statement (not licensed by the SC or BNM) appears only on the legal pages, not in the footer, FAQ or About copy.
+- The word "signals" is banned by the copy checker (client decision); channels are described as "analysis".
 - The IB disclosure renders beside every broker link (`AffiliateDisclosure.tsx`);
   `BrokerLink` cannot render without it.
 - All account statistics render together (`TrackRecordCard.tsx`); the component
@@ -46,6 +47,7 @@ not be guessed:
 | Placeholder | Where |
 | --- | --- |
 | `[BROKER]`, `[BROKER_REFERRAL_URL]` | `src/config/site.ts`, locale files |
+| `[PUBLIC_CHANNEL_URL]`, `[TIKTOK_URL]`, `[COMMUNITY_GROUP_URL]`, `[PRIVATE_ROOM_URL]` | `src/config/site.ts` — until set, the buttons go to the admin's Telegram |
 
 Company registration details are intentionally absent from the footer for now (client decision); add a company block back in `Footer.tsx` when they are confirmed.
 

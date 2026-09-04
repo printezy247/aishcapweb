@@ -63,14 +63,6 @@
     "messageAdmin": "Message the admin on Telegram",
     "backHome": "Back to home"
   },
-  "whatWeAre": {
-    "heading": "What we are, and what we are not",
-    "areTitle": "What we are",
-    "are": "Aish Capital is an education and community brand run by one trader and one admin. We publish one live copy-trading account, CT-1, with every figure shown unedited from the broker dashboard. We explain how copy trading works, what it costs, and how it can go wrong. We earn Introducing Broker commission from the broker and a 20% performance fee on CT-1, and we say so beside every link.",
-    "areNotTitle": "What we are not",
-    "areNot": "We are not a fund. We are not a licensed adviser. We do not guarantee profit. We do not ask you to send us money. Every account is yours, in your name, under your control, and you can disconnect at any time.",
-    "eyebrow": "In plain terms"
-  },
   "howItWorks": {
     "heading": "How copy trading works",
     "intro": "Four steps. Nothing happens to your money without you doing it yourself.",
@@ -110,7 +102,7 @@
   },
   "email": {
     "heading": "The weekly CT-1 breakdown",
-    "body": "One email a week, on Sundays, with what CT-1 did that week and why. It is not a signals list and it will never tell you what to buy.",
+    "body": "One email a week, on Sundays, with what CT-1 did that week and why. It is not a list of trades to copy, and it will never tell you what to buy.",
     "label": "Email address",
     "placeholder": "you@example.com",
     "frequency": "Weekly. One-click unsubscribe in every email. We confirm your address before sending anything.",
@@ -132,7 +124,7 @@
   "about": {
     "heading": "About Aish",
     "portraitAlt": "Aish at a city window, checking his phone",
-    "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD), and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I am not licensed, I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
+    "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD), and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
     "readMore": "More about Aish",
     "eyebrow": "The person",
     "facts": [
@@ -154,10 +146,6 @@
   "faq": {
     "heading": "Questions people ask",
     "items": [
-      {
-        "q": "Are you licensed?",
-        "a": "No. Aish Capital is not licensed by the Securities Commission Malaysia or Bank Negara Malaysia, and we do not claim to be. We are an education and community brand. We do not give personalised financial advice, manage money, or hold funds. Read the risk disclosure before deciding anything."
-      },
       {
         "q": "How do you make money from me?",
         "a": "Two ways. First, if you open a broker account through our referral link, the broker pays us a commission based on your trading activity. Second, if you copy CT-1, a 20% performance fee is charged on gains the copy makes in your account. Both are disclosed beside every link on this site. Both create a financial incentive for us, and you should weigh that."
@@ -183,8 +171,12 @@
         "a": "Yes. You disconnect from CT-1 inside your broker's copy-trading area whenever you choose. Open trades are handled according to the broker's rules, usually closed or left for you to manage. Your account stays in your name throughout. You do not need our permission and we cannot stop you."
       },
       {
-        "q": "What broker do you use and are they regulated?",
-        "a": "We use [BROKER]. Like almost every international forex broker, it is not licensed by the Securities Commission Malaysia or Bank Negara Malaysia, and it may appear on their investor alert lists. Any regulation it holds is from another country and does not give you protection under Malaysian law. Check the SC and BNM alert lists yourself before opening an account."
+        "q": "What broker do you use?",
+        "a": "We use [BROKER]. Read the broker's own terms and our risk disclosure before opening an account. If you open it through our link, the broker pays us a commission based on your trading activity; that is disclosed beside the link and on the affiliate disclosure page."
+      },
+      {
+        "q": "Do I need a broker account to join?",
+        "a": "Not for everything. The public analysis channel and the TikTok lives are open to anyone. The community group and the private analysis room require a broker account opened and funded through our link, because the broker's commission is how we are paid. That commission is disclosed beside every link on this site."
       }
     ],
     "eyebrow": "Straight answers"
@@ -196,14 +188,15 @@
   },
   "footer": {
     "riskTitle": "Risk warning",
-    "risk": "Aish Capital is an educational and community brand. We are not licensed by the Securities Commission Malaysia or Bank Negara Malaysia, and we do not provide investment advice, portfolio management, or financial planning services. We do not accept, hold, or manage client funds. Trading leveraged products carries a high risk of loss and is not suitable for everyone. You may lose more than your initial deposit. Past performance does not indicate future results.",
+    "risk": "Trading leveraged products carries a high risk of loss and is not suitable for everyone. You may lose more than your initial deposit. Past performance does not indicate future results.",
     "affiliateSummary": "We earn Introducing Broker commission from the broker and a 20% performance fee on CT-1. Neither is added to your trading costs, and both give us an incentive.",
     "affiliateLink": "Full affiliate disclosure",
     "legalHeading": "Legal",
     "contactHeading": "Contact",
     "telegramAdmin": "Telegram admin",
     "copyright": "© {{year}} {{name}}. All rights reserved.",
-    "languageHeading": "Language"
+    "languageHeading": "Language",
+    "riskLink": "Read the full risk disclosure"
   },
   "legalNav": {
     "risk": "Risk disclosure",
@@ -250,7 +243,7 @@
     },
     "learn": {
       "heading": "Learn",
-      "intro": "Written explanations, in plain language, of what copy trading is, what it costs, and how it goes wrong. No signals, no calls, no hype.",
+      "intro": "Written explanations, in plain language, of what copy trading is, what it costs, and how it goes wrong. No calls, no hype.",
       "emptyTitle": "Nothing published yet, on purpose",
       "emptyBody": "We would rather publish nothing than pad this page. Articles start once CT-1 has enough history to write about honestly. The weekly breakdown of what CT-1 did, and why, is already posted in the Telegram group.",
       "latest": "Latest"
@@ -270,13 +263,6 @@
           "body": [
             "I opened CT-1 with {{start}} and I am running it in public for {{total}} days. Every figure on the home page is copied from the broker dashboard once a week, unchanged. If it goes badly, that stays on the page too.",
             "After the {{total}} days I plan to move the figures to a third-party verification service so you do not have to take my word for them."
-          ]
-        },
-        {
-          "title": "What I am not",
-          "body": [
-            "I am not licensed by the Securities Commission Malaysia or Bank Negara Malaysia. I do not give personalised financial advice. I never hold anyone's money, and if someone claiming to be me asks you to send money, it is not me.",
-            "One admin helps me run the Telegram group and answer messages. That is the whole company."
           ]
         }
       ]
@@ -446,5 +432,37 @@
     "aria": "Market prices",
     "indicative": "Indicative prices, delayed",
     "asOf": "as of {{time}} MYT"
+  },
+  "offerings": {
+    "eyebrow": "Beyond copy trading",
+    "heading": "Where to find Aish",
+    "intro": "Copy trading is the main thing. These are the other places Aish shows his work, and what each one asks of you.",
+    "free": "Free",
+    "gated": "Funded broker account required",
+    "askAdmin": "Ask the admin on Telegram",
+    "open": "Open",
+    "gatedNote": "Access to the community group and the private analysis room requires a broker account opened and funded through our link. The broker pays us commission on those accounts; that is how we are paid.",
+    "items": [
+      {
+        "title": "Daily XAUUSD analysis, public channel",
+        "body": "Aish's read of the gold chart on most trading days: the levels he is watching and why. Fewer updates than the private room. Education, not instructions.",
+        "platform": "Telegram"
+      },
+      {
+        "title": "Live trading on TikTok",
+        "body": "Aish trades his own account live most days. Watch the decisions, and the mistakes, in real time.",
+        "platform": "TikTok"
+      },
+      {
+        "title": "Community support group",
+        "body": "Questions answered by Aish and the admin, alongside other members. Access requires a broker account opened and funded through our link, because the broker's commission is how we are paid.",
+        "platform": "Telegram"
+      },
+      {
+        "title": "Private analysis room",
+        "body": "Aish's detailed daily analysis and trade reviews, updated more often than the public channel. Access requires a broker account opened and funded through our link, because that is how we are paid.",
+        "platform": "Telegram"
+      }
+    ]
   }
 }
