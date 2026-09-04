@@ -3,7 +3,6 @@ import { Hero } from "@/components/home/Hero";
 import { MarketTicker } from "@/components/home/MarketTicker";
 import { Offerings } from "@/components/home/Offerings";
 import { HowItWorks } from "@/components/home/HowItWorks";
-import { WhyNumbersSmall } from "@/components/home/WhyNumbersSmall";
 import { Community } from "@/components/home/Community";
 import { Testimonials } from "@/components/home/Testimonials";
 import { LearnPreview } from "@/components/home/LearnPreview";
@@ -21,7 +20,6 @@ export default function Home() {
       <MarketTicker />
       <Offerings />
       <HowItWorks />
-      <WhyNumbersSmall />
       <Community />
       <Testimonials />
       <LearnPreview />

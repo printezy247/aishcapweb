@@ -86,11 +86,6 @@
     ],
     "eyebrow": "Four steps"
   },
-  "whyNumbersSmall": {
-    "heading": "Why the numbers are small",
-    "body": "CT-1 started on {{openedAt}} with {{start}} of my own money. At the time of writing that is {{days}} days of history, which is not a track record. It is a starting point. I am running this account in public for {{total}} days before I talk about results anywhere, and every figure on this page is copied from the broker dashboard, unchanged. You do not have to join. Watching for the full {{total}} days is a perfectly good decision, and I would rather you did that than rush.",
-    "eyebrow": "Read this first"
-  },
   "learnPreview": {
     "heading": "Learn",
     "intro": "Plain explanations of how copy trading works, what the fees are, and what the risks look like in practice.",
