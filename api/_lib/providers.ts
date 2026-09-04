@@ -1,5 +1,5 @@
-import type { Quote } from "../../src/lib/quotes.ts";
-import type { SymbolSpec } from "./symbols.ts";
+import type { Quote } from "../../src/lib/quotes";
+import type { SymbolSpec } from "./symbols";
 
 export interface QuoteProvider {
   name: string;
