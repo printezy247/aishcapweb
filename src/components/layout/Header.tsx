@@ -17,23 +17,19 @@ export function Header() {
 
   useEffect(() => setOpen(false), [location.pathname]);
 
-  const current = location.pathname.replace(/\/$/, "");
+  // Legal is deliberately not a tab (client decision, 2026-09-04): the footer
+  // and the inline risk links carry every /legal/* page.
   const items = [
-    { to: href("/"), label: t("nav.home"), end: true, match: undefined as string | undefined },
-    { to: href("/how-it-works"), label: t("nav.howItWorks") },
-    { to: href("/learn"), label: t("nav.learn") },
-    { to: href("/about"), label: t("nav.about") },
-    { to: href("/legal/risk"), label: t("nav.legal"), match: "/legal" },
+    { to: href("/"), label: t("nav.home"), end: true },
+    { to: href("/how-it-works"), label: t("nav.howItWorks"), end: false },
+    { to: href("/learn"), label: t("nav.learn"), end: false },
+    { to: href("/about"), label: t("nav.about"), end: false },
   ];
-  const active = (item: (typeof items)[number], isActive: boolean) =>
-    item.match ? current.includes(item.match) : isActive || current === item.to;
 
+  // .nav-link (index.css): text brightens and a rule slides in on hover /
+  // focus; gold is reserved for the active tab.
   const linkClass = ({ isActive }: { isActive: boolean }) =>
-    cn(
-      "block whitespace-nowrap py-3 text-[15px] no-underline md:py-1.5",
-      // Gold only on the active nav indicator, as a bottom rule.
-      isActive ? "text-platinum md:border-b-2 md:border-gold" : "text-slate hover:text-platinum",
-    );
+    cn("nav-link block whitespace-nowrap py-3 text-[15px] text-slate no-underline md:py-1.5", isActive && "is-active");
 
   return (
     <header className="glass-bar sticky top-0 z-50 border-b hairline bg-navy-abyss/80">
@@ -44,12 +40,7 @@ export function Header() {
 
         <nav aria-label="Primary" className="hidden items-center gap-6 md:flex">
           {items.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              end={item.end}
-              className={({ isActive }) => linkClass({ isActive: active(item, isActive) })}
-            >
+            <NavLink key={item.to} to={item.to} end={item.end} className={linkClass}>
               {item.label}
             </NavLink>
           ))}
@@ -89,11 +80,7 @@ export function Header() {
               to={item.to}
               end={item.end}
               className={({ isActive }) =>
-                cn(
-                  linkClass({ isActive: active(item, isActive) }),
-                  "border-l-2 pl-3",
-                  active(item, isActive) ? "border-gold" : "border-transparent",
-                )
+                cn(linkClass({ isActive }), "nav-link--row border-l-2 pl-3", isActive ? "border-gold" : "border-transparent")
               }
             >
               {item.label}
