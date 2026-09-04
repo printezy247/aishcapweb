@@ -17,7 +17,7 @@ export function LanguageToggle({ className }: { className?: string }) {
           <button
             type="button"
             lang={l}
-            aria-label={fullNames[l]}
+            aria-label={`${labels[l]}, ${fullNames[l]}`}
             aria-pressed={l === locale}
             onClick={() => l !== locale && setLocale(l)}
             data-track="language_switch"

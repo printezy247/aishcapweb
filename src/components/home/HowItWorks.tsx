@@ -68,7 +68,7 @@ export function HowItWorks() {
             <table className="w-full min-w-[640px] border-collapse text-[15px]">
               <thead>
                 <tr>
-                  <th scope="col" className="w-[22%] border-b hairline-strong pb-3 text-left text-label font-semibold text-slate"></th>
+                  <td className="w-[22%] border-b hairline-strong pb-3"></td>
                   {cols.map((c, i) => (
                     <th key={c} scope="col" className={cn("border-b hairline-strong pb-3 pr-4 text-left text-[15px] font-semibold", i === 0 ? "text-gold" : "text-platinum")}>
                       {c}

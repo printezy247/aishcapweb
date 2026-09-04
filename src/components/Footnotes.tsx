@@ -41,7 +41,7 @@ export function Footnotes({ only }: { only?: number[] }) {
                 <a
                   href={`#fn-${i + 1}`}
                   aria-label={t("footnotes.back")}
-                  className="text-slate/70 no-underline hover:text-platinum"
+                  className="text-platinum/80 underline hover:text-platinum"
                   onClick={(e) => {
                     // The hero card renders once per layout, so pick the visible reference.
                     const target = [...document.querySelectorAll<HTMLElement>(`[data-fnref="${i + 1}"]`)].find(

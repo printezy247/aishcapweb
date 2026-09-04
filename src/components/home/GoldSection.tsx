@@ -2,6 +2,7 @@ import { lazy, Suspense, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/Reveal";
+import { Events } from "@/components/home/Events";
 import { useLocale } from "@/hooks/useLocale";
 import { useSeries } from "@/hooks/useSeries";
 import { formatPct, formatPrice, formatTimeMY } from "@/lib/format";
@@ -92,6 +93,7 @@ export function GoldSection() {
           )}
         </p>
       </Reveal>
+      <Events />
     </Section>
   );
 }

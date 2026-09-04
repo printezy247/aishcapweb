@@ -650,5 +650,13 @@
       },
       "brokerHeading": "Opening an account"
     }
+  },
+  "events": {
+    "heading": "High-impact releases this week",
+    "note": "Times in Malaysia time. Source: Forex Factory calendar. Context only, not a recommendation."
+  },
+  "error": {
+    "heading": "Something broke on this page",
+    "body": "The rest of the site still works. Go back to the home page, or tell the admin what you were doing when it happened."
   }
 }

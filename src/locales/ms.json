@@ -650,5 +650,13 @@
       },
       "brokerHeading": "Membuka akaun"
     }
+  },
+  "events": {
+    "heading": "Data ekonomi berimpak tinggi minggu ini",
+    "note": "Waktu Malaysia. Sumber: kalendar Forex Factory. Konteks sahaja, bukan cadangan."
+  },
+  "error": {
+    "heading": "Ada yang rosak di halaman ini",
+    "body": "Bahagian lain laman masih berfungsi. Kembali ke halaman utama, atau beritahu admin apa yang anda lakukan semasa ia berlaku."
   }
 }
