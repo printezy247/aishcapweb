@@ -477,6 +477,7 @@
     "eyebrow": "Members",
     "heading": "In their words",
     "memberSince": "member since {{date}}",
-    "note": "Quotes are published with each member's permission. Members are not paid and receive nothing for them."
+    "note": "Quotes are published with each member's permission. Members are not paid and receive nothing for them.",
+    "rating": "{{n}} out of 5 stars"
   }
 }

@@ -477,6 +477,7 @@
     "eyebrow": "Ahli",
     "heading": "Kata mereka",
     "memberSince": "ahli sejak {{date}}",
-    "note": "Petikan disiarkan dengan kebenaran setiap ahli. Ahli tidak dibayar dan tidak menerima apa-apa untuknya."
+    "note": "Petikan disiarkan dengan kebenaran setiap ahli. Ahli tidak dibayar dan tidak menerima apa-apa untuknya.",
+    "rating": "{{n}} daripada 5 bintang"
   }
 }
