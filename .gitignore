@@ -9,3 +9,4 @@ dist-ssr/
 .vite/
 .vercel/
 .DS_Store
+.lighthouseci/
