@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/home/Hero";
 import { MarketTicker } from "@/components/home/MarketTicker";
-import { WhatWeAre } from "@/components/home/WhatWeAre";
+import { Offerings } from "@/components/home/Offerings";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { WhyNumbersSmall } from "@/components/home/WhyNumbersSmall";
 import { LearnPreview } from "@/components/home/LearnPreview";
@@ -17,7 +17,7 @@ export default function Home() {
     <>
       <Hero />
       <MarketTicker />
-      <WhatWeAre />
+      <Offerings />
       <HowItWorks />
       <WhyNumbersSmall />
       <LearnPreview />

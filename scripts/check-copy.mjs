@@ -9,6 +9,7 @@ const FORBIDDEN = [
   /\bpassive income\b/i,
   /\bfinancial freedom\b/i,
   /\bprofit (daily|weekly|monthly)\b/i,
+
   // Bahasa Melayu equivalents
   /\bdijamin\b/i,
   /\btanpa risiko\b/i,
@@ -16,6 +17,10 @@ const FORBIDDEN = [
   /\bkebebasan kewangan\b/i,
   /\buntung (setiap hari|harian|mingguan|bulanan)\b/i,
 ];
+
+// Copy-only rules (locale JSON + index.html), so code identifiers like
+// AbortSignal are not flagged. Client decision: "signals" never appears on the site.
+const FORBIDDEN_COPY = [/\bsignals?\b/i, /\bisyarat\b/i];
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
@@ -29,8 +34,9 @@ function walk(dir, out = []) {
 let failures = 0;
 for (const file of [...walk("src"), "index.html"]) {
   const lines = readFileSync(file, "utf8").split("\n");
+  const rules = /\.(json|html)$/.test(file) ? [...FORBIDDEN, ...FORBIDDEN_COPY] : FORBIDDEN;
   lines.forEach((line, i) => {
-    for (const re of FORBIDDEN) {
+    for (const re of rules) {
       if (re.test(line)) {
         failures++;
         console.error(`${file}:${i + 1}: forbidden phrase ${re}: ${line.trim()}`);

@@ -33,7 +33,12 @@ export function Footer() {
             <h2 id="footer-risk" className={colHeading}>
               {t("footer.riskTitle")}
             </h2>
-            <p>{t("footer.risk")}</p>
+            <p>
+              {t("footer.risk")}{" "}
+              <Link to={href("/legal/risk")} className="text-platinum underline">
+                {t("footer.riskLink")}
+              </Link>
+            </p>
             <p className="mt-4">
               {t("footer.affiliateSummary")}{" "}
               <Link to={href("/legal/affiliate")} className="text-platinum underline">

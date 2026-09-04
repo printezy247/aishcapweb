@@ -6,6 +6,16 @@
 export const SITE = {
   name: "Aish Capital",
   telegramUrl: "https://t.me/ejjmili7",
+  /**
+   * Where Aish shows his work. Literal placeholders until the client confirms
+   * each URL; resolveLink() falls back to the admin's Telegram meanwhile.
+   */
+  links: {
+    publicChannel: "[PUBLIC_CHANNEL_URL]",
+    tiktok: "[TIKTOK_URL]",
+    community: "[COMMUNITY_GROUP_URL]",
+    privateRoom: "[PRIVATE_ROOM_URL]",
+  },
   /** Broker name. Leave the literal placeholder until the broker is confirmed. */
   brokerName: "[BROKER]",
   /** Referral link. Leave the placeholder until the broker is confirmed. */
@@ -35,3 +45,9 @@ export const SITE = {
 export const LOCALES = ["en", "ms"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "en";
+
+/** A real URL, or the admin's Telegram when the value is still a placeholder. */
+export function resolveLink(url: string): { href: string; isPlaceholder: boolean } {
+  const isReal = /^https?:\/\//.test(url);
+  return { href: isReal ? url : SITE.telegramUrl, isPlaceholder: !isReal };
+}
