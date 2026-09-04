@@ -42,7 +42,9 @@ function walk(dir, out = []) {
 let failures = 0;
 for (const file of [...walk("src"), "index.html"]) {
   const lines = readFileSync(file, "utf8").split("\n");
-  const rules = /\.(json|html)$/.test(file) ? [...FORBIDDEN, ...FORBIDDEN_COPY] : FORBIDDEN;
+  // Locale JSON, index.html and everything under src/content are copy.
+  const isCopy = /\.(json|html)$/.test(file) || file.startsWith(join("src", "content"));
+  const rules = isCopy ? [...FORBIDDEN, ...FORBIDDEN_COPY] : FORBIDDEN;
   lines.forEach((line, i) => {
     for (const re of rules) {
       if (re.test(line)) {

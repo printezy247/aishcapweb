@@ -12,12 +12,14 @@
       "terms": "Terma penggunaan — Aish Capital",
       "privacy": "Dasar privasi — Aish Capital",
       "confirm": "Sahkan langganan — Aish Capital",
-      "notFound": "Halaman tidak dijumpai — Aish Capital"
+      "notFound": "Halaman tidak dijumpai — Aish Capital",
+      "copyTrading": "Salin AishCopytrade — Aish Capital",
+      "article": "{{title}} — Aish Capital"
     }
   },
   "nav": {
     "home": "Utama",
-    "howItWorks": "Cara ia berfungsi",
+    "copyTrading": "Copy trading",
     "learn": "Belajar",
     "about": "Tentang",
     "menu": "Menu",
@@ -61,7 +63,7 @@
   },
   "buttons": {
     "joinTelegram": "Sertai Telegram",
-    "howItWorks": "Cara ia berfungsi",
+    "copyTrading": "Lihat AishCopytrade",
     "readRisks": "Baca risiko",
     "subscribe": "Langgan",
     "messageAdmin": "Hubungi admin di Telegram",
@@ -243,9 +245,23 @@
     "learn": {
       "heading": "Belajar",
       "intro": "Penerangan bertulis, dalam bahasa yang mudah, tentang apa itu copy trading, kosnya, dan bagaimana ia boleh gagal. Tiada seruan, tiada gempak.",
-      "emptyTitle": "Belum ada yang diterbitkan, dengan sengaja",
-      "emptyBody": "Kami lebih rela tidak menerbitkan apa-apa daripada mengisi halaman ini dengan tulisan kosong. Artikel bermula apabila AishCopytrade mempunyai sejarah yang cukup untuk ditulis secara jujur. Ulasan mingguan tentang apa yang AishCopytrade lakukan, dan mengapa, sudah disiarkan dalam kumpulan Telegram.",
-      "latest": "Terkini"
+      "explainers": "Penerangan",
+      "weekly": {
+        "heading": "Ulasan mingguan AishCopytrade",
+        "body": "Setiap Ahad, Aish menyiarkan apa yang AishCopytrade lakukan minggu itu dan sebabnya, di saluran awam. Setiap satu disiarkan semula di sini selepas ia disiarkan, dengan angka yang disalin daripada papan pemuka broker pada tarikh yang dinyatakan. Ia bukan senarai dagangan untuk disalin, dan tidak akan memberitahu anda apa yang perlu dibeli.",
+        "open": "Buka saluran"
+      },
+      "readingTime_one": "Bacaan {{count}} minit",
+      "readingTime_other": "Bacaan {{count}} minit",
+      "read": "Baca",
+      "back": "Kembali ke Belajar",
+      "related": "Baca seterusnya",
+      "inShort": "Ringkasnya",
+      "updated": "Disemak {{date}}",
+      "kind": {
+        "explainer": "Penerangan",
+        "weekly": "Ulasan mingguan"
+      }
     },
     "about": {
       "heading": "Tentang Aish",
@@ -567,5 +583,81 @@
         "other": "Tinggi, ditambah risiko mereka tidak memulangkannya"
       }
     ]
+  },
+  "product": {
+    "eyebrow": "AishCopytrade · copy trading",
+    "heading": "Satu akaun, dicerminkan ke dalam akaun anda.",
+    "intro": "AishCopytrade ialah akaun dagangan sebenar di broker. Sambungkan akaun anda sendiri kepadanya dan sistem broker menyalin dagangannya ke dalam akaun anda, mengikut kadar jumlah yang anda peruntukkan. Akaun, log masuk, dan wang kekal milik anda.",
+    "subnav": {
+      "aria": "Bahagian halaman copy trading",
+      "overview": "Ringkasan",
+      "performance": "Prestasi",
+      "howItWorks": "Cara ia berfungsi",
+      "fees": "Yuran",
+      "start": "Mula"
+    },
+    "performance": {
+      "eyebrow": "Prestasi",
+      "heading": "Setiap angka. Tiada yang disembunyikan.",
+      "intro": "Angka yang sama seperti pada kad, dibentangkan sepenuhnya. Disalin secara manual daripada papan pemuka broker pada tarikh yang ditunjukkan; tidak pernah dianggarkan, tidak pernah dibundarkan ke atas.",
+      "rows": {
+        "account": "Akaun",
+        "opened": "Dibuka",
+        "window": "Tempoh pengesahan",
+        "dayOf": "Hari {{n}} daripada {{total}}",
+        "currency": "Mata wang"
+      },
+      "glossary": [
+        {
+          "term": "Baki dan ekuiti",
+          "body": "Baki ialah wang dalam akaun dengan semua dagangan ditutup. Ekuiti ialah baki campur atau tolak apa yang ditunjukkan oleh dagangan terbuka pada masa ini. Tanpa dagangan terbuka, kedua-duanya sama."
+        },
+        {
+          "term": "Jumlah keuntungan",
+          "body": "Perubahan akaun sejak ia dibuka, sebagai peratusan daripada jumlah permulaan, seperti yang dilaporkan oleh papan pemuka broker. Sifar bermakna akaun berada di tempat ia bermula."
+        },
+        {
+          "term": "Penurunan maksimum",
+          "body": "Kejatuhan terbesar daripada satu puncak ke paras rendah yang menyusulinya, sebagai peratusan. Ia memberitahu seteruk mana tempoh paling buruk setakat ini. Ia tidak boleh memberitahu seteruk mana tempoh seterusnya."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "Cara ia berfungsi",
+      "heading": "Empat langkah, semuanya di tangan anda",
+      "intro": "Tiada apa-apa berlaku kepada wang anda tanpa anda melakukannya sendiri.",
+      "more": "Baca penerangan penuh"
+    },
+    "fees": {
+      "eyebrow": "Yuran",
+      "heading": "Apa kosnya, dan siapa yang dibayar",
+      "intro": "Tiga kos. Dua milik broker, satu datang kepada kami. Setiap satu dinyatakan di sini dan di sebelah setiap pautan di laman ini.",
+      "items": [
+        {
+          "who": "Dibayar kepada broker",
+          "title": "Spread dan komisen broker",
+          "body": "Dikenakan oleh broker ke atas setiap dagangan, sama ada anda menyalin atau berdagang sendiri. Ditetapkan oleh broker, bukan oleh kami."
+        },
+        {
+          "who": "Dikutip oleh sistem copy trading broker",
+          "title": "Yuran prestasi: {{fee}}% daripada keuntungan sahaja",
+          "body": "Dikenakan ke atas keuntungan yang dihasilkan oleh salinan dalam akaun anda. Tiada apa-apa dikenakan ke atas kerugian. Mekanismenya ditetapkan oleh sistem copy trading broker; baca termanya sebelum menyambung."
+        },
+        {
+          "who": "Dibayar oleh broker kepada Aish Capital",
+          "title": "Komisen Introducing Broker",
+          "body": "Jika anda membuka akaun melalui pautan kami, broker membayar kami sebahagian daripada caj brokernya sendiri. Ia tidak menambah kos anda, dan ia adalah sebab untuk kami mahu anda berdagang."
+        }
+      ],
+      "never": {
+        "heading": "Apa yang kami tidak pernah kenakan",
+        "items": [
+          "Tiada yuran langganan atau keahlian.",
+          "Tiada deposit kepada kami, sama sekali. Wang anda hanya masuk ke akaun broker anda sendiri.",
+          "Tiada yuran ke atas kerugian."
+        ]
+      },
+      "brokerHeading": "Membuka akaun"
+    }
   }
 }

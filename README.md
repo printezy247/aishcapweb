@@ -33,6 +33,14 @@ there is no way to hide one. The day counter and account age are derived from
 it was counted, read from the group header. Update it when you update the AishCopytrade
 figures. The date renders publicly, so never estimate or round up.
 
+## Learn posts
+
+`src/content/posts.ts` holds every Learn post in both languages: explainers
+(evergreen) and the weekly AishCopytrade breakdown republished from the
+channel. Each renders at `/learn/{slug}`. The copy checker applies the full
+forbidden-phrase list to this file. Format and rules for a weekly post:
+[`docs/weekly-breakdown.md`](docs/weekly-breakdown.md).
+
 ## Testimonials
 
 `src/content/testimonials.ts` is empty on purpose and the section renders
