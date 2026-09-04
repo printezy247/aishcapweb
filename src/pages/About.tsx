@@ -7,13 +7,13 @@ import { SITE } from "@/config/site";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { useLocale } from "@/hooks/useLocale";
 import { formatMoney } from "@/lib/format";
-import { trackRecordSource } from "@/lib/track-record-source";
+import { CT1 } from "@/config/track-record";
 
 export default function About() {
   const { t } = useTranslation();
   const { locale } = useLocale();
   useDocumentTitle(t("meta.titles.about"));
-  const record = trackRecordSource.getTrackRecord();
+  const record = CT1;
   const sections = t("pages.about.sections", {
     returnObjects: true,
     start: formatMoney(100, record.currency, locale),

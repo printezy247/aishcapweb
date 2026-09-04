@@ -6,7 +6,7 @@ import { Steps } from "@/components/product/Steps";
 import { Fees } from "@/components/product/Fees";
 import { Footnotes } from "@/components/Footnotes";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
-import { trackRecordSource } from "@/lib/track-record-source";
+import { CT1 } from "@/config/track-record";
 
 /**
  * The product page: Overview · Performance · How it works · Fees, with a
@@ -16,7 +16,7 @@ import { trackRecordSource } from "@/lib/track-record-source";
 export default function CopyTrading() {
   const { t } = useTranslation();
   useDocumentTitle(t("meta.titles.copyTrading"));
-  const record = trackRecordSource.getTrackRecord();
+  const record = CT1;
   return (
     <>
       <SubNav />

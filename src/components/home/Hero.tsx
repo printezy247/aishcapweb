@@ -5,13 +5,13 @@ import { ButtonLink } from "@/components/ui/button";
 import { TrackRecordCard } from "@/components/home/TrackRecordCard";
 import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
-import { trackRecordSource } from "@/lib/track-record-source";
+import { CT1 } from "@/config/track-record";
 import { verificationDay } from "@/lib/track-record";
 
 export function Hero() {
   const { t } = useTranslation();
   const { href } = useLocale();
-  const record = trackRecordSource.getTrackRecord();
+  const record = CT1;
   const day = verificationDay(record);
   const proof = t("hero.proof", { returnObjects: true }) as string[];
 

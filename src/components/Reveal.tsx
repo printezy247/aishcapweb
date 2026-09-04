@@ -6,7 +6,7 @@ interface RevealProps {
   className?: string;
   /** Stagger index; delay = index × 40ms. */
   index?: number;
-  as?: "div" | "li" | "section";
+  as?: "div" | "li";
 }
 
 /**
