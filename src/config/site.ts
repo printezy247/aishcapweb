@@ -5,6 +5,8 @@
  */
 export const SITE = {
   name: "Aish Capital",
+  /** Canonical origin. Change when the custom domain is live. */
+  url: "https://aishweb-ezy-ai.vercel.app",
   telegramUrl: "https://t.me/ejjmili7",
   /**
    * Where Aish shows his work. Literal placeholders until the client confirms

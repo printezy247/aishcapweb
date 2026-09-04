@@ -5,6 +5,7 @@ import { formatDate, formatInt, formatMoney, formatPct } from "@/lib/format";
 import { useCountUp } from "@/hooks/useCountUp";
 import { useLocale } from "@/hooks/useLocale";
 import { cn } from "@/lib/utils";
+import { Fn } from "@/components/Footnotes";
 
 /**
  * The live account card, holographic treatment.
@@ -74,7 +75,10 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
       {/* Headline value */}
       <dl className="mt-6">
         <div>
-          <dt className="text-label text-slate">{t("stats.totalGain")}</dt>
+          <dt className="text-label text-slate">
+            {t("stats.totalGain")}
+            <Fn n={1} />
+          </dt>
           <dd className={cn("num mt-1 text-[44px] font-medium leading-none tracking-tight md:text-[52px]", gainTone)}>
             {formatPct(gain, locale, true)}
           </dd>
@@ -95,7 +99,10 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
       <dl className="mt-3 grid grid-cols-2 gap-2">
         {secondary.map((row) => (
           <div key={row.label} className="holo-chip flex items-baseline justify-between gap-2 rounded-md px-3 py-2">
-            <dt className="text-[12px] leading-tight text-slate">{row.label}</dt>
+            <dt className="text-[12px] leading-tight text-slate">
+              {row.label}
+              {row.label === t("stats.performanceFee") && <Fn n={2} />}
+            </dt>
             <dd className="num text-[14px] font-medium leading-none text-platinum">{row.value}</dd>
           </div>
         ))}

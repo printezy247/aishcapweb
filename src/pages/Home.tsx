@@ -9,6 +9,7 @@ import { LearnPreview } from "@/components/home/LearnPreview";
 import { EmailCapture } from "@/components/home/EmailCapture";
 import { AboutAish } from "@/components/home/AboutAish";
 import { Faq } from "@/components/home/Faq";
+import { Footnotes } from "@/components/Footnotes";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 export default function Home() {
@@ -26,6 +27,7 @@ export default function Home() {
       <EmailCapture />
       <AboutAish />
       <Faq />
+      <Footnotes />
     </>
   );
 }

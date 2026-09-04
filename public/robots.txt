@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Sitemap: https://aishweb-ezy-ai.vercel.app/sitemap.xml

@@ -16,21 +16,27 @@ export function Portrait({ variant = "portrait", size = 280 }: { variant?: Varia
   const img = variant === "laptop" ? SITE.laptop : SITE.portrait;
   const alt = variant === "laptop" ? t("about.laptopAlt") : t("about.portraitAlt");
   const ratio = img.height / img.width;
+  const sizes = `(max-width: 640px) 70vw, ${size}px`;
+  const swap = (src: string, ext: string) => src.replace(/\.jpg$/, `.${ext}`);
   return (
     <figure className="metal-card relative overflow-hidden rounded-lg p-2" style={{ maxWidth: size }}>
-      <img
-        src={img.src}
-        srcSet={`${img.srcSmall} ${img.width / 2}w, ${img.src} ${img.width}w`}
-        sizes={`(max-width: 640px) 70vw, ${size}px`}
-        alt={alt}
-        width={img.width}
-        height={img.height}
-        loading="lazy"
-        decoding="async"
-        className="w-full rounded-[4px] object-cover"
-        style={{ aspectRatio: `1 / ${ratio}` }}
-        onError={() => setFailed(true)}
-      />
+      <picture>
+        <source type="image/avif" srcSet={`${swap(img.srcSmall, "avif")} ${img.width / 2}w, ${swap(img.src, "avif")} ${img.width}w`} sizes={sizes} />
+        <source type="image/webp" srcSet={`${swap(img.srcSmall, "webp")} ${img.width / 2}w, ${swap(img.src, "webp")} ${img.width}w`} sizes={sizes} />
+        <img
+          src={img.src}
+          srcSet={`${img.srcSmall} ${img.width / 2}w, ${img.src} ${img.width}w`}
+          sizes={sizes}
+          alt={alt}
+          width={img.width}
+          height={img.height}
+          loading="lazy"
+          decoding="async"
+          className="w-full rounded-[4px] object-cover"
+          style={{ aspectRatio: `1 / ${ratio}` }}
+          onError={() => setFailed(true)}
+        />
+      </picture>
       <span aria-hidden="true" className="gold-bar absolute inset-x-2 bottom-2 h-[2px] opacity-80" />
     </figure>
   );

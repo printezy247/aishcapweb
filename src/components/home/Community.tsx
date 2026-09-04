@@ -7,6 +7,7 @@ import { COMMUNITY } from "@/config/community";
 import { SITE, resolveLink } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 import { formatDate, formatInt } from "@/lib/format";
+import { Fn } from "@/components/Footnotes";
 
 /**
  * A statement of fact about the Telegram group: the member count from
@@ -27,6 +28,7 @@ export function Community() {
         <h2 id="community-heading" className="text-section">
           <span className="num">{count}</span>{" "}
           {t("community.heading", { count: "" }).trim()}
+          <Fn n={3} />
         </h2>
         <p className="mt-3 text-label text-slate">{t("community.groupNote", { groupName: COMMUNITY.groupName })}</p>
         <p className="mt-5 text-platinum/90">{t("community.body")}</p>
@@ -37,7 +39,7 @@ export function Community() {
           </time>
         </p>
         <div className="mt-6">
-          <ButtonLink to={href} variant="secondary">
+          <ButtonLink to={href} variant="secondary" data-track="community_click" data-location="community">
             {isPlaceholder ? t("offerings.askAdmin") : t("community.join")}
           </ButtonLink>
         </div>
