@@ -18,6 +18,18 @@ export const SITE = {
     community: "[COMMUNITY_GROUP_URL]",
     privateRoom: "[PRIVATE_ROOM_URL]",
   },
+  /**
+   * Switches that are off until the client has what they need.
+   * emailSignup: the weekly-email form and the /confirm route. Turn on only
+   * when (1) a sending domain is verified with the email provider, (2) the
+   * Supabase project has supabase/migrations applied and the send-confirmation
+   * function wired as a database webhook, and (3) VITE_SUPABASE_URL and
+   * VITE_SUPABASE_ANON_KEY are set on Vercel (Production + Preview) and the
+   * site has been redeployed. Until then the Join chapter shows FollowBlock.
+   */
+  features: {
+    emailSignup: false,
+  },
   /** Broker name. Leave the literal placeholder until the broker is confirmed. */
   brokerName: "[BROKER]",
   /** Referral link. Leave the placeholder until the broker is confirmed. */

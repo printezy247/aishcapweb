@@ -516,7 +516,11 @@
   "join": {
     "eyebrow": "Kekal dekat",
     "heading": "Ikuti perkembangan, mengikut cara anda",
-    "intro": "E-mel mingguan jika anda mahu, dan jawapan terus kepada soalan yang benar-benar ditanya orang."
+    "intro": "Ulasan mingguan, dan jawapan terus kepada soalan yang benar-benar ditanya orang.",
+    "follow": {
+      "heading": "Ulasan mingguan AishCopytrade",
+      "body": "Setiap Ahad, Aish menyiarkan apa yang AishCopytrade lakukan minggu itu dan sebabnya, di saluran awam. Ia bukan senarai dagangan untuk disalin, dan tidak akan memberitahu anda apa yang perlu dibeli. Penghantaran e-mel akan menyusul kemudian."
+    }
   },
   "compare": {
     "heading": "Tiga cara untuk berada dalam pasaran",

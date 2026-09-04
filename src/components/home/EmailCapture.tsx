@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Reveal } from "@/components/Reveal";
 import { Button, ButtonLink } from "@/components/ui/button";
-import { SITE } from "@/config/site";
+import { SITE, resolveLink } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 import { getSupabase, supabaseConfigured } from "@/lib/supabase";
 
@@ -98,6 +98,27 @@ export function EmailBlock() {
           </ButtonLink>
         )}
       </form>
+    </Reveal>
+  );
+}
+
+/**
+ * Shown in place of EmailBlock while SITE.features.emailSignup is off: the
+ * weekly breakdown lives in the public channel, so point there. No form, no
+ * disclosure (the public channel is free).
+ */
+export function FollowBlock() {
+  const { t } = useTranslation();
+  const { href, isPlaceholder } = resolveLink(SITE.links.publicChannel);
+  return (
+    <Reveal>
+      <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">{t("join.follow.heading")}</h3>
+      <p className="mt-2 max-w-prose text-platinum/80">{t("join.follow.body")}</p>
+      <div className="mt-6">
+        <ButtonLink to={href} variant="secondary" data-track="offering_click" data-location="join-follow">
+          {isPlaceholder ? t("offerings.askAdmin") : t("offerings.open")}
+        </ButtonLink>
+      </div>
     </Reveal>
   );
 }
