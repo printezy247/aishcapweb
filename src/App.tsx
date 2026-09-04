@@ -45,7 +45,7 @@ function LocaleGate() {
   return (
     <Layout>
       <ErrorBoundary>
-        <Suspense fallback={<div className="min-h-[40vh]" aria-busy="true" />}>
+        <Suspense fallback={<div className="min-h-dvh" aria-busy="true" />}>
           <Routes>
           <Route index element={<Home />} />
           <Route path="copy-trading" element={<CopyTrading />} />
