@@ -6,12 +6,12 @@ type Variant = "primary" | "secondary";
 
 const base =
   "inline-flex items-center justify-center whitespace-nowrap rounded-card px-5 min-h-[48px] " +
-  "text-[16px] font-semibold leading-none no-underline select-none";
+  "text-[16px] font-semibold leading-none no-underline select-none active:scale-[0.98]";
 
 const variants: Record<Variant, string> = {
-  // Gold is allowed on exactly one primary button per view.
-  primary: "bg-gold text-navy-midnight hover:bg-gold-bright",
-  secondary: "border border-slate/60 text-platinum hover:border-platinum",
+  // Gold is allowed on exactly one primary button per viewport.
+  primary: "btn-gold",
+  secondary: "btn-glass",
 };
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

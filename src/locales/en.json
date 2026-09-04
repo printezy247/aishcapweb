@@ -31,7 +31,13 @@
     "building": "Building in public. Day {{n}} of {{total}}.",
     "newStrategy": "This strategy is new. There is no performance record yet.",
     "cardAria": "Live account statistics for {{name}}",
-    "selfReported": "Self-reported from the broker dashboard. Third-party verification is planned once the {{total}}-day window ends."
+    "selfReported": "Self-reported from the broker dashboard. Third-party verification is planned once the {{total}}-day window ends.",
+    "eyebrow": "Live account · self-reported",
+    "proof": [
+      "Account in your name",
+      "Disconnect at any time",
+      "20% fee on gains only"
+    ]
   },
   "stats": {
     "totalGain": "Total gain",
@@ -62,7 +68,8 @@
     "areTitle": "What we are",
     "are": "Aish Capital is an education and community brand run by one trader and one admin. We publish one live copy-trading account, CT-1, with every figure shown unedited from the broker dashboard. We explain how copy trading works, what it costs, and how it can go wrong. We earn Introducing Broker commission from the broker and a 20% performance fee on CT-1, and we say so beside every link.",
     "areNotTitle": "What we are not",
-    "areNot": "We are not a fund. We are not a licensed adviser. We do not guarantee profit. We do not ask you to send us money. Every account is yours, in your name, under your control, and you can disconnect at any time."
+    "areNot": "We are not a fund. We are not a licensed adviser. We do not guarantee profit. We do not ask you to send us money. Every account is yours, in your name, under your control, and you can disconnect at any time.",
+    "eyebrow": "In plain terms"
   },
   "howItWorks": {
     "heading": "How copy trading works",
@@ -84,11 +91,13 @@
         "title": "Disconnect at any time",
         "body": "You can stop copying whenever you choose, from your own account, without asking us. The account remains in your name throughout, before, during, and after copying."
       }
-    ]
+    ],
+    "eyebrow": "Four steps"
   },
   "whyNumbersSmall": {
     "heading": "Why the numbers are small",
-    "body": "CT-1 started on {{openedAt}} with {{start}} of my own money. At the time of writing that is {{days}} days of history, which is not a track record. It is a starting point. I am running this account in public for {{total}} days before I talk about results anywhere, and every figure on this page is copied from the broker dashboard, unchanged. You do not have to join. Watching for the full {{total}} days is a perfectly good decision, and I would rather you did that than rush."
+    "body": "CT-1 started on {{openedAt}} with {{start}} of my own money. At the time of writing that is {{days}} days of history, which is not a track record. It is a starting point. I am running this account in public for {{total}} days before I talk about results anywhere, and every figure on this page is copied from the broker dashboard, unchanged. You do not have to join. Watching for the full {{total}} days is a perfectly good decision, and I would rather you did that than rush.",
+    "eyebrow": "Read this first"
   },
   "learnPreview": {
     "heading": "Learn",
@@ -96,7 +105,8 @@
     "emptyTitle": "No articles yet",
     "emptyBody": "The first written pieces go up once CT-1 has enough history to write about honestly. Until then, the weekly breakdown is posted in the Telegram group.",
     "viewAll": "All articles",
-    "readMore": "Read"
+    "readMore": "Read",
+    "eyebrow": "Education"
   },
   "email": {
     "heading": "The weekly CT-1 breakdown",
@@ -109,7 +119,8 @@
     "duplicate": "That address is already on the list. If you have not confirmed it, check your inbox for the link.",
     "invalid": "Please enter a valid email address.",
     "error": "Something went wrong. Please try again, or message the admin on Telegram.",
-    "notConfigured": "Email sign-up is not switched on yet. Join the Telegram group for the weekly breakdown."
+    "notConfigured": "Email sign-up is not switched on yet. Join the Telegram group for the weekly breakdown.",
+    "eyebrow": "Weekly email"
   },
   "confirm": {
     "heading": "Confirming your subscription",
@@ -120,9 +131,24 @@
   },
   "about": {
     "heading": "About Aish",
-    "portraitAlt": "Aish at a laptop by a city window",
+    "portraitAlt": "Aish, head and shoulders, looking at his phone",
     "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD), and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I am not licensed, I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
-    "readMore": "More about Aish"
+    "readMore": "More about Aish",
+    "eyebrow": "The person",
+    "facts": [
+      {
+        "value": "6",
+        "label": "years trading"
+      },
+      {
+        "value": "XAUUSD",
+        "label": "gold, mainly"
+      },
+      {
+        "value": "1",
+        "label": "admin"
+      }
+    ]
   },
   "faq": {
     "heading": "Questions people ask",
@@ -159,7 +185,8 @@
         "q": "What broker do you use and are they regulated?",
         "a": "We use [BROKER]. Like almost every international forex broker, it is not licensed by the Securities Commission Malaysia or Bank Negara Malaysia, and it may appear on their investor alert lists. Any regulation it holds is from another country and does not give you protection under Malaysian law. Check the SC and BNM alert lists yourself before opening an account."
       }
-    ]
+    ],
+    "eyebrow": "Straight answers"
   },
   "affiliate": {
     "inline": "Aish Capital operates as an Introducing Broker and receives commission from {{broker}} based on the trading activity of accounts opened through our links. This is paid by the broker and does not increase your trading costs. This commission creates a financial incentive for us, and you should factor that into any decision you make.",
@@ -415,5 +442,10 @@
       "heading": "Page not found",
       "body": "That page does not exist. It may have moved, or the address may be mistyped."
     }
+  },
+  "ticker": {
+    "aria": "Market prices",
+    "indicative": "Indicative prices, delayed",
+    "asOf": "as of {{time}} MYT"
   }
 }

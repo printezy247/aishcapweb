@@ -5,7 +5,7 @@ import { SITE } from "@/config/site";
  * Renders the brand logo from /public/images/logo.png when present.
  * Falls back to a text wordmark so the header never shows a broken image.
  */
-export function Logo() {
+export function Logo({ className = "h-8 md:h-9" }: { className?: string }) {
   const [failed, setFailed] = useState(false);
   if (failed) {
     return (
@@ -18,9 +18,9 @@ export function Logo() {
     <img
       src={SITE.logo.src}
       alt={SITE.name}
-      width={140}
-      height={36}
-      className="h-9 w-auto"
+      width={200}
+      height={78}
+      className={`${className} w-auto`}
       onError={() => setFailed(true)}
     />
   );

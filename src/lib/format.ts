@@ -36,3 +36,20 @@ export function formatDate(iso: string, locale: Locale): string {
     timeZone: "UTC",
   }).format(date);
 }
+
+export function formatPrice(value: number, decimals: number, locale: Locale): string {
+  return new Intl.NumberFormat(intlLocale[locale], {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  }).format(value);
+}
+
+/** HH:MM in Malaysia time for an ISO timestamp. */
+export function formatTimeMY(iso: string, locale: Locale): string {
+  return new Intl.DateTimeFormat(intlLocale[locale], {
+    timeZone: "Asia/Kuala_Lumpur",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).format(new Date(iso));
+}

@@ -48,11 +48,13 @@ not be guessed:
 | `[BROKER]`, `[BROKER_REFERRAL_URL]` | `src/config/site.ts`, locale files |
 | `[COMPANY LEGAL NAME]`, `[SSM REGISTRATION NO.]`, `[REGISTERED ADDRESS]`, `[CONTACT EMAIL]` | `src/config/site.ts` |
 
-Assets to supply (not in the repo):
+Assets to supply (upload via GitHub → `public/images` → Add file → Upload files):
 
-- `public/images/logo.png` — brand logo (a text wordmark is shown until it exists)
-- `public/images/aish-window.jpg` — the window / laptop portrait, 4:5, ~640×800.
-  No car photographs anywhere on this site.
+- `public/images/logo.png` — brand wordmark, transparent background (a text wordmark shows until it exists)
+- `public/images/aish-portrait.jpg` — the original portrait. Then run
+  `npm run crop:portrait` to generate the head-and-shoulders crops
+  (`aish-portrait-800.jpg`, `aish-portrait-400.jpg`) the site uses, and commit those.
+  Tune with `--top 0.05 --height 0.48 --cx 0.5` if the face is off-centre.
 
 Have a native Malay speaker review `src/locales/ms.json` before launch,
 especially the compliance strings.
@@ -72,6 +74,19 @@ country header if your host exposes one) → `Accept-Language` starting with
 3. The form inserts an unconfirmed row; the email links to
    `/{locale}/confirm?token=…`, which calls `confirm_subscription`.
 4. Optionally schedule `purge_unconfirmed()` daily (30-day PDPA retention).
+
+## Live market prices (ticker)
+
+`api/quotes.ts` is a Vercel serverless function that fetches XAU/USD, EUR/USD,
+GBP/USD, USD/JPY and BTC/USD from Twelve Data (free tier) and caches the result
+at the CDN for 15 minutes (~480 of the 800 daily credits). Set `QUOTES_API_KEY`
+in the Vercel project's environment variables (Production + Preview). Without a
+key the route returns 503 and the site renders no ticker at all. Prices are
+labelled indicative and delayed, with a Malaysia-time stamp. No third-party
+scripts run on the page.
+
+`npm run dev` serves the same handler at `/api/quotes` via a Vite middleware and
+reads `QUOTES_API_KEY` from `.env`.
 
 ## Hosting
 

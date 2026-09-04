@@ -4,26 +4,31 @@
 
 @layer base {
   :root {
-    --navy-deep: #0a1b3d;
+    --navy-abyss: #030b1c;
     --navy-midnight: #061229;
+    --navy-deep: #0a1b3d;
     --navy-raised: #12294f;
     --gold: #d4a017;
     --gold-bright: #f5d061;
+    --gold-deep: #a87d0f;
     --platinum: #e8e8e8;
     --slate: #8fa3c4;
     --bull: #2ecc71;
     --bear: #e74c3c;
+    /* White-alpha hairline: reads as brushed metal, not a drawn line. */
+    --hairline: rgba(232, 232, 232, 0.08);
+    --hairline-strong: rgba(232, 232, 232, 0.14);
     color-scheme: dark;
   }
 
   html {
-    background-color: var(--navy-deep);
+    background-color: var(--navy-abyss);
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-navy-deep text-platinum font-sans text-body-m md:text-body-d antialiased;
+    @apply bg-navy-abyss text-platinum font-sans text-body-m md:text-body-d antialiased;
     font-variation-settings: "wdth" 100;
     min-height: 100dvh;
   }
@@ -84,6 +89,11 @@
   .tabular {
     font-variant-numeric: tabular-nums;
   }
+  /* Numerals: mono + tabular. Used for every figure on the site. */
+  .num {
+    @apply font-mono tabular;
+    font-variation-settings: normal;
+  }
   .text-display {
     @apply wdth-expanded font-bold text-hero-m md:text-hero-d;
   }
@@ -91,17 +101,163 @@
     @apply wdth-semi font-semibold text-section-m md:text-section-d;
   }
   .text-stat {
-    @apply tabular font-semibold text-stat-m md:text-stat-d;
+    @apply num font-medium text-stat-m md:text-stat-d;
   }
   .text-meta {
     @apply text-label text-slate;
+  }
+  .eyebrow {
+    @apply text-label font-semibold text-gold;
+  }
+
+  .hairline {
+    border-color: var(--hairline);
+  }
+  .hairline-strong {
+    border-color: var(--hairline-strong);
   }
   .hairline-gold {
     border-color: var(--gold);
     border-width: 1px 0 0 0;
     border-style: solid;
   }
-  .hairline {
-    border-color: rgba(143, 163, 196, 0.25);
+
+  /* The one card recipe: brushed-metal fill, top sheen, neutral depth. */
+  .metal-card {
+    background: linear-gradient(160deg, #12294f 0%, #0c1e42 55%, #081733 100%);
+    border: 1px solid var(--hairline);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.07),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+      0 1px 2px rgba(0, 0, 0, 0.45),
+      0 6px 16px rgba(0, 0, 0, 0.35),
+      0 20px 48px rgba(0, 0, 0, 0.35);
+  }
+  /* Reserved for the hero account card. */
+  .metal-card--gold {
+    border-color: rgba(212, 160, 23, 0.45);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.09),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(212, 160, 23, 0.12),
+      0 1px 2px rgba(0, 0, 0, 0.45),
+      0 8px 20px rgba(0, 0, 0, 0.4),
+      0 24px 56px rgba(0, 0, 0, 0.4);
+  }
+  .gold-bar {
+    background: linear-gradient(90deg, var(--gold-deep), var(--gold-bright) 50%, var(--gold-deep));
+  }
+
+  /* Buttons. Gold: the single primary per viewport. Glass: everything else. */
+  .btn-gold {
+    color: var(--navy-abyss);
+    background: linear-gradient(180deg, #f5d061 0%, #d4a017 55%, #a87d0f 100%);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.35),
+      inset 0 -3px 6px rgba(0, 0, 0, 0.18),
+      0 2px 6px rgba(0, 0, 0, 0.4),
+      0 10px 24px rgba(212, 160, 23, 0.18);
+  }
+  .btn-gold:hover {
+    background: linear-gradient(180deg, #f8dc7a 0%, #dcab22 55%, #b0851a 100%);
+  }
+  .btn-gold:active {
+    box-shadow:
+      inset 0 2px 6px rgba(0, 0, 0, 0.35),
+      0 1px 2px rgba(0, 0, 0, 0.4);
+  }
+  .btn-glass {
+    color: var(--platinum);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--hairline-strong);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+  .btn-glass:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(232, 232, 232, 0.28);
+  }
+  .btn-glass:active {
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* Wallpaper motif: faint candlesticks + two gold light streaks. Hero and footer only. */
+  .hero-backdrop {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+  }
+  .hero-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(115deg, transparent 38%, rgba(212, 160, 23, 0.07) 47%, rgba(245, 208, 97, 0.1) 50%, rgba(212, 160, 23, 0.06) 53%, transparent 62%),
+      linear-gradient(115deg, transparent 62%, rgba(212, 160, 23, 0.04) 74%, transparent 84%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='160' viewBox='0 0 240 160'%3E%3Cg stroke='%238FA3C4' stroke-opacity='0.16' stroke-width='1' fill='none'%3E%3Cpath d='M20 40v80M14 60h12v40H14zM60 20v70M54 34h12v44H54zM100 60v90M94 78h12v50H94zM140 10v60M134 22h12v32h-12zM180 50v90M174 64h12v48h-12zM220 30v70M214 46h12v36h-12z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: auto, auto, 240px 160px;
+    background-position: center, center, center;
+    mask-image: radial-gradient(120% 80% at 70% 40%, black 30%, transparent 85%);
+    -webkit-mask-image: radial-gradient(120% 80% at 70% 40%, black 30%, transparent 85%);
+  }
+  .hero-backdrop--soft::before {
+    opacity: 0.55;
+  }
+
+  /* Scroll reveal: fade-up only, once. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Market ticker marquee. Duplicate the row so -50% loops seamlessly. */
+  .ticker-wrap {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 6%, black 94%, transparent 100%);
+  }
+  .ticker-track {
+    display: flex;
+    width: max-content;
+    gap: 2.25rem;
+    will-change: transform;
+    animation: ticker 48s linear infinite;
+  }
+  .ticker-wrap:hover .ticker-track {
+    animation-play-state: paused;
+  }
+  @keyframes ticker {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track {
+      animation: none;
+      width: auto;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+    }
+    .ticker-dup {
+      display: none;
+    }
   }
 }

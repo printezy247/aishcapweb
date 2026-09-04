@@ -12,12 +12,17 @@ export function Hero() {
   const { href } = useLocale();
   const record = trackRecordSource.getTrackRecord();
   const day = verificationDay(record);
+  const proof = t("hero.proof", { returnObjects: true }) as string[];
 
   return (
-    <section aria-labelledby="hero-heading" className="bg-navy-midnight py-10 md:py-16">
+    <section aria-labelledby="hero-heading" className="hero-backdrop bg-navy-midnight py-12 md:py-24">
       <Container>
-        <div className="grid items-start gap-8 md:grid-cols-[minmax(0,1fr)_440px] md:gap-12">
+        <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_440px] md:gap-14">
           <div className="max-w-prose">
+            <p className="eyebrow mb-3 flex items-center gap-2">
+              <span aria-hidden="true" className="inline-block h-[6px] w-[6px] rounded-full bg-gold" />
+              {t("hero.eyebrow")}
+            </p>
             <h1 id="hero-heading" className="text-display">
               {t("hero.building", { n: day, total: record.verificationDays })}
             </h1>
@@ -26,19 +31,32 @@ export function Hero() {
               <TrackRecordCard record={record} />
             </div>
 
-            <p className="mt-6 text-platinum/90">{t("hero.newStrategy")}</p>
+            <p className="mt-6 text-[17px] text-platinum/90 md:text-[18px]">{t("hero.newStrategy")}</p>
             <p className="mt-2 text-legal text-slate">
               {t("hero.selfReported", { total: record.verificationDays })}
             </p>
 
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink to={SITE.telegramUrl} variant="primary">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+              {/* Mobile/tablet: gold lives here. On lg+ the header carries it. */}
+              <ButtonLink to={SITE.telegramUrl} variant="primary" className="lg:hidden">
+                {t("buttons.joinTelegram")}
+              </ButtonLink>
+              <ButtonLink to={SITE.telegramUrl} variant="secondary" className="hidden lg:inline-flex">
                 {t("buttons.joinTelegram")}
               </ButtonLink>
               <ButtonLink to={href("/how-it-works")} variant="secondary">
                 {t("buttons.howItWorks")}
               </ButtonLink>
             </div>
+
+            <ul className="mt-8 grid gap-2 text-[14px] text-platinum/85 sm:grid-cols-3 sm:gap-4">
+              {proof.map((item) => (
+                <li key={item} className="flex items-start gap-2 border-t hairline pt-3">
+                  <span aria-hidden="true" className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-gold/70" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
 
           <div className="hidden md:block">

@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { Container } from "@/components/layout/Container";
 import { LanguageToggle } from "@/components/layout/LanguageToggle";
 import { Logo } from "@/components/layout/Logo";
+import { ButtonLink } from "@/components/ui/button";
+import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 import { cn } from "@/lib/utils";
 
@@ -28,13 +30,13 @@ export function Header() {
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     cn(
-      "block whitespace-nowrap py-3 text-[16px] no-underline md:py-2",
+      "block whitespace-nowrap py-3 text-[15px] no-underline md:py-1.5",
       // Gold only on the active nav indicator, as a bottom rule.
       isActive ? "text-platinum md:border-b-2 md:border-gold" : "text-slate hover:text-platinum",
     );
 
   return (
-    <header className="border-b hairline bg-navy-deep">
+    <header className="sticky top-0 z-50 border-b hairline bg-navy-abyss/85 backdrop-blur-md">
       <Container className="flex min-h-[60px] items-center justify-between gap-4">
         <NavLink to={href("/")} className="flex items-center no-underline" aria-label={t("nav.home")}>
           <Logo />
@@ -53,8 +55,12 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 md:gap-4">
           <LanguageToggle />
+          {/* Desktop: the single gold button lives in the header. Mobile keeps it in the hero. */}
+          <ButtonLink to={SITE.telegramUrl} variant="primary" className="hidden min-h-[40px] px-4 text-[14px] lg:inline-flex">
+            {t("buttons.joinTelegram")}
+          </ButtonLink>
           <button
             type="button"
             className="flex h-11 w-11 items-center justify-center text-platinum md:hidden"
@@ -74,7 +80,7 @@ export function Header() {
         id="mobile-nav"
         aria-label="Primary"
         hidden={!open}
-        className="border-t hairline bg-navy-midnight md:hidden"
+        className="border-t hairline bg-navy-midnight/95 backdrop-blur-md md:hidden"
       >
         <Container className="flex flex-col py-2">
           {items.map((item) => (
