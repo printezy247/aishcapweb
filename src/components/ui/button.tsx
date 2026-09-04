@@ -5,13 +5,14 @@ import { cn } from "@/lib/utils";
 type Variant = "primary" | "secondary";
 
 const base =
-  "inline-flex items-center justify-center whitespace-nowrap rounded-card px-5 min-h-[48px] " +
-  "text-[16px] font-semibold leading-none no-underline select-none active:scale-[0.98]";
+  "inline-flex items-center justify-center whitespace-nowrap rounded-card " +
+  "font-semibold leading-none no-underline select-none active:scale-[0.98]";
 
+// Only the primary (gold) action is large. Everything else is compact.
 const variants: Record<Variant, string> = {
   // Gold is allowed on exactly one primary button per viewport.
-  primary: "btn-gold",
-  secondary: "btn-glass",
+  primary: "btn-gold min-h-[48px] px-5 text-[16px]",
+  secondary: "btn-glass min-h-[40px] px-4 text-[14px]",
 };
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

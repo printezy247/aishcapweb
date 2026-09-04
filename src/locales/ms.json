@@ -77,8 +77,8 @@
         "body": "Anda membiayai akaun anda sendiri, terus dengan broker. Kami tidak pernah menyentuhnya. Dagangan berleveraj boleh kehilangan lebih daripada deposit, jadi pilih jumlah dengan mengambil kira perkara itu."
       },
       {
-        "title": "Sambungkan akaun anda kepada CT-1 di dalam ruang copy trading broker",
-        "body": "Platform broker menyalin dagangan CT-1 ke dalam akaun anda mengikut kadar jumlah yang anda peruntukkan. Yuran prestasi 20% dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian."
+        "title": "Sambungkan akaun anda kepada AishCopytrade di dalam ruang copy trading broker",
+        "body": "Platform broker menyalin dagangan AishCopytrade ke dalam akaun anda mengikut kadar jumlah yang anda peruntukkan. Yuran prestasi 20% dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian."
       },
       {
         "title": "Putuskan sambungan pada bila-bila masa",
@@ -91,14 +91,14 @@
     "heading": "Belajar",
     "intro": "Penerangan mudah tentang cara copy trading berfungsi, apa yurannya, dan bagaimana rupa risikonya dalam praktik.",
     "emptyTitle": "Belum ada artikel",
-    "emptyBody": "Tulisan pertama akan dimuat naik apabila CT-1 mempunyai sejarah yang cukup untuk ditulis secara jujur. Sehingga itu, ulasan mingguan disiarkan dalam kumpulan Telegram.",
+    "emptyBody": "Tulisan pertama akan dimuat naik apabila AishCopytrade mempunyai sejarah yang cukup untuk ditulis secara jujur. Sehingga itu, ulasan mingguan disiarkan dalam kumpulan Telegram.",
     "viewAll": "Semua artikel",
     "readMore": "Baca",
     "eyebrow": "Pendidikan"
   },
   "email": {
-    "heading": "Ulasan mingguan CT-1",
-    "body": "Satu e-mel seminggu, pada hari Ahad, tentang apa yang CT-1 lakukan minggu itu dan mengapa. Ia bukan senarai dagangan untuk disalin, dan tidak akan memberitahu anda apa yang perlu dibeli.",
+    "heading": "Ulasan mingguan AishCopytrade",
+    "body": "Satu e-mel seminggu, pada hari Ahad, tentang apa yang AishCopytrade lakukan minggu itu dan mengapa. Ia bukan senarai dagangan untuk disalin, dan tidak akan memberitahu anda apa yang perlu dibeli.",
     "label": "Alamat e-mel",
     "placeholder": "anda@contoh.com",
     "frequency": "Mingguan. Berhenti melanggan dengan satu klik dalam setiap e-mel. Kami mengesahkan alamat anda sebelum menghantar apa-apa.",
@@ -113,14 +113,14 @@
   "confirm": {
     "heading": "Mengesahkan langganan anda",
     "working": "Sebentar…",
-    "success": "Disahkan. Anda akan menerima ulasan mingguan CT-1 pada hari Ahad. Setiap e-mel mempunyai pautan berhenti melanggan satu klik.",
+    "success": "Disahkan. Anda akan menerima ulasan mingguan AishCopytrade pada hari Ahad. Setiap e-mel mempunyai pautan berhenti melanggan satu klik.",
     "invalid": "Pautan pengesahan ini tidak sah atau telah digunakan.",
     "error": "Kami tidak dapat mengesahkan alamat anda. Sila cuba pautan itu sekali lagi, atau hubungi admin di Telegram."
   },
   "about": {
     "heading": "Tentang Aish",
     "portraitAlt": "Aish di tepi tingkap bandar, menyemak telefonnya",
-    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
+    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka AishCopytrade dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
     "readMore": "Lebih lanjut tentang Aish",
     "eyebrow": "Orangnya",
     "facts": [
@@ -144,7 +144,7 @@
     "items": [
       {
         "q": "Bagaimana anda mendapat wang daripada saya?",
-        "a": "Dua cara. Pertama, jika anda membuka akaun broker melalui pautan rujukan kami, broker membayar komisen kepada kami berdasarkan aktiviti dagangan anda. Kedua, jika anda menyalin CT-1, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda. Kedua-duanya didedahkan di sebelah setiap pautan di laman ini. Kedua-duanya mewujudkan insentif kewangan untuk kami, dan anda perlu menimbangkannya."
+        "a": "Dua cara. Pertama, jika anda membuka akaun broker melalui pautan rujukan kami, broker membayar komisen kepada kami berdasarkan aktiviti dagangan anda. Kedua, jika anda menyalin AishCopytrade, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda. Kedua-duanya didedahkan di sebelah setiap pautan di laman ini. Kedua-duanya mewujudkan insentif kewangan untuk kami, dan anda perlu menimbangkannya."
       },
       {
         "q": "Bolehkah saya kehilangan lebih daripada deposit saya?",
@@ -156,7 +156,7 @@
       },
       {
         "q": "Mengapa rekod prestasi anda begitu pendek?",
-        "a": "Kerana memang begitu. CT-1 dibuka pada {{openedAt}} dengan {{start}}. Kami menjalankannya secara terbuka selama {{total}} hari sebelum mempromosikan keputusan di mana-mana. Menunjukkan rekod yang pendek dan tidak disunting hari ini lebih jujur daripada menunjukkan rekod yang panjang tetapi tidak dapat anda semak."
+        "a": "Kerana memang begitu. AishCopytrade dibuka pada {{openedAt}} dengan {{start}}. Kami menjalankannya secara terbuka selama {{total}} hari sebelum mempromosikan keputusan di mana-mana. Menunjukkan rekod yang pendek dan tidak disunting hari ini lebih jujur daripada menunjukkan rekod yang panjang tetapi tidak dapat anda semak."
       },
       {
         "q": "Apa yang berlaku jika strategi ini rugi?",
@@ -164,7 +164,7 @@
       },
       {
         "q": "Bolehkah saya berhenti menyalin pada bila-bila masa?",
-        "a": "Ya. Anda memutuskan sambungan daripada CT-1 di dalam ruang copy trading broker anda bila-bila masa yang anda mahu. Dagangan yang masih terbuka dikendalikan mengikut peraturan broker, biasanya ditutup atau dibiarkan untuk anda uruskan sendiri. Akaun anda kekal atas nama anda sepanjang masa. Anda tidak memerlukan kebenaran kami dan kami tidak boleh menghalang anda."
+        "a": "Ya. Anda memutuskan sambungan daripada AishCopytrade di dalam ruang copy trading broker anda bila-bila masa yang anda mahu. Dagangan yang masih terbuka dikendalikan mengikut peraturan broker, biasanya ditutup atau dibiarkan untuk anda uruskan sendiri. Akaun anda kekal atas nama anda sepanjang masa. Anda tidak memerlukan kebenaran kami dan kami tidak boleh menghalang anda."
       },
       {
         "q": "Broker apa yang anda gunakan?",
@@ -185,7 +185,7 @@
   "footer": {
     "riskTitle": "Amaran risiko",
     "risk": "Dagangan produk berleveraj membawa risiko kerugian yang tinggi dan tidak sesuai untuk semua orang. Anda boleh kehilangan lebih daripada deposit awal anda. Prestasi lampau tidak menunjukkan keputusan masa hadapan.",
-    "affiliateSummary": "Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas CT-1. Kedua-duanya tidak ditambah kepada kos dagangan anda, dan kedua-duanya memberi kami insentif.",
+    "affiliateSummary": "Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas AishCopytrade. Kedua-duanya tidak ditambah kepada kos dagangan anda, dan kedua-duanya memberi kami insentif.",
     "affiliateLink": "Pendedahan afiliasi penuh",
     "legalHeading": "Undang-undang",
     "contactHeading": "Hubungi",
@@ -208,7 +208,7 @@
         {
           "title": "Apa yang sebenarnya berlaku",
           "body": [
-            "CT-1 ialah akaun dagangan biasa di broker. Apabila ia membuka atau menutup dagangan, sistem copy trading broker membuka atau menutup dagangan yang sama dalam setiap akaun yang bersambung kepadanya, mengikut kadar jumlah yang setiap orang peruntukkan.",
+            "AishCopytrade ialah akaun dagangan biasa di broker. Apabila ia membuka atau menutup dagangan, sistem copy trading broker membuka atau menutup dagangan yang sama dalam setiap akaun yang bersambung kepadanya, mengikut kadar jumlah yang setiap orang peruntukkan.",
             "Tiada apa-apa dihantar kepada kami. Tiada apa-apa dikumpulkan. Wang anda tidak pernah keluar daripada akaun anda sendiri di broker. Kami tidak boleh mengeluarkan daripadanya, mendeposit ke dalamnya, atau log masuk ke dalamnya."
           ]
         },
@@ -216,21 +216,21 @@
           "title": "Kosnya",
           "body": [
             "Broker mengenakan spread biasa dan sebarang komisen ke atas setiap dagangan. Jika anda membuka akaun melalui pautan kami, broker turut membayar sebahagian daripadanya kepada kami. Ia tidak dikenakan tambahan daripada poket anda, tetapi ia menjadi sebab kami mahu anda berdagang, dan anda patut tahu perkara itu.",
-            "Yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan CT-1 dalam akaun anda. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran yang tepat ditetapkan oleh sistem copy trading broker, dan anda patut membaca termanya sebelum menyambung."
+            "Yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan AishCopytrade dalam akaun anda. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran yang tepat ditetapkan oleh sistem copy trading broker, dan anda patut membaca termanya sebelum menyambung."
           ]
         },
         {
           "title": "Apa yang boleh menjadi salah",
           "body": [
-            "Keputusan salinan tidak pernah sama dengan CT-1. Dagangan anda diisi pada harga yang sedikit berbeza, peruntukan anda berbeza, dan broker mungkin mengenakan saiz dagangan minimum yang mengubah nisbahnya.",
-            "Leveraj 1:1000 bermaksud pergerakan harga yang kecil menjadi pergerakan akaun yang besar. Akaun boleh habis sepenuhnya, dan boleh jatuh ke bawah sifar, lebih pantas daripada anda sempat bertindak. Keputusan lampau, termasuk CT-1, tidak memberitahu apa-apa yang boleh dipercayai tentang keputusan akan datang."
+            "Keputusan salinan tidak pernah sama dengan AishCopytrade. Dagangan anda diisi pada harga yang sedikit berbeza, peruntukan anda berbeza, dan broker mungkin mengenakan saiz dagangan minimum yang mengubah nisbahnya.",
+            "Leveraj 1:1000 bermaksud pergerakan harga yang kecil menjadi pergerakan akaun yang besar. Akaun boleh habis sepenuhnya, dan boleh jatuh ke bawah sifar, lebih pantas daripada anda sempat bertindak. Keputusan lampau, termasuk AishCopytrade, tidak memberitahu apa-apa yang boleh dipercayai tentang keputusan akan datang."
           ]
         },
         {
           "title": "Bagaimana ia berakhir",
           "body": [
-            "Anda memutuskan sambungan daripada CT-1 di dalam akaun broker anda, pada bila-bila masa, tanpa memberitahu kami. Peraturan broker menentukan apa yang berlaku kepada dagangan yang terbuka pada ketika itu. Akaun anda kekal atas nama anda sebelum, semasa, dan selepas.",
-            "Jika CT-1 ditutup pada bila-bila masa, semua sambungan salinan tamat bersamanya dan akaun anda tidak disentuh."
+            "Anda memutuskan sambungan daripada AishCopytrade di dalam akaun broker anda, pada bila-bila masa, tanpa memberitahu kami. Peraturan broker menentukan apa yang berlaku kepada dagangan yang terbuka pada ketika itu. Akaun anda kekal atas nama anda sebelum, semasa, dan selepas.",
+            "Jika AishCopytrade ditutup pada bila-bila masa, semua sambungan salinan tamat bersamanya dan akaun anda tidak disentuh."
           ]
         }
       ],
@@ -241,7 +241,7 @@
       "heading": "Belajar",
       "intro": "Penerangan bertulis, dalam bahasa yang mudah, tentang apa itu copy trading, kosnya, dan bagaimana ia boleh gagal. Tiada seruan, tiada gempak.",
       "emptyTitle": "Belum ada yang diterbitkan, dengan sengaja",
-      "emptyBody": "Kami lebih rela tidak menerbitkan apa-apa daripada mengisi halaman ini dengan tulisan kosong. Artikel bermula apabila CT-1 mempunyai sejarah yang cukup untuk ditulis secara jujur. Ulasan mingguan tentang apa yang CT-1 lakukan, dan mengapa, sudah disiarkan dalam kumpulan Telegram.",
+      "emptyBody": "Kami lebih rela tidak menerbitkan apa-apa daripada mengisi halaman ini dengan tulisan kosong. Artikel bermula apabila AishCopytrade mempunyai sejarah yang cukup untuk ditulis secara jujur. Ulasan mingguan tentang apa yang AishCopytrade lakukan, dan mengapa, sudah disiarkan dalam kumpulan Telegram.",
       "latest": "Terkini"
     },
     "about": {
@@ -257,7 +257,7 @@
         {
           "title": "Apa yang saya lakukan di sini",
           "body": [
-            "Saya membuka CT-1 dengan {{start}} dan saya menjalankannya secara terbuka selama {{total}} hari. Setiap angka di halaman utama disalin daripada papan pemuka broker seminggu sekali, tanpa diubah. Jika ia berjalan buruk, itu juga kekal di halaman ini.",
+            "Saya membuka AishCopytrade dengan {{start}} dan saya menjalankannya secara terbuka selama {{total}} hari. Setiap angka di halaman utama disalin daripada papan pemuka broker seminggu sekali, tanpa diubah. Jika ia berjalan buruk, itu juga kekal di halaman ini.",
             "Selepas {{total}} hari itu, saya merancang untuk memindahkan angka-angka ini ke perkhidmatan pengesahan pihak ketiga supaya anda tidak perlu percaya kata-kata saya semata-mata."
           ]
         }
@@ -283,16 +283,16 @@
         {
           "title": "Leveraj dan kerugian melebihi deposit anda",
           "body": [
-            "CT-1 menggunakan leveraj 1:1000. Pada tahap itu, pergerakan harga 0.1% menentang kedudukan yang berleveraj penuh sudah cukup untuk kehilangan keseluruhan akaun. Pasaran boleh bergerak sejauh itu dalam beberapa saat, dan jurang harga pada hujung minggu atau semasa berita boleh menolak akaun ke bawah sifar sebelum sebarang kedudukan ditutup.",
+            "AishCopytrade menggunakan leveraj 1:1000. Pada tahap itu, pergerakan harga 0.1% menentang kedudukan yang berleveraj penuh sudah cukup untuk kehilangan keseluruhan akaun. Pasaran boleh bergerak sejauh itu dalam beberapa saat, dan jurang harga pada hujung minggu atau semasa berita boleh menolak akaun ke bawah sifar sebelum sebarang kedudukan ditutup.",
             "Melainkan broker anda menawarkan perlindungan baki negatif, dan mematuhinya, anda boleh kehilangan lebih daripada deposit anda dan berhutang perbezaannya kepada broker. Semak terma broker anda sebelum mendeposit apa-apa."
           ]
         },
         {
           "title": "Copy trading secara khusus",
           "body": [
-            "Keputusan salinan berbeza daripada akaun sumber kerana harga pengisian, saiz peruntukan, saiz dagangan minimum, dan masa yang berbeza. Keputusan anda boleh lebih teruk daripada CT-1, dan boleh menjadi kerugian walaupun CT-1 menunjukkan keuntungan.",
-            "Angka-angka di laman ini dilaporkan sendiri daripada papan pemuka broker. Ia belum disahkan secara bebas. Sejarah yang pendek, termasuk CT-1, bukan bukti bahawa sesuatu strategi berkesan.",
-            "Anda boleh memutuskan sambungan daripada CT-1 pada bila-bila masa. Dagangan yang terbuka pada ketika itu dikendalikan di bawah peraturan broker, dan anda patut membaca peraturan itu sebelum menyambung."
+            "Keputusan salinan berbeza daripada akaun sumber kerana harga pengisian, saiz peruntukan, saiz dagangan minimum, dan masa yang berbeza. Keputusan anda boleh lebih teruk daripada AishCopytrade, dan boleh menjadi kerugian walaupun AishCopytrade menunjukkan keuntungan.",
+            "Angka-angka di laman ini dilaporkan sendiri daripada papan pemuka broker. Ia belum disahkan secara bebas. Sejarah yang pendek, termasuk AishCopytrade, bukan bukti bahawa sesuatu strategi berkesan.",
+            "Anda boleh memutuskan sambungan daripada AishCopytrade pada bila-bila masa. Dagangan yang terbuka pada ketika itu dikendalikan di bawah peraturan broker, dan anda patut membaca peraturan itu sebelum menyambung."
           ]
         },
         {
@@ -317,7 +317,7 @@
         {
           "title": "Yuran prestasi",
           "body": [
-            "Jika anda menyalin CT-1, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda, melalui sistem copy trading broker. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran, termasuk bagaimana dan bila ia dikira, ditetapkan oleh platform broker dan diterangkan dalam termanya."
+            "Jika anda menyalin AishCopytrade, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda, melalui sistem copy trading broker. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran, termasuk bagaimana dan bila ia dikira, ditetapkan oleh platform broker dan diterangkan dalam termanya."
           ]
         },
         {
@@ -362,7 +362,7 @@
         {
           "title": "Liabiliti",
           "body": [
-            "Setakat yang dibenarkan sepenuhnya oleh undang-undang Malaysia, Aish Capital dan orang yang mengendalikannya tidak menerima sebarang liabiliti atas sebarang kerugian yang timbul daripada penggunaan laman ini, penyalinan CT-1, atau sebarang keputusan yang dibuat dengan bergantung kepada apa-apa yang diterbitkan di sini."
+            "Setakat yang dibenarkan sepenuhnya oleh undang-undang Malaysia, Aish Capital dan orang yang mengendalikannya tidak menerima sebarang liabiliti atas sebarang kerugian yang timbul daripada penggunaan laman ini, penyalinan AishCopytrade, atau sebarang keputusan yang dibuat dengan bergantung kepada apa-apa yang diterbitkan di sini."
           ]
         },
         {
@@ -389,7 +389,7 @@
         {
           "title": "Mengapa kami mengumpulnya dan atas dasar apa",
           "body": [
-            "Alamat e-mel digunakan untuk satu tujuan: menghantar ulasan mingguan CT-1. Kami bergantung kepada persetujuan anda, yang anda berikan dengan memasukkan alamat anda dan kemudian mengesahkannya daripada e-mel yang kami hantar. Kami tidak menghantar apa-apa sebelum anda mengesahkan."
+            "Alamat e-mel digunakan untuk satu tujuan: menghantar ulasan mingguan AishCopytrade. Kami bergantung kepada persetujuan anda, yang anda berikan dengan memasukkan alamat anda dan kemudian mengesahkannya daripada e-mel yang kami hantar. Kami tidak menghantar apa-apa sebelum anda mengesahkan."
           ]
         },
         {
@@ -465,7 +465,7 @@
     "eyebrow": "Kumpulan",
     "heading": "{{count}} orang sudah berada di dalam kumpulan",
     "groupNote": "Kumpulan ini dinamakan {{groupName}}.",
-    "body": "Kumpulan Telegram ini telah berjalan lebih lama daripada CT-1. Ahli-ahli menyiarkan carta mereka sendiri, berdebat tentang paras harga, dan memberitahu Aish apabila dia silap. Akses memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami; admin akan membimbing anda.",
+    "body": "Kumpulan Telegram ini telah berjalan lebih lama daripada AishCopytrade. Ahli-ahli menyiarkan carta mereka sendiri, berdebat tentang paras harga, dan memberitahu Aish apabila dia silap. Akses memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami; admin akan membimbing anda.",
     "counted": "Jumlah ahli setakat {{date}}",
     "join": "Sertai kumpulan"
   },

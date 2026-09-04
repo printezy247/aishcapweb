@@ -51,7 +51,7 @@ third-party scripts on the page without a reason, one gold button per viewport.
 | 3.3 | **Section diet**: ten home sections become six chapters, one claim each: Hero → Gold chart + prices → How it works → Proof (community + quotes) → Where to find Aish → Join / FAQ | Apple's homepage is a stack of full-height panels with one message each. Fewer, bigger moments convert better than more, smaller ones. | M |
 | 3.4 | **One pinned scroll sequence** on desktop for "How it works" (three steps reveal while the account card stays pinned), using CSS scroll-driven animations with a `@supports` fallback, or GSAP ScrollTrigger (now free) lazy-loaded; static under reduced motion | The one "Apple moment" the site earns. Once only. Never on mobile data. | M |
 | 3.5 | **Animated numbers** with `@number-flow/react` (~7 KB, React 18) for the card and the community count | Odometer-style ticks feel like a terminal, and it's accessible. | S |
-| 3.6 | **Comparison table**: "Copy trading with CT-1" vs "Trading it yourself" vs "Handing money to someone" — who holds the money, who executes, fees, can you stop, what you see | Apple's compare pages reduce decision anxiety. Also the clearest way to say "we never hold your money" without a disclaimer tone. Never use the word "fund" for the third column. | M |
+| 3.6 | **Comparison table**: "Copy trading with AishCopytrade" vs "Trading it yourself" vs "Handing money to someone" — who holds the money, who executes, fees, can you stop, what you see | Apple's compare pages reduce decision anxiety. Also the clearest way to say "we never hold your money" without a disclaimer tone. Never use the word "fund" for the third column. | M |
 | 3.7 | **Micro-interactions**: `backdrop-filter: saturate(180%) blur(20px)` on the sticky bars, `scale(0.96)` on button press, Magic UI border-beam or shine on the primary card only | Cheap premium cues; zero JS. | S |
 | 3.8 | **Zero-JS borrows** from Magic UI / Tailark: bento layout for "Where to find Aish", shine-border for the hero card, marquee already in place | Premium texture without touching the bundle budget. | S |
 
@@ -61,7 +61,7 @@ third-party scripts on the page without a reason, one gold button per viewport.
 |---|---|---|---|
 | 4.1 | **/copy-trading product page** in Apple product-page form: sticky sub-nav "Overview · Performance · How it works · Fees", one gold "Start" pill | Makes copy trading the product, not a section. The home page becomes the brand page. | L |
 | 4.2 | **/start onboarding path** matching the final IB flow (open account → fund → message admin → connect) with the disclosure inline at the broker step | Waits on the broker and the reworked join flow. | M |
-| 4.3 | **Learn hub with real articles** (weekly CT-1 breakdown republished, "how copy trading actually executes", "what leverage does at 1:1000") | Content is the only sustainable trust engine once the "why the numbers are small" section is gone. | ongoing |
+| 4.3 | **Learn hub with real articles** (weekly AishCopytrade breakdown republished, "how copy trading actually executes", "what leverage does at 1:1000") | Content is the only sustainable trust engine once the "why the numbers are small" section is gone. | ongoing |
 | 4.4 | **FAQ revision** once the flow is final (your note) | | S |
 
 ## Tier 5 — Hygiene

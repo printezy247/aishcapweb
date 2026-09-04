@@ -1,14 +1,14 @@
 // Every field here renders on the public hero. Do not add conditional display
 // logic. Update figures only from the broker dashboard, never by estimate.
 //
-// This file is the single source of truth for the CT-1 account card.
+// This file is the single source of truth for the AishCopytrade account card.
 // Update it once a week, after the broker dashboard, then commit.
 
 import type { TrackRecord } from "@/lib/track-record";
 
 export const CT1: TrackRecord = {
   accountId: "147053176",
-  accountName: "CT-1",
+  accountName: "AishCopytrade",
   openedAt: "2026-08-22", // day counter computes from this
   verificationDays: 90,
   balance: 100.67,
