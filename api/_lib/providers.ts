@@ -1,5 +1,5 @@
 import type { Quote } from "../../src/lib/quotes";
-import type { SymbolSpec } from "./symbols";
+import type { SymbolSpec } from "./symbols.js";
 
 export interface ProviderResult {
   quotes: Quote[];
