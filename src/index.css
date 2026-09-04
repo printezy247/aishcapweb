@@ -285,6 +285,13 @@
   .nav-link--row:active {
     background-color: rgba(255, 255, 255, 0.05);
   }
+  /* FAQ: native <details>. Chevron flips when open. */
+  .faq summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq[open] summary svg {
+    transform: rotate(180deg);
+  }
   .glass-bar {
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);

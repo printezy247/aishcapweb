@@ -92,15 +92,6 @@
     ],
     "eyebrow": "Four steps"
   },
-  "learnPreview": {
-    "heading": "Learn",
-    "intro": "Plain explanations of how copy trading works, what the fees are, and what the risks look like in practice.",
-    "emptyTitle": "No articles yet",
-    "emptyBody": "The first written pieces go up once AishCopytrade has enough history to write about honestly. Until then, the weekly breakdown is posted in the Telegram group.",
-    "viewAll": "All articles",
-    "readMore": "Read",
-    "eyebrow": "Education"
-  },
   "email": {
     "heading": "The weekly AishCopytrade breakdown",
     "body": "One email a week, on Sundays, with what AishCopytrade did that week and why. It is not a list of trades to copy, and it will never tell you what to buy.",

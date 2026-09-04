@@ -8,15 +8,14 @@ interface SectionProps {
   eyebrow?: string;
   heading?: string;
   intro?: string;
-  headingId?: string;
   children: ReactNode;
   className?: string;
   /** Alternate surface: recessed midnight instead of the abyss base. */
   recessed?: boolean;
 }
 
-export function Section({ id, eyebrow, heading, intro, headingId, children, className, recessed }: SectionProps) {
-  const hid = headingId ?? (id ? `${id}-heading` : undefined);
+export function Section({ id, eyebrow, heading, intro, children, className, recessed }: SectionProps) {
+  const hid = id ? `${id}-heading` : undefined;
   return (
     <section
       id={id}

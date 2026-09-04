@@ -4,7 +4,7 @@ import { Reveal } from "@/components/Reveal";
 import { Portrait } from "@/components/Portrait";
 import { useLocale } from "@/hooks/useLocale";
 import { formatMoney } from "@/lib/format";
-import { trackRecordSource } from "@/lib/track-record-source";
+import { CT1 } from "@/config/track-record";
 
 interface Fact {
   value: string;
@@ -14,7 +14,7 @@ interface Fact {
 export function AboutBlock() {
   const { t } = useTranslation();
   const { locale, href } = useLocale();
-  const record = trackRecordSource.getTrackRecord();
+  const record = CT1;
   const facts = t("about.facts", { returnObjects: true }) as Fact[];
 
   return (

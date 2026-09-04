@@ -60,7 +60,7 @@ file; the collection procedure and the consent messages for the admin are in
 - `npm run check:copy` rejects the forbidden phrases in both languages.
 - Bull/bear colour is applied only to the signed total-gain value.
 - No testimonials, logo strips, chart embeds, chat widget, or placeholder posts.
-- Analytics: Vercel Web Analytics (cookieless, same-origin; enable once in the Vercel dashboard) with click goals `telegram_click`, `community_click`, `offering_click`, `language_switch`. Optional Plausible via `VITE_PLAUSIBLE_DOMAIN`. No pixels.
+- Analytics: Vercel Web Analytics (cookieless, same-origin; enable once in the Vercel dashboard) with click goals `telegram_click`, `community_click`, `offering_click`, `language_switch`. No pixels.
 
 ## Placeholders to replace before launch
 
@@ -131,12 +131,10 @@ using for future builds, with licences: [`docs/reference-repos.md`](docs/referen
 
 ## Hosting
 
-Static output in `dist/`. Any static host works (Cloudflare Pages, Netlify,
-Vercel). Configure a SPA fallback so every path serves `index.html`.
-`public/_redirects` covers Netlify/Cloudflare; `vercel.json` covers Vercel.
+Static output in `dist/` plus the two functions in `api/`, deployed by Vercel
+from `main`. `vercel.json` carries the SPA rewrite and security headers.
 
-## Phase 2 seam
+## Verified feed later
 
-`src/lib/track-record-source.ts` exports `trackRecordSource`. Replace
-`configFileSource` with a verified-source implementation of `TrackRecordSource`
-and nothing in the hero changes.
+Every component reads `CT1` from `src/config/track-record.ts`. A verified
+source (Myfxbook / FXBlue / broker API) replaces that one import.

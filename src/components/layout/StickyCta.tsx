@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ButtonLink } from "@/components/ui/button";
 import { SITE } from "@/config/site";
 import { isProductPage } from "@/lib/paths";
-import { trackRecordSource } from "@/lib/track-record-source";
+import { CT1 } from "@/config/track-record";
 
 /**
  * Mobile-only persistent CTA bar (apple.com "localnav" pattern). Visible only
@@ -17,7 +17,7 @@ export function StickyCta() {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const [visible, setVisible] = useState(false);
-  const record = trackRecordSource.getTrackRecord();
+  const record = CT1;
 
   useEffect(() => {
     let raf = 0;
