@@ -103,6 +103,11 @@ scripts run on the page.
 `npm run dev` serves the same handler at `/api/quotes` via a Vite middleware and
 reads `QUOTES_API_KEY` from `.env`.
 
+## Roadmap
+
+The ranked improvement list, with vetted UI repos and sources, is in
+[`docs/improvement-roadmap.md`](docs/improvement-roadmap.md).
+
 ## Hosting
 
 Static output in `dist/`. Any static host works (Cloudflare Pages, Netlify,
