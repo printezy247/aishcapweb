@@ -9,8 +9,8 @@
 // ticker at all. Prices are never fabricated.
 
 import type { QuotesPayload, QuotesUnavailable } from "../src/lib/quotes";
-import { SYMBOLS } from "./_lib/symbols";
-import { providers, type ProviderName } from "./_lib/providers";
+import { SYMBOLS } from "./_lib/symbols.js";
+import { providers, type ProviderName } from "./_lib/providers.js";
 
 const TTL_S = 900;
 const CACHE_OK = `public, max-age=0, s-maxage=${TTL_S}, stale-while-revalidate=300`;
