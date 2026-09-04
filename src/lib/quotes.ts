@@ -16,6 +16,8 @@ export interface QuotesPayload {
   /** ISO timestamp the payload was assembled. */
   asOf: string;
   quotes: Quote[];
+  /** Symbols the provider could not price this round. Diagnostic only. */
+  errors?: Array<{ symbol: string; reason: string }>;
 }
 
 export interface QuotesUnavailable {

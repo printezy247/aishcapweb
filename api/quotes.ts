@@ -44,17 +44,22 @@ export async function GET(): Promise<Response> {
   if (now - failedAt < 60_000) return json(502, { configured: true, error: "upstream" }, "no-store");
 
   try {
-    const quotes = await provider.fetchQuotes(SYMBOLS, apiKey, AbortSignal.timeout(8000));
+    const { quotes, errors } = await provider.fetchQuotes(SYMBOLS, apiKey, AbortSignal.timeout(8000));
+    if (quotes.length === 0) {
+      failedAt = now;
+      return json(502, { configured: true, error: "upstream", errors }, "no-store");
+    }
     const payload: QuotesPayload = {
       configured: true,
       source: provider.name,
       asOf: new Date(now).toISOString(),
       quotes,
+      ...(errors.length ? { errors } : {}),
     };
     memo = { body: JSON.stringify(payload), at: now };
     return json(200, memo.body, CACHE_OK);
-  } catch {
+  } catch (e) {
     failedAt = now;
-    return json(502, { configured: true, error: "upstream" }, "no-store");
+    return json(502, { configured: true, error: "upstream", detail: String((e as Error).message ?? e).slice(0, 200) }, "no-store");
   }
 }
