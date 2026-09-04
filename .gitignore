@@ -226,3 +226,6 @@ dist-ssr/
 .env.*
 !.env.example
 .vite/
+
+# Vercel
+.vercel/
