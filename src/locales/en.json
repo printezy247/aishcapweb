@@ -516,7 +516,11 @@
   "join": {
     "eyebrow": "Stay close",
     "heading": "Follow along, on your terms",
-    "intro": "A weekly email if you want it, and straight answers to the questions people actually ask."
+    "intro": "The weekly breakdown, and straight answers to the questions people actually ask.",
+    "follow": {
+      "heading": "The weekly AishCopytrade breakdown",
+      "body": "Every Sunday Aish posts what AishCopytrade did that week and why, in the public channel. It is not a list of trades to copy, and it will never tell you what to buy. Email delivery comes later."
+    }
   },
   "compare": {
     "heading": "Three ways to be in the market",

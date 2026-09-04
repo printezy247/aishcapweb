@@ -63,6 +63,7 @@ third-party scripts on the page without a reason, one gold button per viewport.
 | 4.2 | **/start onboarding path** matching the final IB flow (open account → fund → message admin → connect) with the disclosure inline at the broker step | Waits on the broker and the reworked join flow. | M |
 | 4.3 | **Learn hub with real articles** (weekly AishCopytrade breakdown republished, "how copy trading actually executes", "what leverage does at 1:1000") | Content is the only sustainable trust engine once the "why the numbers are small" section is gone. | ongoing |
 | 4.4 | **FAQ revision** once the flow is final (your note) | | S |
+| 4.5 | **Email sign-up switched on** (`SITE.features.emailSignup`). Needs, in order: a custom domain with the sender's DNS verified (Resend free tier), a Supabase project with `supabase/migrations` applied and `send-confirmation` wired as a database webhook, then `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` on Vercel and a redeploy. Hidden on 2026-09-04 because no domain exists yet. | Nothing can send from a vercel.app address; a form that cannot work reads as neglect. | M |
 
 ## Tier 5 — Hygiene
 

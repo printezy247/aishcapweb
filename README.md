@@ -14,9 +14,11 @@ npm run build      # typecheck + production build to dist/
 npm run check:copy # fails if any forbidden phrase appears in copy
 ```
 
-Copy `.env.example` to `.env` and fill in the Supabase values to enable the
-email form. Without them the form shows a "not configured" message and points
-to the Telegram group.
+The weekly-email form is behind `SITE.features.emailSignup` in
+`src/config/site.ts` (off until a sending domain exists). While it is off the
+Join chapter shows a "follow the public channel" block instead. Once on, copy
+`.env.example` to `.env` and fill in the Supabase values; without them the form
+shows a "not configured" message and points to the Telegram group.
 
 ## The one file the admin edits
 
@@ -82,6 +84,12 @@ country header if your host exposes one) → `Accept-Language` starting with
 `ms` → Malaysian time zone → English.
 
 ## Email capture (double opt-in)
+
+Off by default (`SITE.features.emailSignup = false`). Before switching it on
+you need: a domain with the email provider's DNS records verified (Resend or
+similar; a vercel.app address cannot send), a Supabase project, and the two
+`VITE_SUPABASE_*` variables on Vercel (Production + Preview) followed by a
+redeploy. Then:
 
 1. Apply `supabase/migrations/20260904000000_subscribers.sql`.
 2. Deploy `supabase/functions/send-confirmation` and attach it as a Database
