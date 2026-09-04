@@ -1,38 +1,49 @@
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ButtonLink } from "@/components/ui/button";
 import { SITE } from "@/config/site";
 import { trackRecordSource } from "@/lib/track-record-source";
 
 /**
- * Mobile-only persistent CTA bar (apple.com "localnav" pattern). Appears once
- * the hero has scrolled out of view, so the one gold button per viewport rule
- * holds: the hero's button is off-screen whenever this one is on.
- * Hidden on lg+ where the header already carries the gold button.
+ * Mobile-only persistent CTA bar (apple.com "localnav" pattern). Visible only
+ * once the hero section has scrolled fully out of view, so the one gold
+ * button per viewport rule holds. The hero is re-measured on every scroll
+ * and resize, so the bar can never show at the top of the page regardless of
+ * mount timing. Hidden on lg+ where the header carries the gold button.
  */
 export function StickyCta() {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
   const [visible, setVisible] = useState(false);
   const record = trackRecordSource.getTrackRecord();
 
   useEffect(() => {
-    const hero = document.getElementById("hero-heading")?.closest("section");
-    if (hero && "IntersectionObserver" in window) {
-      const io = new IntersectionObserver(([e]) => setVisible(!e.isIntersecting), { threshold: 0 });
-      io.observe(hero);
-      return () => io.disconnect();
-    }
-    const onScroll = () => setVisible(window.scrollY > 480);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    let raf = 0;
+    const measure = () => {
+      raf = 0;
+      const hero = document.getElementById("hero-heading")?.closest("section");
+      const next = hero ? hero.getBoundingClientRect().bottom <= 0 : window.scrollY > 480;
+      setVisible(next);
+    };
+    const schedule = () => {
+      if (!raf) raf = window.requestAnimationFrame(measure);
+    };
+    measure();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+      if (raf) window.cancelAnimationFrame(raf);
+    };
+  }, [pathname]);
 
   return (
     <div
       aria-hidden={!visible}
       className={
-        "fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/85 backdrop-blur-xl transition-transform duration-300 lg:hidden " +
+        "fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/85 transition-transform duration-300 lg:hidden " +
         (visible ? "translate-y-0" : "translate-y-full")
       }
       style={{ paddingBottom: "env(safe-area-inset-bottom)", WebkitBackdropFilter: "saturate(180%) blur(20px)", backdropFilter: "saturate(180%) blur(20px)" }}
