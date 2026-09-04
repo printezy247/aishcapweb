@@ -85,6 +85,14 @@ Neither is publishable as supplied.
 Do not screenshot, retype, paraphrase, or "inspire" testimonial copy from
 either. If Syam wants to give a quote, ask him directly using the message above.
 
+## Client decision, 2026-09-04
+
+The first four quotes were supplied by the client and published as given
+(initial surname, trader type, five-star rating, English only) after advice
+that this format departs from the rules above and reads like a template.
+Consent was confirmed by the client. Any further quotes should follow the
+rules above.
+
 ## Adding a quote that passes
 
 Each entry needs both languages (ask the member for one; the admin may
@@ -96,8 +104,9 @@ translate the other and should say so to the member). Example:
     en: "The group is blunt. When I posted a bad entry, three people told me why.",
     ms: "Kumpulan ini berterus terang. Bila saya siarkan entry yang teruk, tiga orang beritahu sebabnya.",
   },
-  firstName: "Syam",
-  state: "Selangor",
+  name: "Syam",
+  role: "Selangor",
+  rating: 4,
   memberSince: "2026-05",
   consentOnFile: true,
 },
