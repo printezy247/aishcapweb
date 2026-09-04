@@ -20,7 +20,15 @@ const FORBIDDEN = [
 
 // Copy-only rules (locale JSON + index.html), so code identifiers like
 // AbortSignal are not flagged. Client decision: "signals" never appears on the site.
-const FORBIDDEN_COPY = [/\bsignals?\b/i, /\bisyarat\b/i];
+const FORBIDDEN_COPY = [
+  /\bsignals?\b/i,
+  /\bisyarat\b/i,
+  // Community / testimonial copy must never describe results.
+  /\bprofitable\b/i,
+  /\bwinning\b/i,
+  /\bmenguntungkan\b/i,
+  /\bsentiasa menang\b/i,
+];
 
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {

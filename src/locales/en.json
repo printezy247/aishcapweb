@@ -464,5 +464,19 @@
         "platform": "Telegram"
       }
     ]
+  },
+  "community": {
+    "eyebrow": "The group",
+    "heading": "{{count}} people are already in the room",
+    "groupNote": "The group is called {{groupName}}.",
+    "body": "The Telegram group has been running longer than CT-1 has. Members post their own charts, argue about levels, and tell Aish when he is wrong. Access requires a broker account opened and funded through our link; the admin walks you through it.",
+    "counted": "Member count as at {{date}}",
+    "join": "Join the group"
+  },
+  "testimonials": {
+    "eyebrow": "Members",
+    "heading": "In their words",
+    "memberSince": "member since {{date}}",
+    "note": "Quotes are published with each member's permission. Members are not paid and receive nothing for them."
   }
 }
