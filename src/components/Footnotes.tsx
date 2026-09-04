@@ -18,10 +18,14 @@ export function Fn({ n }: { n: number }) {
   );
 }
 
-/** Numbered legal block above the footer. Renders all items in order. */
-export function Footnotes() {
+/**
+ * Numbered legal block above the footer. Renders every item in order; a page
+ * that references only some of them passes `only` and keeps the numbering.
+ */
+export function Footnotes({ only }: { only?: number[] }) {
   const { t } = useTranslation();
-  const items = t("footnotes.items", { returnObjects: true }) as string[];
+  const all = t("footnotes.items", { returnObjects: true }) as string[];
+  const items = all.map((text, i) => (only && !only.includes(i + 1) ? null : text));
   return (
     <section id="footnotes" aria-labelledby="footnotes-heading" className="border-t hairline bg-navy-abyss py-10">
       <Container>
@@ -29,7 +33,7 @@ export function Footnotes() {
           {t("footnotes.heading")}
         </h2>
         <ol className="max-w-prose space-y-2 text-legal text-slate">
-          {items.map((text, i) => (
+          {items.map((text, i) => text === null ? null : (
             <li key={i} id={`fn-${i + 1}`} className="flex gap-3 scroll-mt-24">
               <span className="num shrink-0 text-gold">{i + 1}</span>
               <span>

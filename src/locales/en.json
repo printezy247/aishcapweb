@@ -12,12 +12,14 @@
       "terms": "Terms of use — Aish Capital",
       "privacy": "Privacy policy — Aish Capital",
       "confirm": "Confirm subscription — Aish Capital",
-      "notFound": "Page not found — Aish Capital"
+      "notFound": "Page not found — Aish Capital",
+      "copyTrading": "Copy AishCopytrade — Aish Capital",
+      "article": "{{title}} — Aish Capital"
     }
   },
   "nav": {
     "home": "Home",
-    "howItWorks": "How it works",
+    "copyTrading": "Copy trading",
     "learn": "Learn",
     "about": "About",
     "menu": "Menu",
@@ -61,7 +63,7 @@
   },
   "buttons": {
     "joinTelegram": "Join the Telegram",
-    "howItWorks": "How it works",
+    "copyTrading": "See AishCopytrade",
     "readRisks": "Read the risks",
     "subscribe": "Subscribe",
     "messageAdmin": "Message the admin on Telegram",
@@ -243,9 +245,23 @@
     "learn": {
       "heading": "Learn",
       "intro": "Written explanations, in plain language, of what copy trading is, what it costs, and how it goes wrong. No calls, no hype.",
-      "emptyTitle": "Nothing published yet, on purpose",
-      "emptyBody": "We would rather publish nothing than pad this page. Articles start once AishCopytrade has enough history to write about honestly. The weekly breakdown of what AishCopytrade did, and why, is already posted in the Telegram group.",
-      "latest": "Latest"
+      "explainers": "Explainers",
+      "weekly": {
+        "heading": "The weekly AishCopytrade breakdown",
+        "body": "Every Sunday Aish posts what AishCopytrade did that week and why, in the public channel. Each one is republished here once it is posted, with the figures copied from the broker dashboard on a stated date. It is not a list of trades to copy, and it will never tell you what to buy.",
+        "open": "Open the channel"
+      },
+      "readingTime_one": "{{count}} min read",
+      "readingTime_other": "{{count}} min read",
+      "read": "Read",
+      "back": "Back to Learn",
+      "related": "Read next",
+      "inShort": "In short",
+      "updated": "Revised {{date}}",
+      "kind": {
+        "explainer": "Explainer",
+        "weekly": "Weekly breakdown"
+      }
     },
     "about": {
       "heading": "About Aish",
@@ -567,5 +583,81 @@
         "other": "High, plus the risk they never give it back"
       }
     ]
+  },
+  "product": {
+    "eyebrow": "AishCopytrade · copy trading",
+    "heading": "One account, mirrored into yours.",
+    "intro": "AishCopytrade is a real trading account at the broker. Connect your own account to it and the broker's system copies its trades into yours, in proportion to what you allocate. You keep the account, the login, and the money.",
+    "subnav": {
+      "aria": "Copy trading page sections",
+      "overview": "Overview",
+      "performance": "Performance",
+      "howItWorks": "How it works",
+      "fees": "Fees",
+      "start": "Start"
+    },
+    "performance": {
+      "eyebrow": "Performance",
+      "heading": "Every figure. Nothing hidden.",
+      "intro": "The same figures as the card, laid out in full. Copied by hand from the broker dashboard on the date shown; never estimated, never rounded up.",
+      "rows": {
+        "account": "Account",
+        "opened": "Opened",
+        "window": "Verification window",
+        "dayOf": "Day {{n}} of {{total}}",
+        "currency": "Currency"
+      },
+      "glossary": [
+        {
+          "term": "Balance and equity",
+          "body": "Balance is the money in the account with every trade closed. Equity is the balance plus or minus whatever the open trades are showing right now. With no open trades the two are the same."
+        },
+        {
+          "term": "Total gain",
+          "body": "The change in the account since it opened, as a percentage of the starting amount, as reported by the broker dashboard. Zero means the account is where it began."
+        },
+        {
+          "term": "Max drawdown",
+          "body": "The largest fall from a peak to the low that followed it, as a percentage. It says how bad the worst stretch has been so far. It cannot say how bad the next one will be."
+        }
+      ]
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "heading": "Four steps, all of them yours",
+      "intro": "Nothing happens to your money without you doing it yourself.",
+      "more": "Read the full explanation"
+    },
+    "fees": {
+      "eyebrow": "Fees",
+      "heading": "What it costs, and who gets paid",
+      "intro": "Three costs. Two are the broker's, one comes to us. Each is stated here and beside every link on the site.",
+      "items": [
+        {
+          "who": "Paid to the broker",
+          "title": "Broker spread and commission",
+          "body": "Charged by the broker on every trade, whether you copy or trade yourself. Set by the broker, not by us."
+        },
+        {
+          "who": "Collected by the broker's copy-trading system",
+          "title": "Performance fee: {{fee}}% of gains only",
+          "body": "Charged on gains that copying makes in your account. Nothing is charged on losses. The mechanics are set by the broker's copy-trading system; read its terms before connecting."
+        },
+        {
+          "who": "Paid by the broker to Aish Capital",
+          "title": "Introducing Broker commission",
+          "body": "If you open your account through our link, the broker pays us a share of its own charges. It does not add to your costs, and it is a reason for us to want you trading."
+        }
+      ],
+      "never": {
+        "heading": "What we never charge",
+        "items": [
+          "No subscription or membership fee.",
+          "No deposit to us, ever. Your money goes only to your own broker account.",
+          "No fee on losses."
+        ]
+      },
+      "brokerHeading": "Opening an account"
+    }
   }
 }

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { ButtonLink } from "@/components/ui/button";
 import { SITE } from "@/config/site";
+import { isProductPage } from "@/lib/paths";
 import { trackRecordSource } from "@/lib/track-record-source";
 
 /**
@@ -38,6 +39,9 @@ export function StickyCta() {
       if (raf) window.cancelAnimationFrame(raf);
     };
   }, [pathname]);
+
+  // The product page's sticky sub-nav carries the gold pill on every viewport.
+  if (isProductPage(pathname)) return null;
 
   return (
     <div

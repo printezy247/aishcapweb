@@ -261,6 +261,22 @@
   .nav-link.is-active::after {
     background: var(--gold);
   }
+  /* Product sub-nav tab strip: scrolls sideways on narrow screens, fades at
+     the right edge so the clipped tab reads as scrollable, no scrollbar. */
+  .subnav-scroll {
+    scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 40px), transparent);
+  }
+  .subnav-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  @media (min-width: 640px) {
+    .subnav-scroll {
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+  }
   .nav-link--row::after {
     display: none;
   }

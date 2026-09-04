@@ -6,8 +6,10 @@ import { applyHtmlLang, detectLocale, isLocale } from "@/lib/locale";
 import Home from "@/pages/Home";
 
 // Home is in the main chunk for LCP; everything else is lazy.
+const CopyTrading = lazy(() => import("@/pages/CopyTrading"));
 const HowItWorks = lazy(() => import("@/pages/HowItWorks"));
 const Learn = lazy(() => import("@/pages/Learn"));
+const Article = lazy(() => import("@/pages/Article"));
 const About = lazy(() => import("@/pages/About"));
 const Risk = lazy(() => import("@/pages/legal/Risk"));
 const Affiliate = lazy(() => import("@/pages/legal/Affiliate"));
@@ -44,8 +46,10 @@ function LocaleGate() {
       <Suspense fallback={<div className="min-h-[40vh]" aria-busy="true" />}>
         <Routes>
           <Route index element={<Home />} />
+          <Route path="copy-trading" element={<CopyTrading />} />
           <Route path="how-it-works" element={<HowItWorks />} />
           <Route path="learn" element={<Learn />} />
+          <Route path="learn/:slug" element={<Article />} />
           <Route path="about" element={<About />} />
           <Route path="legal/risk" element={<Risk />} />
           <Route path="legal/affiliate" element={<Affiliate />} />

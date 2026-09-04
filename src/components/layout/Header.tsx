@@ -7,6 +7,7 @@ import { Logo } from "@/components/layout/Logo";
 import { ButtonLink } from "@/components/ui/button";
 import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
+import { isProductPage } from "@/lib/paths";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -21,7 +22,7 @@ export function Header() {
   // and the inline risk links carry every /legal/* page.
   const items = [
     { to: href("/"), label: t("nav.home"), end: true },
-    { to: href("/how-it-works"), label: t("nav.howItWorks"), end: false },
+    { to: href("/copy-trading"), label: t("nav.copyTrading"), end: false },
     { to: href("/learn"), label: t("nav.learn"), end: false },
     { to: href("/about"), label: t("nav.about"), end: false },
   ];
@@ -48,8 +49,15 @@ export function Header() {
 
         <div className="flex items-center gap-2 md:gap-4">
           <LanguageToggle />
-          {/* Desktop: the single gold button lives in the header. Mobile keeps it in the hero. */}
-          <ButtonLink to={SITE.telegramUrl} variant="primary" className="hidden min-h-[40px] px-4 text-[14px] lg:inline-flex" data-track="telegram_click" data-location="header">
+          {/* Desktop: the single gold button lives in the header. Mobile keeps it in the hero.
+              The product page carries its own gold pill in the sub-nav, so the header goes glass there. */}
+          <ButtonLink
+            to={SITE.telegramUrl}
+            variant={isProductPage(location.pathname) ? "secondary" : "primary"}
+            className="hidden min-h-[40px] px-4 text-[14px] lg:inline-flex"
+            data-track="telegram_click"
+            data-location="header"
+          >
             {t("buttons.joinTelegram")}
           </ButtonLink>
           <button

@@ -25,6 +25,8 @@ Vercel (static + one serverless function). Live: https://aishweb-ezy-ai.vercel.a
 - Figures the admin edits: `src/config/track-record.ts`, `src/config/community.ts`
 - Placeholders to fill: `[BROKER]`, `[BROKER_REFERRAL_URL]`, channel links in `src/config/site.ts`
 - Feature switches: `SITE.features.emailSignup` (off until a sending domain + Supabase exist; see README)
+- Learn posts (explainers + weekly breakdown): `src/content/posts.ts`; weekly format in `docs/weekly-breakdown.md`
+- Product page `/copy-trading`: `src/pages/CopyTrading.tsx` + `src/components/product/*`; its sub-nav carries the page's only gold button
 - Quotes: `src/content/testimonials.ts`; procedure in `docs/testimonial-collection.md`
 - Roadmap: `docs/improvement-roadmap.md`; repos: `docs/reference-repos.md`
 - Prices API: `api/quotes.ts` (Twelve Data, key `QUOTES_API_KEY` on Vercel)
