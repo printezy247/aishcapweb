@@ -9,7 +9,7 @@
     "preview": "vite preview",
     "typecheck": "tsc -b",
     "check:copy": "node scripts/check-copy.mjs",
-    "crop:portrait": "node scripts/crop-portrait.mjs"
+    "brand:assets": "node scripts/prepare-brand-assets.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

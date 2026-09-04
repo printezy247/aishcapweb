@@ -24,7 +24,7 @@ export default function About() {
     <Container className="py-12 md:py-20">
       <div className="grid gap-10 md:grid-cols-[280px_minmax(0,1fr)] md:gap-16">
         <div>
-          <Portrait />
+          <Portrait variant="laptop" size={320} />
         </div>
         <article className="max-w-prose">
           <h1 className="text-display">{t("pages.about.heading")}</h1>

@@ -10,20 +10,22 @@ export const SITE = {
   brokerName: "[BROKER]",
   /** Referral link. Leave the placeholder until the broker is confirmed. */
   brokerReferralUrl: "[BROKER_REFERRAL_URL]",
-  company: {
-    legalName: "[COMPANY LEGAL NAME]",
-    registrationNo: "[SSM REGISTRATION NO.]",
-    address: "[REGISTERED ADDRESS], Malaysia",
-    email: "[CONTACT EMAIL]",
-  },
   /**
-   * Portrait: head-and-shoulders crop produced by scripts/crop-portrait.mjs
-   * from public/images/aish-portrait.jpg. The client chose a tight crop of
-   * the phone photograph; the car behind him is out of frame / out of focus.
+   * Photographs, generated from the masters in /brand by
+   * scripts/prepare-brand-assets.mjs. Interior / city-window / laptop only —
+   * the car photographs stay in /brand/reference and are never deployed.
    */
   portrait: {
     src: "/images/aish-portrait-800.jpg",
     srcSmall: "/images/aish-portrait-400.jpg",
+    width: 800,
+    height: 800,
+  },
+  laptop: {
+    src: "/images/aish-laptop-900.jpg",
+    srcSmall: "/images/aish-laptop-450.jpg",
+    width: 900,
+    height: 1125,
   },
   logo: {
     src: "/images/logo.png",
