@@ -4,10 +4,11 @@
 
 @layer base {
   :root {
-    --navy-abyss: #030b1c;
-    --navy-midnight: #061229;
-    --navy-deep: #0a1b3d;
-    --navy-raised: #12294f;
+    --navy-abyss: #020814;
+    --navy-midnight: #050d1f;
+    --navy-deep: #081733;
+    --navy-raised: #0c1e42;
+    --navy-top: #12294f;
     --gold: #d4a017;
     --gold-bright: #f5d061;
     --gold-deep: #a87d0f;
@@ -28,7 +29,7 @@
   }
 
   body {
-    @apply bg-navy-abyss text-platinum font-sans text-body-m md:text-body-d antialiased;
+    @apply bg-navy-abyss text-platinum font-sans text-body-d antialiased;
     font-variation-settings: "wdth" 100;
     min-height: 100dvh;
   }
@@ -95,10 +96,10 @@
     font-variation-settings: normal;
   }
   .text-display {
-    @apply wdth-expanded font-bold text-hero-m md:text-hero-d;
+    @apply wdth-expanded font-bold text-hero;
   }
   .text-section {
-    @apply wdth-semi font-semibold text-section-m md:text-section-d;
+    @apply wdth-semi font-semibold text-chapter;
   }
   .text-stat {
     @apply num font-medium text-stat-m md:text-stat-d;
@@ -125,13 +126,11 @@
   /* The one card recipe: brushed-metal fill, top sheen, neutral depth. */
   .metal-card {
     background: linear-gradient(160deg, #12294f 0%, #0c1e42 55%, #081733 100%);
-    border: 1px solid var(--hairline);
+    border: 1px solid var(--hairline-strong);
     box-shadow:
       inset 0 1px 0 rgba(255, 255, 255, 0.07),
       inset 0 -1px 0 rgba(0, 0, 0, 0.35),
-      0 1px 2px rgba(0, 0, 0, 0.45),
-      0 6px 16px rgba(0, 0, 0, 0.35),
-      0 20px 48px rgba(0, 0, 0, 0.35);
+      0 1px 2px rgba(0, 0, 0, 0.4);
   }
   /* Reserved for the hero account card. */
   .metal-card--gold {
@@ -205,6 +204,32 @@
   }
   .hero-backdrop--soft::before {
     opacity: 0.55;
+  }
+
+  /* The one scroll-driven moment: how-it-works steps on desktop. Static
+     everywhere else (no support, small screens, reduced motion). */
+  @supports (animation-timeline: view()) {
+    @media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+      .step-in {
+        animation: step-in linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 55%;
+      }
+    }
+  }
+  @keyframes step-in {
+    from {
+      opacity: 0.1;
+      transform: translateY(36px) scale(0.975);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  .glass-bar {
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
   }
 
   /* Scroll reveal: fade-up only, once. */

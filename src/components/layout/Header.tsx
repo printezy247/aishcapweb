@@ -36,7 +36,7 @@ export function Header() {
     );
 
   return (
-    <header className="sticky top-0 z-50 border-b hairline bg-navy-abyss/85 backdrop-blur-md">
+    <header className="glass-bar sticky top-0 z-50 border-b hairline bg-navy-abyss/80">
       <Container className="flex min-h-[60px] items-center justify-between gap-4">
         <NavLink to={href("/")} className="flex items-center no-underline" aria-label={t("nav.home")}>
           <Logo />

@@ -18,11 +18,13 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
+      // Surface ladder (Linear's method): canvas, then four lifts.
       navy: {
-        abyss: "#030B1C",
-        midnight: "#061229",
-        deep: "#0A1B3D",
-        raised: "#12294F",
+        abyss: "#020814",
+        midnight: "#050D1F",
+        deep: "#081733",
+        raised: "#0C1E42",
+        top: "#12294F",
       },
       gold: {
         DEFAULT: "#D4A017",
@@ -51,6 +53,9 @@ export default {
     extend: {
       fontSize: {
         // Type scale (mobile → desktop handled with responsive utilities)
+        // Fluid display sizes (Apple-style: one dominant size per viewport).
+        hero: ["clamp(2.5rem, 5.5vw, 4.25rem)", { lineHeight: "1.04", letterSpacing: "-0.025em" }],
+        chapter: ["clamp(1.75rem, 3vw, 2.5rem)", { lineHeight: "1.12", letterSpacing: "-0.015em" }],
         "hero-m": ["32px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
         "hero-d": ["52px", { lineHeight: "1.05", letterSpacing: "-0.02em" }],
         "section-m": ["24px", { lineHeight: "1.15" }],

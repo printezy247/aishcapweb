@@ -1,7 +1,7 @@
 import { useId, useState, type FormEvent } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Section } from "@/components/layout/Section";
+import { Reveal } from "@/components/Reveal";
 import { Button, ButtonLink } from "@/components/ui/button";
 import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
@@ -15,7 +15,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
  * Weekly breakdown sign-up. Double opt-in: the row is inserted unconfirmed;
  * a database webhook sends the confirmation email; /confirm?token=… flips it.
  */
-export function EmailCapture() {
+export function EmailBlock() {
   const { t } = useTranslation();
   const { locale } = useLocale();
   const { pathname } = useLocation();
@@ -60,8 +60,10 @@ export function EmailCapture() {
   };
 
   return (
-    <Section id="subscribe" eyebrow={t("email.eyebrow")} heading={t("email.heading")} intro={t("email.body")}>
-      <form onSubmit={onSubmit} noValidate className="metal-card max-w-[560px] rounded-lg p-6 md:p-8">
+    <Reveal>
+      <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">{t("email.heading")}</h3>
+      <p className="mt-2 max-w-prose text-platinum/80">{t("email.body")}</p>
+      <form onSubmit={onSubmit} noValidate className="metal-card mt-6 max-w-[560px] rounded-lg p-6 md:p-8">
         <label htmlFor={id} className="mb-2 block text-label text-slate">
           {t("email.label")}
         </label>
@@ -96,6 +98,6 @@ export function EmailCapture() {
           </ButtonLink>
         )}
       </form>
-    </Section>
+    </Reveal>
   );
 }
