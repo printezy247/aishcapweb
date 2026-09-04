@@ -60,10 +60,8 @@ export function EmailCapture() {
   };
 
   return (
-    <Section id="subscribe" heading={t("email.heading")}>
-      <p className="max-w-prose text-platinum/90">{t("email.body")}</p>
-
-      <form onSubmit={onSubmit} noValidate className="mt-6 max-w-[520px]">
+    <Section id="subscribe" eyebrow={t("email.eyebrow")} heading={t("email.heading")} intro={t("email.body")}>
+      <form onSubmit={onSubmit} noValidate className="metal-card max-w-[560px] rounded-lg p-6 md:p-8">
         <label htmlFor={id} className="mb-2 block text-label text-slate">
           {t("email.label")}
         </label>
@@ -80,7 +78,7 @@ export function EmailCapture() {
             placeholder={t("email.placeholder")}
             aria-invalid={status === "invalid"}
             aria-describedby={`${id}-hint ${id}-msg`}
-            className="min-h-[48px] flex-1 rounded-card border border-slate/60 bg-navy-midnight px-4 text-platinum placeholder:text-slate/70"
+            className="min-h-[48px] flex-1 rounded-card border hairline-strong bg-navy-abyss/70 px-4 text-platinum placeholder:text-slate/60"
           />
           <Button type="submit" variant="secondary" disabled={status === "submitting"}>
             {status === "submitting" ? t("email.submitting") : t("buttons.subscribe")}

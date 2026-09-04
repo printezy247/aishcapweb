@@ -47,8 +47,10 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
   return (
     <section
       aria-label={t("hero.cardAria", { name: record.accountName })}
-      className="w-full max-w-[440px] rounded-card bg-navy-raised px-4 py-4 text-platinum sm:px-5"
+      className="metal-card metal-card--gold relative w-full max-w-[440px] overflow-hidden rounded-lg px-5 pb-5 pt-6 text-platinum sm:px-6"
     >
+      <span aria-hidden="true" className="gold-bar absolute inset-x-0 top-0 h-[2px]" />
+
       {/* Account name + live indicator + account number */}
       <div className="flex items-baseline justify-between gap-3">
         <h2 className="wdth-semi text-[18px] font-semibold">{record.accountName}</h2>
@@ -57,12 +59,12 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
           {t("stats.live")}
         </span>
       </div>
-      <p className="tabular mt-0.5 text-label text-slate">
+      <p className="num mt-0.5 text-label text-slate">
         <span className="sr-only">{t("stats.accountId")}: </span>
         {record.accountId}
       </p>
 
-      <hr className="hairline-gold my-3" />
+      <hr className="hairline-gold my-4 opacity-70" />
 
       {/* Headline stat */}
       <dl>
@@ -72,23 +74,23 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
         </div>
       </dl>
 
-      <hr className="my-3 border-t hairline" />
+      <hr className="my-4 border-t hairline" />
 
       {/* Full stat set — always together */}
-      <dl className="tabular text-[15px]">
+      <dl className="text-[15px]">
         {rows.map((row) => (
-          <div key={row.label} className="flex items-baseline justify-between gap-4 py-[5px]">
+          <div key={row.label} className="flex items-baseline justify-between gap-4 border-b hairline py-[7px] last:border-b-0">
             <dt className="text-slate">{row.label}</dt>
-            <dd className="text-right font-medium">{row.value}</dd>
+            <dd className="num text-right font-medium">{row.value}</dd>
           </div>
         ))}
       </dl>
 
-      <hr className="hairline-gold my-3" />
+      <hr className="hairline-gold my-4 opacity-70" />
 
       <p className="text-label text-slate">
         {t("stats.lastUpdated")}{" "}
-        <time dateTime={record.lastUpdated} className="tabular text-platinum/85">
+        <time dateTime={record.lastUpdated} className="num text-platinum/85">
           {formatDate(record.lastUpdated, locale)}
         </time>
       </p>

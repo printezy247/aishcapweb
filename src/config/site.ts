@@ -16,9 +16,14 @@ export const SITE = {
     address: "[REGISTERED ADDRESS], Malaysia",
     email: "[CONTACT EMAIL]",
   },
-  /** Portrait: interior / city-window / laptop photograph of Aish. No cars. */
+  /**
+   * Portrait: head-and-shoulders crop produced by scripts/crop-portrait.mjs
+   * from public/images/aish-portrait.jpg. The client chose a tight crop of
+   * the phone photograph; the car behind him is out of frame / out of focus.
+   */
   portrait: {
-    src: "/images/aish-window.jpg",
+    src: "/images/aish-portrait-800.jpg",
+    srcSmall: "/images/aish-portrait-400.jpg",
   },
   logo: {
     src: "/images/logo.png",

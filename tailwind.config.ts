@@ -19,8 +19,9 @@ export default {
       transparent: "transparent",
       current: "currentColor",
       navy: {
-        deep: "#0A1B3D",
+        abyss: "#030B1C",
         midnight: "#061229",
+        deep: "#0A1B3D",
         raised: "#12294F",
       },
       gold: {
@@ -33,6 +34,7 @@ export default {
       bear: "#E74C3C",
     },
     fontFamily: {
+      mono: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],
       sans: [
         "Archivo",
         "ui-sans-serif",

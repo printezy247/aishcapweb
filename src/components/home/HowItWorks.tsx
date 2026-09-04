@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Section } from "@/components/layout/Section";
+import { Reveal } from "@/components/Reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { useLocale } from "@/hooks/useLocale";
 
@@ -15,22 +16,22 @@ export function HowItWorks() {
   const steps = t("howItWorks.steps", { returnObjects: true }) as Step[];
 
   return (
-    <Section id="how-it-works" heading={t("howItWorks.heading")} recessed>
-      <p className="mb-8 max-w-prose text-platinum/90">{t("howItWorks.intro")}</p>
-      <ol className="grid gap-8 md:grid-cols-2">
+    <Section
+      id="how-it-works"
+      eyebrow={t("howItWorks.eyebrow")}
+      heading={t("howItWorks.heading")}
+      intro={t("howItWorks.intro")}
+      recessed
+    >
+      <ol className="grid gap-4 md:grid-cols-2 md:gap-6">
         {steps.map((step, i) => (
-          <li key={step.title} className="flex gap-4">
-            <span
-              aria-hidden="true"
-              className="tabular wdth-expanded mt-0.5 w-8 shrink-0 text-[22px] font-bold leading-none text-slate"
-            >
-              {i + 1}
+          <Reveal key={step.title} as="li" index={i} className="metal-card relative rounded-lg p-6 pt-5 md:p-8 md:pt-6">
+            <span aria-hidden="true" className="num block text-[40px] font-medium leading-none text-gold/35 md:text-[48px]">
+              {String(i + 1).padStart(2, "0")}
             </span>
-            <div className="max-w-prose">
-              <h3 className="font-semibold">{step.title}</h3>
-              <p className="mt-2 text-platinum/85">{step.body}</p>
-            </div>
-          </li>
+            <h3 className="mt-3 max-w-prose text-[17px] font-semibold">{step.title}</h3>
+            <p className="mt-2 max-w-prose text-platinum/80">{step.body}</p>
+          </Reveal>
         ))}
       </ol>
       <div className="mt-8">

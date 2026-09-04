@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Container } from "@/components/layout/Container";
 import { LanguageToggle } from "@/components/layout/LanguageToggle";
+import { Logo } from "@/components/layout/Logo";
 import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 
@@ -17,32 +18,38 @@ export function Footer() {
     { to: href("/legal/privacy"), label: t("legalNav.privacy") },
   ];
 
-  return (
-    <footer className="border-t hairline bg-navy-midnight text-legal text-platinum/85">
-      <Container className="py-10 md:py-14">
-        {/* The risk warning is real text on every page. Never an image. */}
-        <section aria-labelledby="footer-risk" className="max-w-prose">
-          <h2 id="footer-risk" className="mb-2 text-label font-semibold text-platinum">
-            {t("footer.riskTitle")}
-          </h2>
-          <p>{t("footer.risk")}</p>
-          <p className="mt-4">
-            {t("footer.affiliateSummary")}{" "}
-            <Link to={href("/legal/affiliate")} className="text-platinum underline">
-              {t("footer.affiliateLink")}
-            </Link>
-          </p>
-        </section>
+  const colHeading = "mb-3 text-label font-semibold text-platinum";
+  const link = "text-slate no-underline hover:text-platinum hover:underline";
 
-        <div className="mt-10 grid gap-8 sm:grid-cols-3">
+  return (
+    <footer className="hero-backdrop hero-backdrop--soft border-t hairline bg-navy-abyss text-legal text-platinum/85">
+      <Container className="py-12 md:py-16">
+        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
+          {/* Brand + the risk warning. Real text on every page. Never an image. */}
+          <section aria-labelledby="footer-risk" className="max-w-prose">
+            <div className="mb-5">
+              <Logo className="h-8" />
+            </div>
+            <h2 id="footer-risk" className={colHeading}>
+              {t("footer.riskTitle")}
+            </h2>
+            <p>{t("footer.risk")}</p>
+            <p className="mt-4">
+              {t("footer.affiliateSummary")}{" "}
+              <Link to={href("/legal/affiliate")} className="text-platinum underline">
+                {t("footer.affiliateLink")}
+              </Link>
+            </p>
+          </section>
+
           <nav aria-labelledby="footer-legal">
-            <h2 id="footer-legal" className="mb-3 text-label font-semibold text-platinum">
+            <h2 id="footer-legal" className={colHeading}>
               {t("footer.legalHeading")}
             </h2>
             <ul className="space-y-2">
               {legal.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-slate no-underline hover:text-platinum hover:underline">
+                  <Link to={l.to} className={link}>
                     {l.label}
                   </Link>
                 </li>
@@ -51,17 +58,12 @@ export function Footer() {
           </nav>
 
           <section aria-labelledby="footer-contact">
-            <h2 id="footer-contact" className="mb-3 text-label font-semibold text-platinum">
+            <h2 id="footer-contact" className={colHeading}>
               {t("footer.contactHeading")}
             </h2>
             <ul className="space-y-2">
               <li>
-                <a
-                  href={SITE.telegramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate no-underline hover:text-platinum hover:underline"
-                >
+                <a href={SITE.telegramUrl} target="_blank" rel="noopener noreferrer" className={link}>
                   {t("footer.telegramAdmin")} · @ejjmili7
                 </a>
               </li>
@@ -70,7 +72,7 @@ export function Footer() {
           </section>
 
           <section aria-labelledby="footer-company">
-            <h2 id="footer-company" className="mb-3 text-label font-semibold text-platinum">
+            <h2 id="footer-company" className={colHeading}>
               {t("footer.companyHeading")}
             </h2>
             <address className="not-italic text-slate">
@@ -83,7 +85,7 @@ export function Footer() {
           </section>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t hairline pt-6 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t hairline pt-6 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-slate">{t("footer.copyright", { year, name: SITE.name })}</p>
           <div className="flex items-center gap-3">
             <span className="text-slate">{t("footer.languageHeading")}</span>

@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/home/Hero";
+import { MarketTicker } from "@/components/home/MarketTicker";
 import { WhatWeAre } from "@/components/home/WhatWeAre";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { WhyNumbersSmall } from "@/components/home/WhyNumbersSmall";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <MarketTicker />
       <WhatWeAre />
       <HowItWorks />
       <WhyNumbersSmall />
