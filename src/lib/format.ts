@@ -2,28 +2,21 @@ import type { Locale } from "@/config/site";
 
 const intlLocale: Record<Locale, string> = { en: "en-MY", ms: "ms-MY" };
 
-export function formatMoney(value: number, currency: string, locale: Locale): string {
-  return new Intl.NumberFormat(intlLocale[locale], {
-    style: "currency",
-    currency,
-    currencyDisplay: "narrowSymbol",
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(value);
-}
+const nf = (locale: Locale, options: Intl.NumberFormatOptions) => new Intl.NumberFormat(intlLocale[locale], options);
+
+export const formatMoney = (value: number, currency: string, locale: Locale) =>
+  nf(locale, { style: "currency", currency, currencyDisplay: "narrowSymbol", minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(value);
+
+export const formatInt = (value: number, locale: Locale) => nf(locale, { maximumFractionDigits: 0 }).format(value);
+
+export const formatPrice = (value: number, decimals: number, locale: Locale) =>
+  nf(locale, { minimumFractionDigits: decimals, maximumFractionDigits: decimals }).format(value);
 
 export function formatPct(value: number, locale: Locale, signed = false): string {
-  const formatted = new Intl.NumberFormat(intlLocale[locale], {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(Math.abs(value));
+  const formatted = formatPrice(Math.abs(value), 2, locale);
   if (signed && value > 0) return `+${formatted}%`;
   if (value < 0) return `−${formatted}%`;
   return `${formatted}%`;
-}
-
-export function formatInt(value: number, locale: Locale): string {
-  return new Intl.NumberFormat(intlLocale[locale], { maximumFractionDigits: 0 }).format(value);
 }
 
 export function formatDate(iso: string, locale: Locale): string {
@@ -35,13 +28,6 @@ export function formatDate(iso: string, locale: Locale): string {
     year: "numeric",
     timeZone: "UTC",
   }).format(date);
-}
-
-export function formatPrice(value: number, decimals: number, locale: Locale): string {
-  return new Intl.NumberFormat(intlLocale[locale], {
-    minimumFractionDigits: decimals,
-    maximumFractionDigits: decimals,
-  }).format(value);
 }
 
 /** HH:MM in Malaysia time for an ISO timestamp. */

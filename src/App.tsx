@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect } from "react";
 import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 import { Layout } from "@/components/layout/Layout";
 import { applyHtmlLang, detectLocale, isLocale } from "@/lib/locale";
 import Home from "@/pages/Home";
@@ -43,8 +44,9 @@ function LocaleGate() {
 
   return (
     <Layout>
-      <Suspense fallback={<div className="min-h-[40vh]" aria-busy="true" />}>
-        <Routes>
+      <ErrorBoundary>
+        <Suspense fallback={<div className="min-h-[40vh]" aria-busy="true" />}>
+          <Routes>
           <Route index element={<Home />} />
           <Route path="copy-trading" element={<CopyTrading />} />
           <Route path="how-it-works" element={<HowItWorks />} />
@@ -57,8 +59,9 @@ function LocaleGate() {
           <Route path="legal/privacy" element={<Privacy />} />
           <Route path="confirm" element={<Confirm />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Suspense>
+          </Routes>
+        </Suspense>
+      </ErrorBoundary>
     </Layout>
   );
 }
