@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/home/Hero";
 import { MarketTicker } from "@/components/home/MarketTicker";
+import { GoldSection } from "@/components/home/GoldSection";
 import { Offerings } from "@/components/home/Offerings";
 import { HowItWorks } from "@/components/home/HowItWorks";
 import { Community } from "@/components/home/Community";
@@ -19,6 +20,7 @@ export default function Home() {
     <>
       <Hero />
       <MarketTicker />
+      <GoldSection />
       <Offerings />
       <HowItWorks />
       <Community />

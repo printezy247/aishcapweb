@@ -30,8 +30,8 @@ export default {
       },
       platinum: "#E8E8E8",
       slate: "#8FA3C4",
-      bull: "#2ECC71",
-      bear: "#E74C3C",
+      bull: "#26A69A",
+      bear: "#EF5350",
     },
     fontFamily: {
       mono: ["IBM Plex Mono", "ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"],

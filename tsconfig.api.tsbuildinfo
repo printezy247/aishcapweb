@@ -1,1 +1,1 @@
-{"root":["./api/quotes.ts","./api/_lib/providers.ts","./api/_lib/symbols.ts","./src/lib/quotes.ts"],"version":"5.9.3"}
+{"root":["./api/quotes.ts","./api/series.ts","./api/_lib/providers.ts","./api/_lib/symbols.ts","./src/lib/quotes.ts"],"version":"5.9.3"}

@@ -13,8 +13,8 @@
     --gold-deep: #a87d0f;
     --platinum: #e8e8e8;
     --slate: #8fa3c4;
-    --bull: #2ecc71;
-    --bear: #e74c3c;
+    --bull: #26a69a;
+    --bear: #ef5350;
     /* White-alpha hairline: reads as brushed metal, not a drawn line. */
     --hairline: rgba(232, 232, 232, 0.08);
     --hairline-strong: rgba(232, 232, 232, 0.14);
@@ -243,6 +243,20 @@
   }
   .ticker-wrap:hover .ticker-track {
     animation-play-state: paused;
+  }
+  .flash-up {
+    animation: flash-up 0.9s ease-out;
+  }
+  .flash-down {
+    animation: flash-down 0.9s ease-out;
+  }
+  @keyframes flash-up {
+    from { background: rgba(38, 166, 154, 0.35); }
+    to { background: transparent; }
+  }
+  @keyframes flash-down {
+    from { background: rgba(239, 83, 80, 0.35); }
+    to { background: transparent; }
   }
   @keyframes ticker {
     to {
