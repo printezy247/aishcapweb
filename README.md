@@ -46,7 +46,6 @@ not be guessed:
 | Placeholder | Where |
 | --- | --- |
 | `[BROKER]`, `[BROKER_REFERRAL_URL]` | `src/config/site.ts`, locale files |
-| `[YEARS]`, `[INSTRUMENTS]` | `about.body` and `pages.about` in both locale files |
 | `[COMPANY LEGAL NAME]`, `[SSM REGISTRATION NO.]`, `[REGISTERED ADDRESS]`, `[CONTACT EMAIL]` | `src/config/site.ts` |
 
 Assets to supply (not in the repo):

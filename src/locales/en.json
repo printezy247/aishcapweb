@@ -121,7 +121,7 @@
   "about": {
     "heading": "About Aish",
     "portraitAlt": "Aish at a laptop by a city window",
-    "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for [YEARS] years, mostly [INSTRUMENTS], and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I am not licensed, I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
+    "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD), and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I am not licensed, I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
     "readMore": "More about Aish"
   },
   "faq": {
@@ -235,7 +235,7 @@
         {
           "title": "Who I am",
           "body": [
-            "I am Aish, a trader from Malaysia in my late twenties. I have been trading for [YEARS] years, mostly [INSTRUMENTS]. For most of that time I traded on my own and told nobody about it.",
+            "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD). For most of that time I traded on my own and told nobody about it.",
             "I started Aish Capital because I kept getting the same questions about copy trading from friends, and most of the answers they were finding online were either a sales pitch or plainly wrong."
           ]
         },

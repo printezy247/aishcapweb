@@ -121,7 +121,7 @@
   "about": {
     "heading": "Tentang Aish",
     "portraitAlt": "Aish di hadapan komputer riba di tepi tingkap bandar",
-    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama [YEARS] tahun, kebanyakannya [INSTRUMENTS], dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak berlesen, saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
+    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak berlesen, saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
     "readMore": "Lebih lanjut tentang Aish"
   },
   "faq": {
@@ -235,7 +235,7 @@
         {
           "title": "Siapa saya",
           "body": [
-            "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama [YEARS] tahun, kebanyakannya [INSTRUMENTS]. Sebahagian besar masa itu saya berdagang sendirian dan tidak memberitahu sesiapa.",
+            "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD). Sebahagian besar masa itu saya berdagang sendirian dan tidak memberitahu sesiapa.",
             "Saya memulakan Aish Capital kerana saya sering ditanya soalan yang sama tentang copy trading oleh rakan-rakan, dan kebanyakan jawapan yang mereka jumpa dalam talian sama ada jualan semata-mata atau jelas salah."
           ]
         },
