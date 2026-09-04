@@ -1,0 +1,419 @@
+{
+  "meta": {
+    "siteName": "Aish Capital",
+    "tagline": "Pendidikan dan komuniti copy trading, dibina secara terbuka.",
+    "titles": {
+      "home": "Aish Capital — Dibina secara terbuka",
+      "howItWorks": "Cara copy trading berfungsi — Aish Capital",
+      "learn": "Belajar — Aish Capital",
+      "about": "Tentang Aish — Aish Capital",
+      "risk": "Pendedahan risiko — Aish Capital",
+      "affiliate": "Pendedahan afiliasi — Aish Capital",
+      "terms": "Terma penggunaan — Aish Capital",
+      "privacy": "Dasar privasi — Aish Capital",
+      "confirm": "Sahkan langganan — Aish Capital",
+      "notFound": "Halaman tidak dijumpai — Aish Capital"
+    }
+  },
+  "nav": {
+    "home": "Utama",
+    "howItWorks": "Cara ia berfungsi",
+    "learn": "Belajar",
+    "about": "Tentang",
+    "legal": "Undang-undang",
+    "menu": "Menu",
+    "close": "Tutup menu",
+    "skipToContent": "Langkau ke kandungan",
+    "language": "Bahasa",
+    "switchTo": "English"
+  },
+  "hero": {
+    "building": "Dibina secara terbuka. Hari {{n}} daripada {{total}}.",
+    "newStrategy": "Strategi ini baharu. Tiada rekod prestasi lagi.",
+    "cardAria": "Statistik akaun langsung untuk {{name}}",
+    "selfReported": "Dilaporkan sendiri daripada papan pemuka broker. Pengesahan pihak ketiga dirancang selepas tempoh {{total}} hari tamat."
+  },
+  "stats": {
+    "totalGain": "Jumlah keuntungan",
+    "balance": "Baki",
+    "equity": "Ekuiti",
+    "maxDrawdown": "Penurunan maksimum",
+    "closedTrades": "Dagangan ditutup",
+    "openTrades": "Dagangan terbuka",
+    "leverage": "Leveraj",
+    "performanceFee": "Yuran prestasi",
+    "accountAge": "Usia akaun",
+    "lastUpdated": "Dikemas kini",
+    "live": "langsung",
+    "days_one": "{{count}} hari",
+    "days_other": "{{count}} hari",
+    "accountId": "Nombor akaun"
+  },
+  "buttons": {
+    "joinTelegram": "Sertai Telegram",
+    "howItWorks": "Cara ia berfungsi",
+    "readRisks": "Baca risiko",
+    "subscribe": "Langgan",
+    "messageAdmin": "Hubungi admin di Telegram",
+    "backHome": "Kembali ke utama"
+  },
+  "whatWeAre": {
+    "heading": "Siapa kami, dan siapa kami bukan",
+    "areTitle": "Siapa kami",
+    "are": "Aish Capital ialah jenama pendidikan dan komuniti yang dikendalikan oleh seorang pedagang dan seorang admin. Kami memaparkan satu akaun copy trading langsung, CT-1, dengan setiap angka ditunjukkan tanpa suntingan daripada papan pemuka broker. Kami menerangkan cara copy trading berfungsi, kosnya, dan bagaimana ia boleh gagal. Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas CT-1, dan kami menyatakannya di sebelah setiap pautan.",
+    "areNotTitle": "Siapa kami bukan",
+    "areNot": "Kami bukan dana. Kami bukan penasihat berlesen. Kami tidak menjamin keuntungan. Kami tidak meminta anda menghantar wang kepada kami. Setiap akaun adalah milik anda, atas nama anda, di bawah kawalan anda, dan anda boleh memutuskan sambungan pada bila-bila masa."
+  },
+  "howItWorks": {
+    "heading": "Cara copy trading berfungsi",
+    "intro": "Empat langkah. Tiada apa-apa berlaku kepada wang anda tanpa anda melakukannya sendiri.",
+    "steps": [
+      {
+        "title": "Buka akaun dengan broker, atas nama anda sendiri",
+        "body": "Anda mendaftar terus dengan broker. Akaun, log masuk, dan wang adalah milik anda. Jika anda menggunakan pautan kami, broker membayar komisen kepada kami. Perkara itu didedahkan betul-betul di sebelah pautan."
+      },
+      {
+        "title": "Deposit hanya jumlah yang anda sanggup kehilangan sepenuhnya",
+        "body": "Anda membiayai akaun anda sendiri, terus dengan broker. Kami tidak pernah menyentuhnya. Dagangan berleveraj boleh kehilangan lebih daripada deposit, jadi pilih jumlah dengan mengambil kira perkara itu."
+      },
+      {
+        "title": "Sambungkan akaun anda kepada CT-1 di dalam ruang copy trading broker",
+        "body": "Platform broker menyalin dagangan CT-1 ke dalam akaun anda mengikut kadar jumlah yang anda peruntukkan. Yuran prestasi 20% dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian."
+      },
+      {
+        "title": "Putuskan sambungan pada bila-bila masa",
+        "body": "Anda boleh berhenti menyalin bila-bila masa yang anda mahu, daripada akaun anda sendiri, tanpa perlu bertanya kepada kami. Akaun kekal atas nama anda sepanjang masa, sebelum, semasa, dan selepas menyalin."
+      }
+    ]
+  },
+  "whyNumbersSmall": {
+    "heading": "Mengapa angkanya kecil",
+    "body": "CT-1 bermula pada {{openedAt}} dengan {{start}} wang saya sendiri. Pada masa ini ditulis, itu {{days}} hari sejarah, dan itu bukan rekod prestasi. Ia titik permulaan. Saya menjalankan akaun ini secara terbuka selama {{total}} hari sebelum saya bercakap tentang keputusan di mana-mana, dan setiap angka di halaman ini disalin daripada papan pemuka broker, tanpa diubah. Anda tidak perlu menyertai. Memerhati sepanjang {{total}} hari itu adalah keputusan yang baik, dan saya lebih rela anda berbuat begitu daripada tergesa-gesa."
+  },
+  "learnPreview": {
+    "heading": "Belajar",
+    "intro": "Penerangan mudah tentang cara copy trading berfungsi, apa yurannya, dan bagaimana rupa risikonya dalam praktik.",
+    "emptyTitle": "Belum ada artikel",
+    "emptyBody": "Tulisan pertama akan dimuat naik apabila CT-1 mempunyai sejarah yang cukup untuk ditulis secara jujur. Sehingga itu, ulasan mingguan disiarkan dalam kumpulan Telegram.",
+    "viewAll": "Semua artikel",
+    "readMore": "Baca"
+  },
+  "email": {
+    "heading": "Ulasan mingguan CT-1",
+    "body": "Satu e-mel seminggu, pada hari Ahad, tentang apa yang CT-1 lakukan minggu itu dan mengapa. Ia bukan senarai isyarat dan tidak akan memberitahu anda apa yang perlu dibeli.",
+    "label": "Alamat e-mel",
+    "placeholder": "anda@contoh.com",
+    "frequency": "Mingguan. Berhenti melanggan dengan satu klik dalam setiap e-mel. Kami mengesahkan alamat anda sebelum menghantar apa-apa.",
+    "submitting": "Menghantar…",
+    "success": "Semak peti masuk anda. Kami telah menghantar pautan pengesahan, dan tiada apa-apa akan dihantar sehingga anda mengkliknya.",
+    "duplicate": "Alamat itu sudah ada dalam senarai. Jika anda belum mengesahkannya, semak peti masuk anda untuk pautan tersebut.",
+    "invalid": "Sila masukkan alamat e-mel yang sah.",
+    "error": "Ada masalah berlaku. Sila cuba lagi, atau hubungi admin di Telegram.",
+    "notConfigured": "Pendaftaran e-mel belum diaktifkan. Sertai kumpulan Telegram untuk ulasan mingguan."
+  },
+  "confirm": {
+    "heading": "Mengesahkan langganan anda",
+    "working": "Sebentar…",
+    "success": "Disahkan. Anda akan menerima ulasan mingguan CT-1 pada hari Ahad. Setiap e-mel mempunyai pautan berhenti melanggan satu klik.",
+    "invalid": "Pautan pengesahan ini tidak sah atau telah digunakan.",
+    "error": "Kami tidak dapat mengesahkan alamat anda. Sila cuba pautan itu sekali lagi, atau hubungi admin di Telegram."
+  },
+  "about": {
+    "heading": "Tentang Aish",
+    "portraitAlt": "Aish di hadapan komputer riba di tepi tingkap bandar",
+    "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama [YEARS] tahun, kebanyakannya [INSTRUMENTS], dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak berlesen, saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
+    "readMore": "Lebih lanjut tentang Aish"
+  },
+  "faq": {
+    "heading": "Soalan yang sering ditanya",
+    "items": [
+      {
+        "q": "Adakah anda berlesen?",
+        "a": "Tidak. Aish Capital tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan kami tidak mendakwa sedemikian. Kami ialah jenama pendidikan dan komuniti. Kami tidak memberi nasihat kewangan peribadi, tidak menguruskan wang, dan tidak memegang dana. Baca pendedahan risiko sebelum membuat sebarang keputusan."
+      },
+      {
+        "q": "Bagaimana anda mendapat wang daripada saya?",
+        "a": "Dua cara. Pertama, jika anda membuka akaun broker melalui pautan rujukan kami, broker membayar komisen kepada kami berdasarkan aktiviti dagangan anda. Kedua, jika anda menyalin CT-1, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda. Kedua-duanya didedahkan di sebelah setiap pautan di laman ini. Kedua-duanya mewujudkan insentif kewangan untuk kami, dan anda perlu menimbangkannya."
+      },
+      {
+        "q": "Bolehkah saya kehilangan lebih daripada deposit saya?",
+        "a": "Ya, ia mungkin berlaku. Dengan leveraj 1:1000, pergerakan pasaran yang pantas boleh menolak akaun ke bawah sifar sebelum broker sempat menutup kedudukan. Sesetengah broker menawarkan perlindungan baki negatif; semak sama ada broker anda menawarkannya dan dengan syarat apa. Jangan sekali-kali berdagang dengan wang yang anda tidak sanggup kehilangan sepenuhnya."
+      },
+      {
+        "q": "Adakah anda pernah memegang wang saya?",
+        "a": "Tidak. Akaun anda dibuka atas nama anda sendiri dengan broker. Deposit dan pengeluaran berlaku terus antara anda dan broker. Kami tidak pernah meminta anda menghantar wang kepada kami. Jika sesiapa yang mendakwa sebagai Aish Capital meminta anda berbuat demikian, itu penipuan dan anda patut melaporkannya kepada kami di Telegram."
+      },
+      {
+        "q": "Mengapa rekod prestasi anda begitu pendek?",
+        "a": "Kerana memang begitu. CT-1 dibuka pada {{openedAt}} dengan {{start}}. Kami menjalankannya secara terbuka selama {{total}} hari sebelum mempromosikan keputusan di mana-mana. Menunjukkan rekod yang pendek dan tidak disunting hari ini lebih jujur daripada menunjukkan rekod yang panjang tetapi tidak dapat anda semak."
+      },
+      {
+        "q": "Apa yang berlaku jika strategi ini rugi?",
+        "a": "Akaun salinan anda turut rugi, mengikut kadar jumlah yang anda peruntukkan. Yuran 20% dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian, tetapi kerugian itu sendiri kekal dalam akaun anda dan menjadi tanggungan anda. Peruntukkan hanya jumlah yang anda sanggup kehilangan, dan perhatikan angka penurunan maksimum pada kad di atas."
+      },
+      {
+        "q": "Bolehkah saya berhenti menyalin pada bila-bila masa?",
+        "a": "Ya. Anda memutuskan sambungan daripada CT-1 di dalam ruang copy trading broker anda bila-bila masa yang anda mahu. Dagangan yang masih terbuka dikendalikan mengikut peraturan broker, biasanya ditutup atau dibiarkan untuk anda uruskan sendiri. Akaun anda kekal atas nama anda sepanjang masa. Anda tidak memerlukan kebenaran kami dan kami tidak boleh menghalang anda."
+      },
+      {
+        "q": "Broker apa yang anda gunakan dan adakah mereka dikawal selia?",
+        "a": "Kami menggunakan [BROKER]. Seperti hampir semua broker forex antarabangsa, ia tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan ia mungkin tersenarai dalam senarai amaran pelabur mereka. Sebarang kawal selia yang dipegangnya adalah daripada negara lain dan tidak memberi anda perlindungan di bawah undang-undang Malaysia. Semak sendiri senarai amaran SC dan BNM sebelum membuka akaun."
+      }
+    ]
+  },
+  "affiliate": {
+    "inline": "Aish Capital beroperasi sebagai Introducing Broker dan menerima komisen daripada {{broker}} berdasarkan aktiviti dagangan akaun yang dibuka melalui pautan kami. Komisen ini dibayar oleh broker dan tidak menambah kos dagangan anda. Komisen ini mewujudkan insentif kewangan untuk kami, dan anda perlu mengambil kira perkara itu dalam sebarang keputusan yang anda buat.",
+    "linkLabel": "Buka akaun dengan {{broker}}",
+    "disclosureLabel": "Pendedahan komisen"
+  },
+  "footer": {
+    "riskTitle": "Amaran risiko",
+    "risk": "Aish Capital ialah jenama pendidikan dan komuniti. Kami tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan kami tidak menyediakan nasihat pelaburan, pengurusan portfolio, atau perkhidmatan perancangan kewangan. Kami tidak menerima, memegang, atau menguruskan dana pelanggan. Dagangan produk berleveraj membawa risiko kerugian yang tinggi dan tidak sesuai untuk semua orang. Anda boleh kehilangan lebih daripada deposit awal anda. Prestasi lampau tidak menunjukkan keputusan masa hadapan.",
+    "affiliateSummary": "Kami memperoleh komisen Introducing Broker daripada broker dan yuran prestasi 20% ke atas CT-1. Kedua-duanya tidak ditambah kepada kos dagangan anda, dan kedua-duanya memberi kami insentif.",
+    "affiliateLink": "Pendedahan afiliasi penuh",
+    "legalHeading": "Undang-undang",
+    "contactHeading": "Hubungi",
+    "telegramAdmin": "Admin Telegram",
+    "companyHeading": "Syarikat",
+    "registration": "No. pendaftaran",
+    "copyright": "© {{year}} {{name}}. Hak cipta terpelihara.",
+    "languageHeading": "Bahasa"
+  },
+  "legalNav": {
+    "risk": "Pendedahan risiko",
+    "affiliate": "Pendedahan afiliasi",
+    "terms": "Terma penggunaan",
+    "privacy": "Dasar privasi"
+  },
+  "pages": {
+    "howItWorks": {
+      "heading": "Cara copy trading berfungsi",
+      "intro": "Copy trading bermaksud platform broker menyalin dagangan satu akaun ke dalam akaun lain. Inilah maksud sebenarnya untuk anda, kosnya, dan bagaimana ia berakhir.",
+      "sections": [
+        {
+          "title": "Apa yang sebenarnya berlaku",
+          "body": [
+            "CT-1 ialah akaun dagangan biasa di broker. Apabila ia membuka atau menutup dagangan, sistem copy trading broker membuka atau menutup dagangan yang sama dalam setiap akaun yang bersambung kepadanya, mengikut kadar jumlah yang setiap orang peruntukkan.",
+            "Tiada apa-apa dihantar kepada kami. Tiada apa-apa dikumpulkan. Wang anda tidak pernah keluar daripada akaun anda sendiri di broker. Kami tidak boleh mengeluarkan daripadanya, mendeposit ke dalamnya, atau log masuk ke dalamnya."
+          ]
+        },
+        {
+          "title": "Kosnya",
+          "body": [
+            "Broker mengenakan spread biasa dan sebarang komisen ke atas setiap dagangan. Jika anda membuka akaun melalui pautan kami, broker turut membayar sebahagian daripadanya kepada kami. Ia tidak dikenakan tambahan daripada poket anda, tetapi ia menjadi sebab kami mahu anda berdagang, dan anda patut tahu perkara itu.",
+            "Yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan CT-1 dalam akaun anda. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran yang tepat ditetapkan oleh sistem copy trading broker, dan anda patut membaca termanya sebelum menyambung."
+          ]
+        },
+        {
+          "title": "Apa yang boleh menjadi salah",
+          "body": [
+            "Keputusan salinan tidak pernah sama dengan CT-1. Dagangan anda diisi pada harga yang sedikit berbeza, peruntukan anda berbeza, dan broker mungkin mengenakan saiz dagangan minimum yang mengubah nisbahnya.",
+            "Leveraj 1:1000 bermaksud pergerakan harga yang kecil menjadi pergerakan akaun yang besar. Akaun boleh habis sepenuhnya, dan boleh jatuh ke bawah sifar, lebih pantas daripada anda sempat bertindak. Keputusan lampau, termasuk CT-1, tidak memberitahu apa-apa yang boleh dipercayai tentang keputusan akan datang."
+          ]
+        },
+        {
+          "title": "Bagaimana ia berakhir",
+          "body": [
+            "Anda memutuskan sambungan daripada CT-1 di dalam akaun broker anda, pada bila-bila masa, tanpa memberitahu kami. Peraturan broker menentukan apa yang berlaku kepada dagangan yang terbuka pada ketika itu. Akaun anda kekal atas nama anda sebelum, semasa, dan selepas.",
+            "Jika CT-1 ditutup pada bila-bila masa, semua sambungan salinan tamat bersamanya dan akaun anda tidak disentuh."
+          ]
+        }
+      ],
+      "brokerHeading": "Membuka akaun",
+      "brokerBody": "Broker belum disahkan untuk laman ini. Apabila sudah, pautan rujukan akan dipaparkan di sini bersama pendedahan komisen di sebelahnya, seperti di tempat lain di laman ini."
+    },
+    "learn": {
+      "heading": "Belajar",
+      "intro": "Penerangan bertulis, dalam bahasa yang mudah, tentang apa itu copy trading, kosnya, dan bagaimana ia boleh gagal. Tiada isyarat, tiada seruan, tiada gempak.",
+      "emptyTitle": "Belum ada yang diterbitkan, dengan sengaja",
+      "emptyBody": "Kami lebih rela tidak menerbitkan apa-apa daripada mengisi halaman ini dengan tulisan kosong. Artikel bermula apabila CT-1 mempunyai sejarah yang cukup untuk ditulis secara jujur. Ulasan mingguan tentang apa yang CT-1 lakukan, dan mengapa, sudah disiarkan dalam kumpulan Telegram.",
+      "latest": "Terkini"
+    },
+    "about": {
+      "heading": "Tentang Aish",
+      "sections": [
+        {
+          "title": "Siapa saya",
+          "body": [
+            "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama [YEARS] tahun, kebanyakannya [INSTRUMENTS]. Sebahagian besar masa itu saya berdagang sendirian dan tidak memberitahu sesiapa.",
+            "Saya memulakan Aish Capital kerana saya sering ditanya soalan yang sama tentang copy trading oleh rakan-rakan, dan kebanyakan jawapan yang mereka jumpa dalam talian sama ada jualan semata-mata atau jelas salah."
+          ]
+        },
+        {
+          "title": "Apa yang saya lakukan di sini",
+          "body": [
+            "Saya membuka CT-1 dengan {{start}} dan saya menjalankannya secara terbuka selama {{total}} hari. Setiap angka di halaman utama disalin daripada papan pemuka broker seminggu sekali, tanpa diubah. Jika ia berjalan buruk, itu juga kekal di halaman ini.",
+            "Selepas {{total}} hari itu, saya merancang untuk memindahkan angka-angka ini ke perkhidmatan pengesahan pihak ketiga supaya anda tidak perlu percaya kata-kata saya semata-mata."
+          ]
+        },
+        {
+          "title": "Siapa saya bukan",
+          "body": [
+            "Saya tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia. Saya tidak memberi nasihat kewangan peribadi. Saya tidak pernah memegang wang sesiapa, dan jika seseorang yang mendakwa sebagai saya meminta anda menghantar wang, itu bukan saya.",
+            "Seorang admin membantu saya menguruskan kumpulan Telegram dan membalas mesej. Itulah keseluruhan syarikat ini."
+          ]
+        }
+      ]
+    },
+    "risk": {
+      "heading": "Pendedahan risiko",
+      "updated": "Dikemas kini {{date}}",
+      "sections": [
+        {
+          "title": "Siapa kami",
+          "body": [
+            "Aish Capital ialah jenama pendidikan dan komuniti. Kami tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia, dan kami tidak menyediakan nasihat pelaburan, pengurusan portfolio, atau perkhidmatan perancangan kewangan. Kami tidak menerima, memegang, atau menguruskan dana pelanggan. Dagangan produk berleveraj membawa risiko kerugian yang tinggi dan tidak sesuai untuk semua orang. Anda boleh kehilangan lebih daripada deposit awal anda. Prestasi lampau tidak menunjukkan keputusan masa hadapan."
+          ]
+        },
+        {
+          "title": "Status kawal selia di Malaysia",
+          "body": [
+            "Pada dasarnya tiada broker forex yang berlesen untuk melayani pelanggan runcit di Malaysia. Kebanyakan broker antarabangsa, termasuk yang kami gunakan, tersenarai atau mungkin tersenarai dalam Senarai Amaran Pengguna Kewangan Bank Negara Malaysia dan Senarai Amaran Pelabur Suruhanjaya Sekuriti. Kawal selia yang dipegang broker tersebut di negara lain tidak memberi anda perlindungan di bawah undang-undang Malaysia.",
+            "Tiada apa-apa di laman ini merupakan tawaran, pelawaan, atau cadangan untuk membeli atau menjual sebarang produk kewangan. Keputusan untuk membuka akaun broker, mendeposit wang, atau menyalin sebarang strategi adalah keputusan anda sendiri."
+          ]
+        },
+        {
+          "title": "Leveraj dan kerugian melebihi deposit anda",
+          "body": [
+            "CT-1 menggunakan leveraj 1:1000. Pada tahap itu, pergerakan harga 0.1% menentang kedudukan yang berleveraj penuh sudah cukup untuk kehilangan keseluruhan akaun. Pasaran boleh bergerak sejauh itu dalam beberapa saat, dan jurang harga pada hujung minggu atau semasa berita boleh menolak akaun ke bawah sifar sebelum sebarang kedudukan ditutup.",
+            "Melainkan broker anda menawarkan perlindungan baki negatif, dan mematuhinya, anda boleh kehilangan lebih daripada deposit anda dan berhutang perbezaannya kepada broker. Semak terma broker anda sebelum mendeposit apa-apa."
+          ]
+        },
+        {
+          "title": "Copy trading secara khusus",
+          "body": [
+            "Keputusan salinan berbeza daripada akaun sumber kerana harga pengisian, saiz peruntukan, saiz dagangan minimum, dan masa yang berbeza. Keputusan anda boleh lebih teruk daripada CT-1, dan boleh menjadi kerugian walaupun CT-1 menunjukkan keuntungan.",
+            "Angka-angka di laman ini dilaporkan sendiri daripada papan pemuka broker. Ia belum disahkan secara bebas. Sejarah yang pendek, termasuk CT-1, bukan bukti bahawa sesuatu strategi berkesan.",
+            "Anda boleh memutuskan sambungan daripada CT-1 pada bila-bila masa. Dagangan yang terbuka pada ketika itu dikendalikan di bawah peraturan broker, dan anda patut membaca peraturan itu sebelum menyambung."
+          ]
+        },
+        {
+          "title": "Penipuan menggunakan nama kami",
+          "body": [
+            "Kami tidak pernah meminta anda menghantar wang kepada kami, ke akaun peribadi, atau ke mana-mana dompet. Sesiapa yang berbuat demikian atas nama kami melakukan penipuan. Laporkan kepada admin Telegram dan pihak berkuasa."
+          ]
+        }
+      ]
+    },
+    "affiliate": {
+      "heading": "Pendedahan afiliasi",
+      "updated": "Dikemas kini {{date}}",
+      "sections": [
+        {
+          "title": "Komisen Introducing Broker",
+          "body": [
+            "Aish Capital beroperasi sebagai Introducing Broker dan menerima komisen daripada [BROKER] berdasarkan aktiviti dagangan akaun yang dibuka melalui pautan kami. Komisen ini dibayar oleh broker dan tidak menambah kos dagangan anda. Komisen ini mewujudkan insentif kewangan untuk kami, dan anda perlu mengambil kira perkara itu dalam sebarang keputusan yang anda buat.",
+            "Komisen ini biasanya dikira berdasarkan jumlah dagangan. Ini bermakna kami memperoleh lebih banyak apabila anda berdagang lebih banyak, tidak kira sama ada anda untung atau rugi. Kami rasa anda patut tahu perkara ini dengan jelas."
+          ]
+        },
+        {
+          "title": "Yuran prestasi",
+          "body": [
+            "Jika anda menyalin CT-1, yuran prestasi 20% dikenakan ke atas keuntungan yang dihasilkan oleh salinan itu dalam akaun anda, melalui sistem copy trading broker. Tiada yuran dikenakan ke atas kerugian. Mekanisme yuran, termasuk bagaimana dan bila ia dikira, ditetapkan oleh platform broker dan diterangkan dalam termanya."
+          ]
+        },
+        {
+          "title": "Di mana anda akan melihatnya",
+          "body": [
+            "Pendedahan ini, dalam bentuk ringkas, dipaparkan di sebelah setiap pautan rujukan broker di laman ini dan di bahagian bawah setiap halaman. Ia tidak disembunyikan di halaman ini sahaja.",
+            "Kami tidak menerima bayaran untuk ulasan, artikel, atau cadangan, dan kami tidak menjalankan program afiliasi lain dalam Fasa 1 laman ini."
+          ]
+        }
+      ]
+    },
+    "terms": {
+      "heading": "Terma penggunaan",
+      "updated": "Dikemas kini {{date}}",
+      "sections": [
+        {
+          "title": "Sifat laman ini",
+          "body": [
+            "Laman web ini diterbitkan oleh Aish Capital untuk tujuan pendidikan dan komuniti sahaja. Tiada apa-apa di dalamnya merupakan nasihat pelaburan, cadangan, tawaran, atau pelawaan untuk membeli atau menjual sebarang produk kewangan, dan tiada apa-apa di dalamnya mengambil kira keadaan peribadi anda.",
+            "Aish Capital tidak berlesen di bawah Suruhanjaya Sekuriti Malaysia atau Bank Negara Malaysia. Kami bukan dana, pengurus dana, penasihat pelaburan, atau perancang kewangan."
+          ]
+        },
+        {
+          "title": "Tanggungjawab anda",
+          "body": [
+            "Sebarang keputusan untuk membuka akaun broker, mendeposit wang, atau menyalin strategi dagangan adalah keputusan anda sendiri, dibuat atas pertimbangan anda sendiri atau dengan nasihat daripada profesional berlesen. Anda patut membaca pendedahan risiko dan terma broker sendiri sebelum melakukan mana-mana perkara itu.",
+            "Anda bertanggungjawab mematuhi undang-undang negara tempat anda tinggal, termasuk sebarang sekatan terhadap dagangan dengan broker luar negara."
+          ]
+        },
+        {
+          "title": "Ketepatan angka",
+          "body": [
+            "Angka akaun di laman ini disalin secara manual daripada papan pemuka broker, biasanya setiap minggu, dan diberi cap tarikh. Ia mungkin tidak terkini antara kemas kini dan ia belum disahkan secara bebas. Kami tidak membuat sebarang jaminan bahawa ia tepat atau lengkap."
+          ]
+        },
+        {
+          "title": "Hubungan komersial",
+          "body": [
+            "Kami memperoleh komisen Introducing Broker dan yuran prestasi seperti yang diterangkan dalam pendedahan afiliasi. Ini didedahkan di sebelah setiap pautan yang berkaitan."
+          ]
+        },
+        {
+          "title": "Liabiliti",
+          "body": [
+            "Setakat yang dibenarkan sepenuhnya oleh undang-undang Malaysia, Aish Capital dan orang yang mengendalikannya tidak menerima sebarang liabiliti atas sebarang kerugian yang timbul daripada penggunaan laman ini, penyalinan CT-1, atau sebarang keputusan yang dibuat dengan bergantung kepada apa-apa yang diterbitkan di sini."
+          ]
+        },
+        {
+          "title": "Kandungan dan perubahan",
+          "body": [
+            "Teks dan imej di laman ini adalah milik Aish Capital melainkan dinyatakan sebaliknya. Anda boleh memetik petikan pendek dengan menyatakan sumber. Kami boleh mengubah terma ini pada bila-bila masa; tarikh di bahagian atas menunjukkan versi semasa.",
+            "Terma ini tertakluk kepada undang-undang Malaysia."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "heading": "Dasar privasi",
+      "updated": "Dikemas kini {{date}}",
+      "intro": "Dasar ini ditulis untuk mematuhi Akta Perlindungan Data Peribadi 2010 (PDPA). Ia ringkas kerana kami mengumpul sangat sedikit.",
+      "sections": [
+        {
+          "title": "Apa yang kami kumpul",
+          "body": [
+            "Jika anda melanggan e-mel mingguan, kami menyimpan alamat e-mel anda, bahasa yang anda pilih, halaman tempat anda mendaftar, masa anda mendaftar, dan masa anda mengesahkan. Itulah senarai lengkapnya.",
+            "Kami tidak mengumpul nama, nombor telefon, atau sebarang maklumat kewangan. Kami tidak menggunakan kuki penjejakan atau piksel pemasaran. Jika pengira paparan halaman diaktifkan, ia mengira lawatan tanpa mengenal pasti anda dan tanpa menyimpan apa-apa pada peranti anda."
+          ]
+        },
+        {
+          "title": "Mengapa kami mengumpulnya dan atas dasar apa",
+          "body": [
+            "Alamat e-mel digunakan untuk satu tujuan: menghantar ulasan mingguan CT-1. Kami bergantung kepada persetujuan anda, yang anda berikan dengan memasukkan alamat anda dan kemudian mengesahkannya daripada e-mel yang kami hantar. Kami tidak menghantar apa-apa sebelum anda mengesahkan."
+          ]
+        },
+        {
+          "title": "Siapa lagi yang melihatnya",
+          "body": [
+            "Alamat anda disimpan dengan Supabase, penyedia pangkalan data kami, dan diserahkan kepada penyedia penghantaran e-mel kami untuk menghantar e-mel mingguan. Kedua-duanya tidak dibenarkan menggunakannya untuk tujuan lain. Data anda mungkin disimpan di pelayan di luar Malaysia.",
+            "Kami tidak pernah menjual, menyewakan, atau berkongsi alamat anda dengan broker atau sesiapa pun."
+          ]
+        },
+        {
+          "title": "Berapa lama kami menyimpannya",
+          "body": [
+            "Sehingga anda berhenti melanggan. Setiap e-mel mempunyai pautan berhenti melanggan satu klik, dan berhenti melanggan memadamkan alamat anda daripada senarai. Alamat yang tidak disahkan dipadamkan selepas 30 hari."
+          ]
+        },
+        {
+          "title": "Hak anda di bawah PDPA",
+          "body": [
+            "Anda berhak mengakses data peribadi yang kami simpan tentang anda, membetulkannya, dan menarik balik persetujuan anda pada bila-bila masa. Untuk melaksanakan mana-mana hak ini, berhenti melanggan menggunakan pautan dalam mana-mana e-mel atau hubungi admin Telegram. Kami akan membalas dalam masa 21 hari."
+          ]
+        },
+        {
+          "title": "Hubungi",
+          "body": [
+            "Soalan tentang dasar ini boleh dihantar kepada admin Telegram yang dipautkan di bahagian bawah halaman atau ke e-mel hubungan yang disenaraikan di sana."
+          ]
+        }
+      ]
+    },
+    "notFound": {
+      "heading": "Halaman tidak dijumpai",
+      "body": "Halaman itu tidak wujud. Ia mungkin telah dipindahkan, atau alamatnya tersalah taip."
+    }
+  }
+}
