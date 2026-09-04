@@ -7,11 +7,12 @@ import { useLocale } from "@/hooks/useLocale";
 import { cn } from "@/lib/utils";
 
 /**
- * The live account card.
+ * The live account card, holographic treatment.
  *
- * It takes the whole TrackRecord and renders every field of it. There are no
- * props to hide, reorder, or omit individual statistics — that is a
- * compliance control, not an omission. Do not add any.
+ * It takes the whole TrackRecord and renders every field of it. Visual
+ * hierarchy is allowed (headline, primary tiles, secondary chips); omission
+ * is not. There are no props to hide, reorder, or drop a statistic — that
+ * is a compliance control, not an omission. Do not add any.
  */
 export function TrackRecordCard({ record }: { record: TrackRecord }) {
   const { t } = useTranslation();
@@ -29,67 +30,79 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
   const fee = useCountUp(record.performanceFee);
   const ageDays = useCountUp(age);
 
-  // Bull/bear strictly for a signed value. Zero stays neutral.
-  const gainTone =
-    record.gainPct > 0 ? "text-bull" : record.gainPct < 0 ? "text-bear" : "text-platinum";
+  // Bull/bear strictly for a signed value. Zero keeps the gold gradient.
+  const gainTone = record.gainPct > 0 ? "text-bull" : record.gainPct < 0 ? "text-bear" : "holo-value";
 
-  const rows: Array<{ label: string; value: string }> = [
+  const primary: Array<{ label: string; value: string }> = [
     { label: t("stats.balance"), value: formatMoney(balance, record.currency, locale) },
     { label: t("stats.equity"), value: formatMoney(equity, record.currency, locale) },
     { label: t("stats.maxDrawdown"), value: formatPct(drawdown, locale) },
+    { label: t("stats.accountAge"), value: t("stats.days", { count: Math.round(ageDays) }) },
+  ];
+  const secondary: Array<{ label: string; value: string }> = [
     { label: t("stats.closedTrades"), value: formatInt(Math.round(closed), locale) },
     { label: t("stats.openTrades"), value: formatInt(Math.round(open), locale) },
     { label: t("stats.leverage"), value: record.leverage },
     { label: t("stats.performanceFee"), value: `${formatInt(Math.round(fee), locale)}%` },
-    { label: t("stats.accountAge"), value: t("stats.days", { count: Math.round(ageDays) }) },
   ];
 
   return (
     <section
       aria-label={t("hero.cardAria", { name: record.accountName })}
-      className="metal-card metal-card--gold relative w-full max-w-[440px] overflow-hidden rounded-lg px-5 pb-5 pt-6 text-platinum sm:px-6"
+      className="holo w-full max-w-[460px] px-5 pb-5 pt-6 text-platinum sm:px-6"
     >
-      <span aria-hidden="true" className="gold-bar absolute inset-x-0 top-0 h-[2px]" />
+      <span aria-hidden="true" className="holo-corner holo-corner--tl" />
+      <span aria-hidden="true" className="holo-corner holo-corner--tr" />
+      <span aria-hidden="true" className="holo-corner holo-corner--bl" />
+      <span aria-hidden="true" className="holo-corner holo-corner--br" />
 
-      {/* Account name + live indicator + account number */}
-      <div className="flex items-baseline justify-between gap-3">
-        <h2 className="wdth-semi text-[18px] font-semibold">{record.accountName}</h2>
-        <span className="flex items-center gap-2 text-label text-slate">
-          <span aria-hidden="true" className="inline-block h-[6px] w-[6px] rounded-full bg-gold" />
+      {/* Identity row */}
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <h2 className="wdth-expanded text-[20px] font-bold tracking-tight">{record.accountName}</h2>
+          <p className="num mt-0.5 text-[12px] tracking-[0.08em] text-slate">
+            <span className="sr-only">{t("stats.accountId")}: </span>
+            {record.accountId}
+          </p>
+        </div>
+        <span className="holo-chip flex items-center gap-2 rounded-full px-2.5 py-1 text-[12px] text-slate">
+          <span aria-hidden="true" className="inline-block h-[6px] w-[6px] rounded-full bg-gold shadow-[0_0_8px_rgba(245,208,97,0.9)]" />
           {t("stats.live")}
         </span>
       </div>
-      <p className="num mt-0.5 text-label text-slate">
-        <span className="sr-only">{t("stats.accountId")}: </span>
-        {record.accountId}
-      </p>
 
-      <hr className="hairline-gold my-4 opacity-70" />
-
-      {/* Headline stat */}
-      <dl>
-        <div className="py-1">
+      {/* Headline value */}
+      <dl className="mt-6">
+        <div>
           <dt className="text-label text-slate">{t("stats.totalGain")}</dt>
-          <dd className={cn("text-stat mt-1", gainTone)}>{formatPct(gain, locale, true)}</dd>
+          <dd className={cn("num mt-1 text-[44px] font-medium leading-none tracking-tight md:text-[52px]", gainTone)}>
+            {formatPct(gain, locale, true)}
+          </dd>
         </div>
       </dl>
 
-      <hr className="my-4 border-t hairline" />
-
-      {/* Full stat set — always together */}
-      <dl className="text-[15px]">
-        {rows.map((row) => (
-          <div key={row.label} className="flex items-baseline justify-between gap-4 border-b hairline py-[7px] last:border-b-0">
-            <dt className="text-slate">{row.label}</dt>
-            <dd className="num text-right font-medium">{row.value}</dd>
+      {/* Primary tiles */}
+      <dl className="mt-6 grid grid-cols-2 gap-2.5">
+        {primary.map((row) => (
+          <div key={row.label} className="holo-tile rounded-lg px-3.5 py-3">
+            <dt className="text-[12px] leading-tight text-slate">{row.label}</dt>
+            <dd className="num mt-1 text-[19px] font-medium leading-none text-platinum md:text-[21px]">{row.value}</dd>
           </div>
         ))}
       </dl>
 
-      <hr className="hairline-gold my-4 opacity-70" />
+      {/* Secondary chips — still part of the same stat set, never dropped */}
+      <dl className="mt-3 grid grid-cols-2 gap-2">
+        {secondary.map((row) => (
+          <div key={row.label} className="holo-chip flex items-baseline justify-between gap-2 rounded-md px-3 py-2">
+            <dt className="text-[12px] leading-tight text-slate">{row.label}</dt>
+            <dd className="num text-[14px] font-medium leading-none text-platinum">{row.value}</dd>
+          </div>
+        ))}
+      </dl>
 
-      <p className="text-label text-slate">
-        {t("stats.lastUpdated")}{" "}
+      <p className="mt-5 flex items-center justify-between gap-3 border-t pt-3 text-[12px] text-slate" style={{ borderColor: "rgba(212,160,23,0.35)" }}>
+        <span>{t("stats.lastUpdated")}</span>
         <time dateTime={record.lastUpdated} className="num text-platinum/85">
           {formatDate(record.lastUpdated, locale)}
         </time>

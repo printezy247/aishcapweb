@@ -86,11 +86,6 @@
     ],
     "eyebrow": "Empat langkah"
   },
-  "whyNumbersSmall": {
-    "heading": "Mengapa angkanya kecil",
-    "body": "CT-1 bermula pada {{openedAt}} dengan {{start}} wang saya sendiri. Pada masa ini ditulis, itu {{days}} hari sejarah, dan itu bukan rekod prestasi. Ia titik permulaan. Saya menjalankan akaun ini secara terbuka selama {{total}} hari sebelum saya bercakap tentang keputusan di mana-mana, dan setiap angka di halaman ini disalin daripada papan pemuka broker, tanpa diubah. Anda tidak perlu menyertai. Memerhati sepanjang {{total}} hari itu adalah keputusan yang baik, dan saya lebih rela anda berbuat begitu daripada tergesa-gesa.",
-    "eyebrow": "Baca ini dahulu"
-  },
   "learnPreview": {
     "heading": "Belajar",
     "intro": "Penerangan mudah tentang cara copy trading berfungsi, apa yurannya, dan bagaimana rupa risikonya dalam praktik.",
