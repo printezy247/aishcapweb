@@ -131,7 +131,7 @@
   },
   "about": {
     "heading": "About Aish",
-    "portraitAlt": "Aish, head and shoulders, looking at his phone",
+    "portraitAlt": "Aish at a city window, checking his phone",
     "body": "I am Aish, a trader from Malaysia in my late twenties. I have been trading for 6 years, mostly gold (XAUUSD), and for most of that time I traded quietly and on my own. Aish Capital exists because I kept being asked the same questions about copy trading, and most of the public answers were either sales pitches or nonsense. So I opened CT-1 with {{start}}, put every number on this page, and committed to {{total}} days in the open before promoting anything. I am not licensed, I do not hold anyone's money, and I will tell you when I am wrong. One admin helps me run the Telegram group. That is the whole company.",
     "readMore": "More about Aish",
     "eyebrow": "The person",
@@ -148,7 +148,8 @@
         "value": "1",
         "label": "admin"
       }
-    ]
+    ],
+    "laptopAlt": "Aish working on a laptop by a window overlooking Kuala Lumpur"
   },
   "faq": {
     "heading": "Questions people ask",
@@ -201,8 +202,6 @@
     "legalHeading": "Legal",
     "contactHeading": "Contact",
     "telegramAdmin": "Telegram admin",
-    "companyHeading": "Company",
-    "registration": "Registration no.",
     "copyright": "© {{year}} {{name}}. All rights reserved.",
     "languageHeading": "Language"
   },
@@ -433,7 +432,7 @@
         {
           "title": "Contact",
           "body": [
-            "Questions about this policy can be sent to the Telegram admin linked in the footer or to the contact email listed there."
+            "Questions about this policy can be sent to the Telegram admin linked in the footer."
           ]
         }
       ]

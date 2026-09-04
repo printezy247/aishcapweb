@@ -131,7 +131,7 @@
   },
   "about": {
     "heading": "Tentang Aish",
-    "portraitAlt": "Aish, kepala dan bahu, sedang melihat telefonnya",
+    "portraitAlt": "Aish di tepi tingkap bandar, menyemak telefonnya",
     "body": "Saya Aish, pedagang dari Malaysia dalam lingkungan akhir dua puluhan. Saya telah berdagang selama 6 tahun, kebanyakannya emas (XAUUSD), dan sebahagian besar masa itu saya berdagang secara senyap dan bersendirian. Aish Capital wujud kerana saya sering ditanya soalan yang sama tentang copy trading, dan kebanyakan jawapan yang ada di luar sana sama ada jualan semata-mata atau karut. Jadi saya membuka CT-1 dengan {{start}}, meletakkan setiap angka di halaman ini, dan berjanji untuk {{total}} hari secara terbuka sebelum mempromosikan apa-apa. Saya tidak berlesen, saya tidak memegang wang sesiapa, dan saya akan beritahu anda apabila saya silap. Seorang admin membantu saya menguruskan kumpulan Telegram. Itulah keseluruhan syarikat ini.",
     "readMore": "Lebih lanjut tentang Aish",
     "eyebrow": "Orangnya",
@@ -148,7 +148,8 @@
         "value": "1",
         "label": "admin"
       }
-    ]
+    ],
+    "laptopAlt": "Aish bekerja dengan komputer riba di tepi tingkap menghadap Kuala Lumpur"
   },
   "faq": {
     "heading": "Soalan yang sering ditanya",
@@ -201,8 +202,6 @@
     "legalHeading": "Undang-undang",
     "contactHeading": "Hubungi",
     "telegramAdmin": "Admin Telegram",
-    "companyHeading": "Syarikat",
-    "registration": "No. pendaftaran",
     "copyright": "© {{year}} {{name}}. Hak cipta terpelihara.",
     "languageHeading": "Bahasa"
   },
@@ -433,7 +432,7 @@
         {
           "title": "Hubungi",
           "body": [
-            "Soalan tentang dasar ini boleh dihantar kepada admin Telegram yang dipautkan di bahagian bawah halaman atau ke e-mel hubungan yang disenaraikan di sana."
+            "Soalan tentang dasar ini boleh dihantar kepada admin Telegram yang dipautkan di bahagian bawah halaman."
           ]
         }
       ]

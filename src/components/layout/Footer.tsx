@@ -24,7 +24,7 @@ export function Footer() {
   return (
     <footer className="hero-backdrop hero-backdrop--soft border-t hairline bg-navy-abyss text-legal text-platinum/85">
       <Container className="py-12 md:py-16">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
+        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr] md:gap-8">
           {/* Brand + the risk warning. Real text on every page. Never an image. */}
           <section aria-labelledby="footer-risk" className="max-w-prose">
             <div className="mb-5">
@@ -67,22 +67,9 @@ export function Footer() {
                   {t("footer.telegramAdmin")} · @ejjmili7
                 </a>
               </li>
-              <li className="text-slate">{SITE.company.email}</li>
             </ul>
           </section>
 
-          <section aria-labelledby="footer-company">
-            <h2 id="footer-company" className={colHeading}>
-              {t("footer.companyHeading")}
-            </h2>
-            <address className="not-italic text-slate">
-              <div>{SITE.company.legalName}</div>
-              <div>
-                {t("footer.registration")} {SITE.company.registrationNo}
-              </div>
-              <div>{SITE.company.address}</div>
-            </address>
-          </section>
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t hairline pt-6 sm:flex-row sm:items-center sm:justify-between">

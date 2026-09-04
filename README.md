@@ -46,15 +46,15 @@ not be guessed:
 | Placeholder | Where |
 | --- | --- |
 | `[BROKER]`, `[BROKER_REFERRAL_URL]` | `src/config/site.ts`, locale files |
-| `[COMPANY LEGAL NAME]`, `[SSM REGISTRATION NO.]`, `[REGISTERED ADDRESS]`, `[CONTACT EMAIL]` | `src/config/site.ts` |
 
-Assets to supply (upload via GitHub → `public/images` → Add file → Upload files):
+Company registration details are intentionally absent from the footer for now (client decision); add a company block back in `Footer.tsx` when they are confirmed.
 
-- `public/images/logo.png` — brand wordmark, transparent background (a text wordmark shows until it exists)
-- `public/images/aish-portrait.jpg` — the original portrait. Then run
-  `npm run crop:portrait` to generate the head-and-shoulders crops
-  (`aish-portrait-800.jpg`, `aish-portrait-400.jpg`) the site uses, and commit those.
-  Tune with `--top 0.05 --height 0.48 --cx 0.5` if the face is off-centre.
+Brand assets: masters live in `/brand` (never deployed). Run `npm run brand:assets`
+to regenerate `public/images/logo.png` and the two photographs the site uses
+(`aish-portrait-*.jpg`, city window; `aish-laptop-*.jpg`, laptop by the window).
+The car photographs in `/brand/reference` must never be copied into `public/`.
+`brand/reference/ct-dashboard-*.jpg` is the broker screenshot the CT-1 figures
+were copied from.
 
 Have a native Malay speaker review `src/locales/ms.json` before launch,
 especially the compliance strings.
