@@ -67,6 +67,8 @@ third-party scripts on the page without a reason, one gold button per viewport.
 
 ## Tier 5 — Hygiene
 
+Done 2026-09-04: the "Legal" tab was removed from the header on the client's decision; every `/legal/*` page stays reachable from the footer column, the footer risk warning and the inline risk links. Header tabs got a hover / focus animation (`.nav-link` in `src/index.css`).
+
 Native Malay review of `ms.json`; accessibility pass (focus order, contrast on the new holo card, `aria` on the ticker); Lighthouse CI in GitHub Actions with a performance budget; an error boundary and a styled 404; a `CLAUDE.md` for future sessions.
 
 ---
