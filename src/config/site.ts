@@ -12,7 +12,7 @@ export const SITE = {
    */
   links: {
     publicChannel: "[PUBLIC_CHANNEL_URL]",
-    tiktok: "[TIKTOK_URL]",
+    tiktok: "https://www.tiktok.com/@aishselalusenyum",
     community: "[COMMUNITY_GROUP_URL]",
     privateRoom: "[PRIVATE_ROOM_URL]",
   },

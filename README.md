@@ -25,6 +25,19 @@ broker dashboard, commit, deploy. The hero renders every field in that object;
 there is no way to hide one. The day counter and account age are derived from
 `openedAt` and are never typed by hand.
 
+## The other file the admin edits
+
+`src/config/community.ts` holds the Telegram group's member count and the date
+it was counted, read from the group header. Update it when you update the CT-1
+figures. The date renders publicly, so never estimate or round up.
+
+## Testimonials
+
+`src/content/testimonials.ts` is empty on purpose and the section renders
+nothing until it has at least two entries. The publishing rules are in that
+file; the collection procedure and the consent messages for the admin are in
+[`docs/testimonial-collection.md`](docs/testimonial-collection.md).
+
 ## Compliance controls built into the code
 
 - A short risk warning is real text in the footer of every page (`Footer.tsx`), linking to the full disclosure. At the client's request the licensing statement (not licensed by the SC or BNM) appears only on the legal pages, not in the footer, FAQ or About copy.
@@ -47,7 +60,7 @@ not be guessed:
 | Placeholder | Where |
 | --- | --- |
 | `[BROKER]`, `[BROKER_REFERRAL_URL]` | `src/config/site.ts`, locale files |
-| `[PUBLIC_CHANNEL_URL]`, `[TIKTOK_URL]`, `[COMMUNITY_GROUP_URL]`, `[PRIVATE_ROOM_URL]` | `src/config/site.ts` — until set, the buttons go to the admin's Telegram |
+| `[PUBLIC_CHANNEL_URL]`, `[COMMUNITY_GROUP_URL]`, `[PRIVATE_ROOM_URL]` | `src/config/site.ts` — until set, the buttons go to the admin's Telegram |
 
 Company registration details are intentionally absent from the footer for now (client decision); add a company block back in `Footer.tsx` when they are confirmed.
 

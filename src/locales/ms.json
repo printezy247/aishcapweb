@@ -464,5 +464,19 @@
         "platform": "Telegram"
       }
     ]
+  },
+  "community": {
+    "eyebrow": "Kumpulan",
+    "heading": "{{count}} orang sudah berada di dalam kumpulan",
+    "groupNote": "Kumpulan ini dinamakan {{groupName}}.",
+    "body": "Kumpulan Telegram ini telah berjalan lebih lama daripada CT-1. Ahli-ahli menyiarkan carta mereka sendiri, berdebat tentang paras harga, dan memberitahu Aish apabila dia silap. Akses memerlukan akaun broker yang dibuka dan didepositkan melalui pautan kami; admin akan membimbing anda.",
+    "counted": "Jumlah ahli setakat {{date}}",
+    "join": "Sertai kumpulan"
+  },
+  "testimonials": {
+    "eyebrow": "Ahli",
+    "heading": "Kata mereka",
+    "memberSince": "ahli sejak {{date}}",
+    "note": "Petikan disiarkan dengan kebenaran setiap ahli. Ahli tidak dibayar dan tidak menerima apa-apa untuknya."
   }
 }
