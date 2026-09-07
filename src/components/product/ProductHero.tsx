@@ -16,7 +16,7 @@ export function ProductHero({ record }: { record: TrackRecord }) {
   return (
     <section id="overview" aria-labelledby="product-heading" className="hero-backdrop scroll-mt-28 bg-navy-midnight py-12 md:py-24">
       <Container>
-        <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_440px] md:gap-14">
+        <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-14">
           <div className="max-w-prose">
             <p className="eyebrow mb-3 flex items-center gap-2">
               <span aria-hidden="true" className="inline-block h-[6px] w-[6px] rounded-full bg-gold" />
@@ -25,7 +25,7 @@ export function ProductHero({ record }: { record: TrackRecord }) {
             <h1 id="product-heading" className="text-display">
               {t("product.heading")}
             </h1>
-            <div className="holo-glow mt-8 md:hidden">
+            <div className="holo-glow mt-8 lg:hidden">
               <TrackRecordCard record={record} />
             </div>
             <p className="mt-6 text-[17px] text-platinum/90 md:text-[18px]">{t("product.intro")}</p>
@@ -56,7 +56,7 @@ export function ProductHero({ record }: { record: TrackRecord }) {
               ))}
             </ul>
           </div>
-          <div className="holo-glow hidden md:block">
+          <div className="holo-glow hidden lg:block">
             <TrackRecordCard record={record} />
           </div>
         </div>

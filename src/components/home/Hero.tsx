@@ -18,7 +18,7 @@ export function Hero() {
   return (
     <section aria-labelledby="hero-heading" className="hero-backdrop bg-navy-midnight py-12 md:py-24">
       <Container>
-        <div className="grid items-start gap-10 md:grid-cols-[minmax(0,1fr)_440px] md:gap-14">
+        <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-14">
           <div className="max-w-prose">
             <p className="eyebrow mb-3 flex items-center gap-2">
               <span aria-hidden="true" className="inline-block h-[6px] w-[6px] rounded-full bg-gold" />
@@ -28,7 +28,7 @@ export function Hero() {
               {t("hero.building", { n: day, total: record.verificationDays })}
             </h1>
 
-            <div className="holo-glow mt-8 md:hidden">
+            <div className="holo-glow mt-8 lg:hidden">
               <TrackRecordCard record={record} />
             </div>
 
@@ -67,7 +67,7 @@ export function Hero() {
             </ul>
           </div>
 
-          <div className="holo-glow hidden md:block">
+          <div className="holo-glow hidden lg:block">
             <TrackRecordCard record={record} />
           </div>
         </div>

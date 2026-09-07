@@ -84,7 +84,7 @@ export function Header() {
               to={item.to}
               end={item.end}
               className={({ isActive }) =>
-                cn(linkClass({ isActive }), "nav-link--row border-l-2 pl-3", isActive ? "border-gold" : "border-transparent")
+                cn(linkClass({ isActive }), "nav-link--row border-l-2 py-3.5 pl-3 text-[16px]", isActive ? "border-gold" : "border-transparent")
               }
             >
               {item.label}

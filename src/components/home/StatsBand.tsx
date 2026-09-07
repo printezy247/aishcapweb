@@ -25,9 +25,9 @@ export function StatsBand() {
   return (
     <section aria-label={t("band.aria")} className="border-b hairline bg-navy-abyss">
       <Container>
-        <ul className="grid grid-cols-2 gap-y-6 py-8 md:grid-cols-4 md:py-10">
+        <ul className="grid grid-cols-2 gap-y-6 py-8 md:py-10 lg:grid-cols-4">
           {items.map((it, i) => (
-            <Reveal key={it.caption} as="li" index={i} className="px-2 md:border-l md:hairline md:px-6 md:first:border-l-0 md:first:pl-0">
+            <Reveal key={it.caption} as="li" index={i} className="px-2 lg:border-l lg:hairline lg:px-6 lg:first:border-l-0 lg:first:pl-0">
               <p className="num text-[30px] font-medium leading-none text-platinum md:text-[36px]">
                 <Num value={it.value} />
                 {it.suffix && <span className="text-[18px] text-slate md:text-[20px]">{it.suffix}</span>}
