@@ -28,7 +28,7 @@ export function Hero() {
               {t("hero.building", { n: day, total: record.verificationDays })}
             </h1>
 
-            <div className="mt-8 md:hidden">
+            <div className="holo-glow mt-8 md:hidden">
               <TrackRecordCard record={record} />
             </div>
 
@@ -60,14 +60,14 @@ export function Hero() {
             <ul className="mt-8 grid gap-2 text-[14px] text-platinum/85 sm:grid-cols-3 sm:gap-4">
               {proof.map((item) => (
                 <li key={item} className="flex items-start gap-2 border-t hairline pt-3">
-                  <span aria-hidden="true" className="mt-[7px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-gold/70" />
+                  <span aria-hidden="true" className="gold-bar mt-[9px] h-[2px] w-5 shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="hidden md:block">
+          <div className="holo-glow hidden md:block">
             <TrackRecordCard record={record} />
           </div>
         </div>

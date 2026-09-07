@@ -55,6 +55,8 @@ third-party scripts on the page without a reason, one gold button per viewport.
 | 3.7 | **Done (Tier 3).** **Micro-interactions**: `backdrop-filter: saturate(180%) blur(20px)` on the sticky bars, `scale(0.96)` on button press, Magic UI border-beam or shine on the primary card only | Cheap premium cues; zero JS. | S |
 | 3.8 | **Done (Tier 3).** **Zero-JS borrows** from Magic UI / Tailark: bento layout for "Where to find Aish", shine-border for the hero card, marquee already in place | Premium texture without touching the bundle budget. | S |
 
+Borrows shipped 2026-09-07 from the four client-supplied repos (see `docs/reference-repos.md`): stats band under the hero, card hover lift, gold glow behind the account card, gradient bar list accents, route fade-in, mobile-menu slide-in, closing CTA band. All CSS or a few lines of React; no new dependency.
+
 ## Tier 4 — Structure and pages (after the flow is decided)
 
 | # | Improvement | Why it matters | Effort |

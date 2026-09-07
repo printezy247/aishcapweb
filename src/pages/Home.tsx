@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/home/Hero";
+import { StatsBand } from "@/components/home/StatsBand";
+import { ClosingCta } from "@/components/home/ClosingCta";
 import { MarketTicker } from "@/components/home/MarketTicker";
 import { GoldSection } from "@/components/home/GoldSection";
 import { HowItWorks } from "@/components/home/HowItWorks";
@@ -21,6 +23,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatsBand />
       <MarketTicker />
       <GoldSection />
       <HowItWorks />
@@ -46,6 +49,7 @@ export default function Home() {
           <FaqBlock />
         </div>
       </Section>
+      <ClosingCta />
       <Footnotes />
     </>
   );

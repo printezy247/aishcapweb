@@ -64,7 +64,7 @@ export function HowItWorks() {
         <Reveal className="mt-16 md:mt-24">
           <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">{t("compare.heading")}</h3>
           <p className="mt-2 max-w-prose text-platinum/80">{t("compare.intro")}</p>
-          <div className="mt-6 overflow-x-auto">
+          <div className="mt-6 overflow-x-auto" tabIndex={0} role="region" aria-label={t("compare.heading")}>
             <table className="w-full min-w-[640px] border-collapse text-[15px]">
               <thead>
                 <tr>

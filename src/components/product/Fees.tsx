@@ -41,7 +41,7 @@ export function Fees({ record }: { record: TrackRecord }) {
           <ul className="mt-4 space-y-3 text-platinum/90">
             {never.map((line) => (
               <li key={line} className="flex gap-3 border-t hairline pt-3">
-                <span aria-hidden="true" className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-gold/70" />
+                <span aria-hidden="true" className="gold-bar mt-[11px] h-[2px] w-5 shrink-0" />
                 <span>{line}</span>
               </li>
             ))}

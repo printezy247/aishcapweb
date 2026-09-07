@@ -658,5 +658,16 @@
   "error": {
     "heading": "Something broke on this page",
     "body": "The rest of the site still works. Go back to the home page, or tell the admin what you were doing when it happened."
+  },
+  "band": {
+    "aria": "Key facts",
+    "day": "Day of the {{total}}-day public window",
+    "members": "in {{group}}, counted {{date}}",
+    "fee": "fee on gains only, never on losses",
+    "years": "years trading XAUUSD"
+  },
+  "cta": {
+    "heading": "Still have a question?",
+    "body": "The admin answers on Telegram. You do not need an account to ask, and nobody will ask you to send money."
   }
 }

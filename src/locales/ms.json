@@ -658,5 +658,16 @@
   "error": {
     "heading": "Ada yang rosak di halaman ini",
     "body": "Bahagian lain laman masih berfungsi. Kembali ke halaman utama, atau beritahu admin apa yang anda lakukan semasa ia berlaku."
+  },
+  "band": {
+    "aria": "Fakta utama",
+    "day": "Hari dalam tempoh terbuka {{total}} hari",
+    "members": "dalam {{group}}, dikira {{date}}",
+    "fee": "yuran ke atas keuntungan sahaja, tidak ke atas kerugian",
+    "years": "tahun berdagang XAUUSD"
+  },
+  "cta": {
+    "heading": "Masih ada soalan?",
+    "body": "Admin menjawab di Telegram. Anda tidak perlu ada akaun untuk bertanya, dan tiada siapa akan meminta anda menghantar wang."
   }
 }

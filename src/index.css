@@ -132,7 +132,25 @@
       inset 0 -1px 0 rgba(0, 0, 0, 0.35),
       0 1px 2px rgba(0, 0, 0, 0.4);
   }
-  /* Reserved for the hero account card. */
+  /* Pointer devices only: cards lift a touch on hover. `translate` composes
+     with the reveal transform instead of fighting it. */
+  @media (hover: hover) {
+    .metal-card {
+      transition:
+        translate 180ms ease,
+        border-color 180ms ease,
+        box-shadow 180ms ease;
+    }
+    .metal-card:hover {
+      translate: 0 -2px;
+      border-color: rgba(232, 232, 232, 0.28);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.09),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.35),
+        0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+  }
+  /* Gold-edged card: the closing call to action. */
   .metal-card--gold {
     border-color: rgba(212, 160, 23, 0.45);
     box-shadow:
@@ -291,6 +309,40 @@
   }
   .faq[open] summary svg {
     transform: rotate(180deg);
+  }
+  /* Soft gold glow behind the account card. */
+  .holo-glow {
+    position: relative;
+    isolation: isolate;
+  }
+  .holo-glow::before {
+    content: "";
+    position: absolute;
+    inset: -48px;
+    z-index: -1;
+    background: radial-gradient(closest-side, rgba(212, 160, 23, 0.16), transparent 72%);
+    filter: blur(40px);
+    pointer-events: none;
+  }
+
+  /* Route change and mobile menu: a short fade, transform only, no layout shift. */
+  .route-in {
+    animation: route-in 240ms ease-out both;
+  }
+  @keyframes route-in {
+    from {
+      opacity: 0;
+      translate: 0 6px;
+    }
+  }
+  .menu-in {
+    animation: menu-in 180ms ease-out both;
+  }
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+      translate: 0 -6px;
+    }
   }
   .glass-bar {
     backdrop-filter: saturate(180%) blur(20px);
