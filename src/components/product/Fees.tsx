@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/Reveal";
-import { Fn } from "@/components/Footnotes";
 import { BrokerLink } from "@/components/AffiliateDisclosure";
 import type { TrackRecord } from "@/lib/track-record";
 
@@ -28,7 +27,6 @@ export function Fees({ record }: { record: TrackRecord }) {
             <p className="text-label text-slate">{item.who}</p>
             <h3 className="mt-3 text-[18px] font-semibold leading-snug">
               {item.title}
-              {i === 1 && <Fn n={2} />}
             </h3>
             <p className="mt-2 flex-1 text-platinum/80">{item.body}</p>
           </Reveal>
@@ -41,7 +39,7 @@ export function Fees({ record }: { record: TrackRecord }) {
           <ul className="mt-4 space-y-3 text-platinum/90">
             {never.map((line) => (
               <li key={line} className="flex gap-3 border-t hairline pt-3">
-                <span aria-hidden="true" className="mt-[9px] inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-gold/70" />
+                <span aria-hidden="true" className="gold-bar mt-[11px] h-[2px] w-5 shrink-0" />
                 <span>{line}</span>
               </li>
             ))}

@@ -75,12 +75,8 @@ export function Header() {
         </div>
       </Container>
 
-      <nav
-        id="mobile-nav"
-        aria-label="Primary"
-        hidden={!open}
-        className="border-t hairline bg-navy-midnight/95 backdrop-blur-md md:hidden"
-      >
+      {open && (
+      <nav id="mobile-nav" aria-label="Primary" className="menu-in border-t hairline bg-navy-midnight/95 backdrop-blur-md md:hidden">
         <Container className="flex flex-col py-2">
           {items.map((item) => (
             <NavLink
@@ -96,6 +92,7 @@ export function Header() {
           ))}
         </Container>
       </nav>
+      )}
     </header>
   );
 }

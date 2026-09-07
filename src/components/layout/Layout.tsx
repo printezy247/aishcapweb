@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -8,6 +9,7 @@ import { useSeo } from "@/hooks/useSeo";
 
 export function Layout({ children }: { children: ReactNode }) {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
   useSeo();
   return (
     <div className="flex min-h-dvh flex-col">
@@ -18,7 +20,7 @@ export function Layout({ children }: { children: ReactNode }) {
         {t("nav.skipToContent")}
       </a>
       <Header />
-      <main id="main" className="flex-1 pb-16 lg:pb-0">
+      <main id="main" key={pathname} className="route-in flex-1 pb-16 lg:pb-0">
         {children}
       </main>
       <Footer />

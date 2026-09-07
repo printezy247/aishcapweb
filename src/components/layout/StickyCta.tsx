@@ -44,7 +44,8 @@ export function StickyCta() {
   if (isProductPage(pathname)) return null;
 
   return (
-    <div
+    <aside
+      aria-label={record.accountName}
       aria-hidden={!visible}
       className={
         "glass-bar fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/80 transition-transform duration-300 lg:hidden " +
@@ -61,6 +62,6 @@ export function StickyCta() {
           {t("buttons.joinTelegram")}
         </ButtonLink>
       </div>
-    </div>
+    </aside>
   );
 }

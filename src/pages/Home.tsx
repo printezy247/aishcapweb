@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Hero } from "@/components/home/Hero";
+import { StatsBand } from "@/components/home/StatsBand";
+import { ClosingCta } from "@/components/home/ClosingCta";
 import { MarketTicker } from "@/components/home/MarketTicker";
 import { GoldSection } from "@/components/home/GoldSection";
 import { HowItWorks } from "@/components/home/HowItWorks";
@@ -9,7 +11,6 @@ import { AboutBlock } from "@/components/home/AboutAish";
 import { OfferingsBlock } from "@/components/home/Offerings";
 import { EmailBlock, FollowBlock } from "@/components/home/EmailCapture";
 import { FaqBlock } from "@/components/home/Faq";
-import { Footnotes } from "@/components/Footnotes";
 import { Section } from "@/components/layout/Section";
 import { SITE } from "@/config/site";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <StatsBand />
       <MarketTicker />
       <GoldSection />
       <HowItWorks />
@@ -46,7 +48,7 @@ export default function Home() {
           <FaqBlock />
         </div>
       </Section>
-      <Footnotes />
+      <ClosingCta />
     </>
   );
 }

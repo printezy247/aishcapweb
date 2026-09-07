@@ -6,7 +6,6 @@ import { COMMUNITY } from "@/config/community";
 import { SITE, resolveLink } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 import { formatDate } from "@/lib/format";
-import { Fn } from "@/components/Footnotes";
 import { Num } from "@/components/Num";
 
 /**
@@ -25,7 +24,6 @@ export function CommunityBlock() {
       <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">
         <span className="num"><Num value={COMMUNITY.members} /></span>{" "}
         {t("community.heading", { count: "" }).trim()}
-        <Fn n={3} />
       </h3>
       <p className="mt-3 text-label text-slate">{t("community.groupNote", { groupName: COMMUNITY.groupName })}</p>
       <p className="mt-5 text-platinum/90">{t("community.body")}</p>

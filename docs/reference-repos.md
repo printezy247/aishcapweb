@@ -20,6 +20,15 @@ heavy behind the section that needs it.
 | [flackr/scroll-timeline](https://github.com/flackr/scroll-timeline) | Polyfill for CSS scroll-driven animations | Optional; gate with `@supports` |
 | [d3/d3-hierarchy](https://github.com/d3/d3-hierarchy) | Treemap layout | Only if a heatmap is ever wanted (probably never) |
 
+## Reviewed 2026-09-07 (client-supplied)
+
+| Repo | Verdict | Borrowed | Rejected, and why |
+| --- | --- | --- | --- |
+| [adrianhajdin/project_hoobank](https://github.com/adrianhajdin/project_hoobank) | 2022 JS Mastery fintech landing (React + Tailwind, Poppins) | Stats row under the hero (`StatsBand.tsx`, facts only, dated), card hover lift, soft blur glow behind the hero card, closing CTA band (glass button) | Client logo strip and feedback carousel (brief), discount pill (promotional), app-store buttons, gradient text on numbers (colour must not carry meaning), Poppins |
+| [itsDaiton/business-website-template](https://github.com/itsDaiton/business-website-template) | HooBank fork, same sections | Nothing beyond the above | Same |
+| [adrianhajdin/project_modern_ui_ux_gpt3](https://github.com/adrianhajdin/project_modern_ui_ux_gpt3) | CSS-only landing (BEM, Manrope) | Gradient bar accents on list items, short scale/slide entrance animations reused as the route fade-in and mobile-menu slide-in (CSS only) | Header email input (`emailSignup` off), text gradient headline, blog grid with stock images |
+| [tenfoldmarc/website-builder-setup](https://github.com/tenfoldmarc/website-builder-setup) | Claude Code setup skill, no site code | The idea of page transitions and hover effects, done in CSS | Framer Motion (bundle budget), 21st.dev Magic (MCP + API key, generic components), "UI/UX Pro Max" style prompts (the brand is already fixed) |
+
 ## Use with care
 
 | Repo | Licence | Note |

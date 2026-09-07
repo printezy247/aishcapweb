@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Section } from "@/components/layout/Section";
 import { Reveal } from "@/components/Reveal";
-import { Fn } from "@/components/Footnotes";
 import { useLocale } from "@/hooks/useLocale";
 import { formatDate, formatInt, formatMoney, formatPct } from "@/lib/format";
 import { accountAgeDays, verificationDay, type TrackRecord } from "@/lib/track-record";
@@ -24,7 +23,7 @@ export function Performance({ record }: { record: TrackRecord }) {
   const glossary = t("product.performance.glossary", { returnObjects: true }) as Term[];
   const gainTone = record.gainPct > 0 ? "text-bull" : record.gainPct < 0 ? "text-bear" : "text-platinum";
 
-  const rows: Array<{ label: string; value: string; fn?: number; tone?: string }> = [
+  const rows: Array<{ label: string; value: string; tone?: string }> = [
     { label: t("product.performance.rows.account"), value: record.accountName },
     { label: t("stats.accountId"), value: record.accountId },
     { label: t("product.performance.rows.opened"), value: formatDate(record.openedAt, locale) },
@@ -32,12 +31,12 @@ export function Performance({ record }: { record: TrackRecord }) {
     { label: t("product.performance.rows.window"), value: t("product.performance.rows.dayOf", { n: day, total: record.verificationDays }) },
     { label: t("stats.balance"), value: formatMoney(record.balance, record.currency, locale) },
     { label: t("stats.equity"), value: formatMoney(record.equity, record.currency, locale) },
-    { label: t("stats.totalGain"), value: formatPct(record.gainPct, locale, true), fn: 1, tone: gainTone },
+    { label: t("stats.totalGain"), value: formatPct(record.gainPct, locale, true), tone: gainTone },
     { label: t("stats.maxDrawdown"), value: formatPct(record.maxDrawdownPct, locale) },
     { label: t("stats.closedTrades"), value: formatInt(record.closedTrades, locale) },
     { label: t("stats.openTrades"), value: formatInt(record.openTrades, locale) },
     { label: t("stats.leverage"), value: record.leverage },
-    { label: t("stats.performanceFee"), value: formatPct(record.performanceFee, locale), fn: 2 },
+    { label: t("stats.performanceFee"), value: formatPct(record.performanceFee, locale) },
     { label: t("product.performance.rows.currency"), value: record.currency },
     { label: t("stats.lastUpdated"), value: formatDate(record.lastUpdated, locale) },
   ];
@@ -59,7 +58,6 @@ export function Performance({ record }: { record: TrackRecord }) {
                 <tr key={r.label}>
                   <th scope="row" className="border-b hairline py-3 pr-4 text-left text-label font-semibold text-slate">
                     {r.label}
-                    {r.fn && <Fn n={r.fn} />}
                   </th>
                   <td className={cn("num border-b hairline py-3 text-right", r.tone ?? "text-platinum")}>{r.value}</td>
                 </tr>

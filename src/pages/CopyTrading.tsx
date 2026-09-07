@@ -4,7 +4,6 @@ import { ProductHero } from "@/components/product/ProductHero";
 import { Performance } from "@/components/product/Performance";
 import { Steps } from "@/components/product/Steps";
 import { Fees } from "@/components/product/Fees";
-import { Footnotes } from "@/components/Footnotes";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { CT1 } from "@/config/track-record";
 
@@ -24,7 +23,6 @@ export default function CopyTrading() {
       <Performance record={record} />
       <Steps />
       <Fees record={record} />
-      <Footnotes only={[1, 2]} />
     </>
   );
 }

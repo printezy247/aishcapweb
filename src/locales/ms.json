@@ -486,16 +486,6 @@
     "note": "Petikan disiarkan dengan kebenaran setiap ahli. Ahli tidak dibayar dan tidak menerima apa-apa untuknya.",
     "rating": "{{n}} daripada 5 bintang"
   },
-  "footnotes": {
-    "heading": "Nota",
-    "back": "Kembali ke rujukan",
-    "items": [
-      "Angka disalin secara manual daripada papan pemuka broker pada tarikh yang ditunjukkan dan belum disahkan secara bebas. Pengesahan pihak ketiga dirancang selepas tempoh 90 hari.",
-      "Yuran prestasi dikenakan ke atas keuntungan sahaja, tidak sekali-kali ke atas kerugian. Mekanismenya ditetapkan oleh sistem copy trading broker; baca termanya sebelum menyambung.",
-      "Jumlah ahli dibaca daripada pengepala kumpulan Telegram pada tarikh yang ditunjukkan. Ia bukan anggaran.",
-      "Petikan disiarkan dengan kebenaran bertulis setiap ahli, disimpan di luar laman ini. Ahli tidak dibayar dan tidak menerima apa-apa untuknya."
-    ]
-  },
   "gold": {
     "eyebrow": "Konteks pasaran",
     "heading": "Emas, pasaran yang Aish dagangkan",
@@ -658,5 +648,16 @@
   "error": {
     "heading": "Ada yang rosak di halaman ini",
     "body": "Bahagian lain laman masih berfungsi. Kembali ke halaman utama, atau beritahu admin apa yang anda lakukan semasa ia berlaku."
+  },
+  "band": {
+    "aria": "Fakta utama",
+    "day": "Hari dalam tempoh terbuka {{total}} hari",
+    "members": "dalam {{group}}, dikira {{date}}",
+    "fee": "yuran ke atas keuntungan sahaja, tidak ke atas kerugian",
+    "years": "tahun berdagang XAUUSD"
+  },
+  "cta": {
+    "heading": "Masih ada soalan?",
+    "body": "Admin menjawab di Telegram. Anda tidak perlu ada akaun untuk bertanya, dan tiada siapa akan meminta anda menghantar wang."
   }
 }
