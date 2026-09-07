@@ -21,7 +21,7 @@ export function Fees({ record }: { record: TrackRecord }) {
 
   return (
     <Section id="fees" eyebrow={t("product.fees.eyebrow")} heading={t("product.fees.heading")} intro={t("product.fees.intro")} className="scroll-mt-28">
-      <ol className="grid gap-4 md:grid-cols-3 md:gap-5">
+      <ol className="grid gap-4 md:gap-5 lg:grid-cols-3">
         {items.map((item, i) => (
           <Reveal key={item.title} as="li" index={i} className="metal-card flex flex-col rounded-lg p-6">
             <p className="text-label text-slate">{item.who}</p>

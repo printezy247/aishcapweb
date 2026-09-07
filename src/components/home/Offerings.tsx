@@ -11,12 +11,12 @@ interface Item {
   platform: string;
 }
 
-/** Order matches offerings.items in the locale files. Bento spans: wide, narrow, narrow, wide. */
-const ACCESS: Array<{ url: string; gated: boolean; span: string }> = [
-  { url: SITE.links.publicChannel, gated: false, span: "md:col-span-2" },
-  { url: SITE.links.tiktok, gated: false, span: "md:col-span-1" },
-  { url: SITE.links.community, gated: true, span: "md:col-span-1" },
-  { url: SITE.links.privateRoom, gated: true, span: "md:col-span-2" },
+/** Order matches offerings.items in the locale files. Four equal cards, two per row from tablet up. */
+const ACCESS: Array<{ url: string; gated: boolean }> = [
+  { url: SITE.links.publicChannel, gated: false },
+  { url: SITE.links.tiktok, gated: false },
+  { url: SITE.links.community, gated: true },
+  { url: SITE.links.privateRoom, gated: true },
 ];
 
 /**
@@ -35,12 +35,12 @@ export function OfferingsBlock() {
         <h3 className="wdth-semi text-[24px] font-semibold leading-tight md:text-[28px]">{t("offerings.heading")}</h3>
         <p className="mt-2 max-w-prose text-platinum/80">{t("offerings.intro")}</p>
       </Reveal>
-      <ul className="mt-6 grid gap-4 md:grid-cols-3 md:gap-5">
+      <ul className="mt-6 grid gap-4 md:grid-cols-2 md:gap-5">
         {items.map((item, i) => {
           const access = ACCESS[i];
           const { href, isPlaceholder } = resolveLink(access.url);
           return (
-            <Reveal key={item.title} as="li" index={i} className={cn("metal-card relative flex flex-col rounded-lg p-6", access.span, access.gated && "overflow-hidden")}>
+            <Reveal key={item.title} as="li" index={i} className={cn("metal-card relative flex flex-col rounded-lg p-6", access.gated && "overflow-hidden")}>
               {access.gated && <span aria-hidden="true" className="gold-bar absolute inset-x-0 top-0 h-[2px]" />}
               <div className="flex items-start justify-between gap-3">
                 <p className="text-label text-slate">{item.platform}</p>
@@ -61,8 +61,9 @@ export function OfferingsBlock() {
           );
         })}
       </ul>
-      <Reveal index={4} className="mt-6">
-        <p id={noteId} className="mb-3 max-w-prose text-legal text-platinum/85">{t("offerings.gatedNote")}</p>
+      {/* Note and disclosure share a row from tablet up; on phones they stack. */}
+      <Reveal index={4} className="mt-6 grid gap-4 md:grid-cols-2 md:items-start">
+        <p id={noteId} className="text-legal text-platinum/85">{t("offerings.gatedNote")}</p>
         <AffiliateDisclosure />
       </Reveal>
     </div>

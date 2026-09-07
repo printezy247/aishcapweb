@@ -24,9 +24,9 @@ export function Footer() {
   return (
     <footer className="hero-backdrop hero-backdrop--soft border-t hairline bg-navy-abyss text-legal text-platinum/85">
       <Container className="py-12 md:py-16">
-        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr] md:gap-8">
+        <div className="grid gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-[1.6fr_1fr_1fr]">
           {/* Brand + the risk warning. Real text on every page. Never an image. */}
-          <section aria-labelledby="footer-risk" className="max-w-prose">
+          <section aria-labelledby="footer-risk" className="max-w-prose sm:col-span-2 lg:col-span-1">
             <div className="mb-5">
               <Logo className="h-8" />
             </div>
