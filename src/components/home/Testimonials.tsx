@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { Reveal } from "@/components/Reveal";
 import { TESTIMONIALS } from "@/content/testimonials";
 import { useLocale } from "@/hooks/useLocale";
-import { Fn } from "@/components/Footnotes";
 
 /** Member quotes with consent on file. Renders nothing below two entries. */
 export function TestimonialsBlock() {
@@ -40,7 +39,6 @@ export function TestimonialsBlock() {
       <Reveal index={4}>
         <p className="mt-6 max-w-prose text-legal text-slate">
           {t("testimonials.note")}
-          <Fn n={4} />
         </p>
       </Reveal>
     </div>

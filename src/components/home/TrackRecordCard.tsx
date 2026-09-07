@@ -4,7 +4,6 @@ import { accountAgeDays } from "@/lib/track-record";
 import { formatDate } from "@/lib/format";
 import { useLocale } from "@/hooks/useLocale";
 import { cn } from "@/lib/utils";
-import { Fn } from "@/components/Footnotes";
 import { Num } from "@/components/Num";
 
 /**
@@ -55,7 +54,6 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
         <div>
           <dt className="text-label text-slate">
             {t("stats.totalGain")}
-            <Fn n={1} />
           </dt>
           <dd className={cn("num mt-1 text-[44px] font-medium leading-none tracking-tight md:text-[52px]", gainTone)}>
             {arrow}
@@ -99,7 +97,6 @@ export function TrackRecordCard({ record }: { record: TrackRecord }) {
         <div className="holo-chip flex items-baseline justify-between gap-2 rounded-md px-3 py-2">
           <dt className="text-[12px] leading-tight text-slate">
             {t("stats.performanceFee")}
-            <Fn n={2} />
           </dt>
           <dd className="num text-[14px] font-medium leading-none text-platinum"><Num value={record.performanceFee} suffix="%" /></dd>
         </div>

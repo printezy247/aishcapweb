@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Container } from "@/components/layout/Container";
 import { Reveal } from "@/components/Reveal";
-import { Fn } from "@/components/Footnotes";
 import { Num } from "@/components/Num";
 import { COMMUNITY } from "@/config/community";
 import { CT1 } from "@/config/track-record";
@@ -19,8 +18,8 @@ export function StatsBand() {
   const day = verificationDay(CT1);
   const items = [
     { value: day, suffix: ` / ${CT1.verificationDays}`, caption: t("band.day", { total: CT1.verificationDays }) },
-    { value: COMMUNITY.members, caption: t("band.members", { group: COMMUNITY.groupName, date: formatDate(COMMUNITY.lastCounted, locale) }), fn: 3 },
-    { value: CT1.performanceFee, suffix: "%", caption: t("band.fee"), fn: 2 },
+    { value: COMMUNITY.members, caption: t("band.members", { group: COMMUNITY.groupName, date: formatDate(COMMUNITY.lastCounted, locale) }) },
+    { value: CT1.performanceFee, suffix: "%", caption: t("band.fee") },
     { value: 6, caption: t("band.years") },
   ];
   return (
@@ -35,7 +34,6 @@ export function StatsBand() {
               </p>
               <p className="mt-2 text-label text-slate">
                 {it.caption}
-                {it.fn && <Fn n={it.fn} />}
               </p>
             </Reveal>
           ))}
