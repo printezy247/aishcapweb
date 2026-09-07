@@ -29,7 +29,7 @@ export function HowItWorks() {
   const cols = t("compare.columns", { returnObjects: true }) as string[];
 
   return (
-    <section id="how-it-works" aria-labelledby="how-it-works-heading" className="scroll-mt-24 border-t hairline bg-navy-abyss py-16 sm:py-24">
+    <section id="how-it-works" aria-labelledby="how-it-works-heading" className="scroll-mt-24 border-t hairline bg-ink-abyss py-16 sm:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-16">
           <div className="lg:sticky lg:top-24 lg:self-start">

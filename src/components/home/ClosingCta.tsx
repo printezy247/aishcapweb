@@ -8,7 +8,7 @@ import { SITE } from "@/config/site";
 export function ClosingCta() {
   const { t } = useTranslation();
   return (
-    <section aria-labelledby="cta-heading" className="border-t hairline bg-navy-midnight py-12 md:py-16">
+    <section aria-labelledby="cta-heading" className="border-t hairline bg-ink-midnight py-12 md:py-16">
       <Container>
         <Reveal className="metal-card metal-card--gold flex flex-col gap-6 rounded-lg p-6 md:flex-row md:items-center md:justify-between md:p-10">
           <div>

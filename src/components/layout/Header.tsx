@@ -33,7 +33,7 @@ export function Header() {
     cn("nav-link block whitespace-nowrap py-3 text-[15px] text-slate no-underline md:py-1.5", isActive && "is-active");
 
   return (
-    <header className="glass-bar sticky top-0 z-50 border-b hairline bg-navy-abyss/80">
+    <header className="glass-bar sticky top-0 z-50 border-b hairline bg-ink-abyss/80">
       <Container className="flex min-h-[60px] items-center justify-between gap-4">
         <NavLink to={href("/")} className="flex items-center no-underline" aria-label={t("nav.home")}>
           <Logo />
@@ -76,7 +76,7 @@ export function Header() {
       </Container>
 
       {open && (
-      <nav id="mobile-nav" aria-label="Primary" className="menu-in border-t hairline bg-navy-midnight/95 backdrop-blur-md md:hidden">
+      <nav id="mobile-nav" aria-label="Primary" className="menu-in border-t hairline bg-ink-midnight/95 backdrop-blur-md md:hidden">
         <Container className="flex flex-col py-2">
           {items.map((item) => (
             <NavLink

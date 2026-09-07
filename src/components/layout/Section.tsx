@@ -22,7 +22,7 @@ export function Section({ id, eyebrow, heading, intro, children, className, rece
       aria-labelledby={heading ? hid : undefined}
       className={cn(
         "scroll-mt-24 border-t hairline py-16 sm:py-24",
-        recessed ? "bg-navy-midnight" : "bg-navy-abyss",
+        recessed ? "bg-ink-midnight" : "bg-ink-abyss",
         className,
       )}
     >

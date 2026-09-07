@@ -14,7 +14,7 @@ Vercel (static + one serverless function). Live: https://aishweb-ezy-ai.vercel.a
 - The hero card renders every field of `src/config/track-record.ts`. No props that hide a field.
 - Every figure is date-stamped. Never estimate; figures come from the broker dashboard.
 - Forbidden words are enforced by `scripts/check-copy.mjs` (incl. "signals", "profitable", "winning").
-- Bull/bear colours only on signed numbers. Gold is brand + one primary button per viewport.
+- Bull/bear colours only on signed numbers. Gold is brand + one primary button per viewport. Surfaces are the `ink.*` obsidian ladder; secondary text is `slate` (warm grey).
 - No testimonials without consent on file; no countdowns, popups, chat widgets, marketing pixels.
 - IB commission disclosure renders beside every broker-gated link (`AffiliateDisclosure`).
 - Licensing statements live only on `/legal/*` (client decision, 2026-09-04).

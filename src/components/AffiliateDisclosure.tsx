@@ -11,7 +11,7 @@ export function AffiliateDisclosure({ className = "" }: { className?: string }) 
     <div
       role="note"
       aria-label={t("affiliate.disclosureLabel")}
-      className={`rounded-card border hairline bg-navy-midnight px-4 py-3 text-legal text-platinum/85 ${className}`}
+      className={`rounded-card border hairline bg-ink-midnight px-4 py-3 text-legal text-platinum/85 ${className}`}
     >
       <p className="mb-1 text-label font-semibold text-platinum">{t("affiliate.disclosureLabel")}</p>
       <p>{t("affiliate.inline", { broker: SITE.brokerName })}</p>

@@ -22,7 +22,7 @@ interface Sprite {
 
 const GLYPHS = ["$", "XAU", "€", "£", "¥", "%"];
 const GOLD = "212, 160, 23";
-const SLATE = "143, 163, 196";
+const SLATE = "168, 164, 156";
 
 function make(w: number, h: number, i: number): Sprite {
   const kinds: Kind[] = ["candle", "candle", "tick", "line", "glyph"];

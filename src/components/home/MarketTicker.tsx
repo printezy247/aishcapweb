@@ -58,7 +58,7 @@ export function MarketTicker() {
   };
 
   return (
-    <section aria-label={t("ticker.aria")} className="ticker-wrap border-b hairline bg-navy-abyss py-2.5">
+    <section aria-label={t("ticker.aria")} className="ticker-wrap border-b hairline bg-ink-abyss py-2.5">
       <div className="ticker-track px-6">
         {quotes.map(item)}
         {stamp}
