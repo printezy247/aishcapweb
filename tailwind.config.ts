@@ -18,20 +18,20 @@ export default {
     colors: {
       transparent: "transparent",
       current: "currentColor",
-      // Surface ladder (Linear's method): canvas, then four lifts.
-      navy: {
-        abyss: "#020814",
-        midnight: "#050D1F",
-        deep: "#081733",
-        raised: "#0C1E42",
-        top: "#12294F",
+      // Obsidian surface ladder: warm-neutral matte black canvas, then four lifts.
+      ink: {
+        abyss: "#060606",
+        midnight: "#0B0B0C",
+        deep: "#111113",
+        raised: "#17171A",
+        top: "#1E1E22",
       },
       gold: {
         DEFAULT: "#D4A017",
         bright: "#F5D061",
       },
       platinum: "#E8E8E8",
-      slate: "#8FA3C4",
+      slate: "#A8A49C",
       bull: "#26A69A",
       bear: "#EF5350",
     },

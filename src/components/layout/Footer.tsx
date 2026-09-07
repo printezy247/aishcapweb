@@ -22,7 +22,7 @@ export function Footer() {
   const link = "text-slate no-underline hover:text-platinum hover:underline";
 
   return (
-    <footer className="hero-backdrop hero-backdrop--soft border-t hairline bg-navy-abyss text-legal text-platinum/85">
+    <footer className="hero-backdrop hero-backdrop--soft border-t hairline bg-ink-abyss text-legal text-platinum/85">
       <Container className="py-12 md:py-16">
         <div className="grid gap-10 sm:grid-cols-2 sm:gap-8 lg:grid-cols-[1.6fr_1fr_1fr]">
           {/* Brand + the risk warning. Real text on every page. Never an image. */}

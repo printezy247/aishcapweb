@@ -48,7 +48,7 @@ export function StickyCta() {
       aria-label={record.accountName}
       aria-hidden={!visible}
       className={
-        "glass-bar fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-navy-abyss/80 transition-transform duration-300 lg:hidden " +
+        "glass-bar fixed inset-x-0 bottom-0 z-40 border-t hairline-strong bg-ink-abyss/80 transition-transform duration-300 lg:hidden " +
         (visible ? "translate-y-0" : "translate-y-full")
       }
       style={{ paddingBottom: "env(safe-area-inset-bottom)" }}

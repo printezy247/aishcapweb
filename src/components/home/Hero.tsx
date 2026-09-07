@@ -17,7 +17,7 @@ export function Hero() {
   const proof = t("hero.proof", { returnObjects: true }) as string[];
 
   return (
-    <section aria-labelledby="hero-heading" className="hero-backdrop bg-navy-midnight py-12 md:py-24">
+    <section aria-labelledby="hero-heading" className="hero-backdrop bg-ink-midnight py-12 md:py-24">
       <HeroField />
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-14">

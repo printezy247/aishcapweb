@@ -80,7 +80,7 @@ export function EmailBlock() {
             placeholder={t("email.placeholder")}
             aria-invalid={status === "invalid"}
             aria-describedby={`${id}-hint ${id}-msg`}
-            className="min-h-[48px] flex-1 rounded-card border hairline-strong bg-navy-abyss/70 px-4 text-platinum placeholder:text-slate/60"
+            className="min-h-[48px] flex-1 rounded-card border hairline-strong bg-ink-abyss/70 px-4 text-platinum placeholder:text-slate/60"
           />
           <Button type="submit" variant="secondary" disabled={status === "submitting"}>
             {status === "submitting" ? t("email.submitting") : t("buttons.subscribe")}

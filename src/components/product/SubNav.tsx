@@ -51,7 +51,7 @@ export function SubNav() {
   }, []);
 
   return (
-    <div className="glass-bar sticky top-[60px] z-40 border-b hairline bg-navy-abyss/80">
+    <div className="glass-bar sticky top-[60px] z-40 border-b hairline bg-ink-abyss/80">
       <Container className="flex items-center justify-between gap-4">
         <nav aria-label={t("product.subnav.aria")} className="subnav-scroll -mx-5 flex min-w-0 gap-5 overflow-x-auto px-5 pr-10 sm:mx-0 sm:px-0">
           {PRODUCT_SECTIONS.map((id) => (

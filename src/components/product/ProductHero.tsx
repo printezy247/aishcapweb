@@ -14,7 +14,7 @@ export function ProductHero({ record }: { record: TrackRecord }) {
   const proof = t("hero.proof", { returnObjects: true }) as string[];
 
   return (
-    <section id="overview" aria-labelledby="product-heading" className="hero-backdrop scroll-mt-28 bg-navy-midnight py-12 md:py-24">
+    <section id="overview" aria-labelledby="product-heading" className="hero-backdrop scroll-mt-28 bg-ink-midnight py-12 md:py-24">
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-14">
           <div className="max-w-prose">

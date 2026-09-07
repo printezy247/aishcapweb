@@ -62,7 +62,7 @@ export function GoldSection() {
                 onClick={() => setRange(r)}
                 className={cn(
                   "num min-h-[32px] rounded px-3 text-[13px] font-medium",
-                  range === r ? "bg-gold text-navy-abyss" : "text-slate hover:text-platinum",
+                  range === r ? "bg-gold text-ink-abyss" : "text-slate hover:text-platinum",
                 )}
               >
                 {t(`gold.ranges.${r}`)}
@@ -73,7 +73,7 @@ export function GoldSection() {
 
         <div className="mt-4 h-[240px] md:h-[300px]" aria-busy={status === "loading"}>
           {points.length > 1 ? (
-            <Suspense fallback={<div className="h-full w-full animate-pulse rounded bg-navy-abyss/40" />}>
+            <Suspense fallback={<div className="h-full w-full animate-pulse rounded bg-ink-abyss/40" />}>
               <GoldChart points={points} intraday={range !== "1m"} />
             </Suspense>
           ) : (

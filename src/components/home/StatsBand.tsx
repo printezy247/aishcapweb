@@ -23,7 +23,7 @@ export function StatsBand() {
     { value: 6, caption: t("band.years") },
   ];
   return (
-    <section aria-label={t("band.aria")} className="border-b hairline bg-navy-abyss">
+    <section aria-label={t("band.aria")} className="border-b hairline bg-ink-abyss">
       <Container>
         <ul className="grid grid-cols-2 gap-y-6 py-8 md:py-10 lg:grid-cols-4">
           {items.map((it, i) => (
