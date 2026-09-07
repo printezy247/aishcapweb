@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Container } from "@/components/layout/Container";
 import { ButtonLink } from "@/components/ui/button";
 import { TrackRecordCard } from "@/components/home/TrackRecordCard";
+import { HeroField } from "@/components/home/HeroField";
 import { SITE } from "@/config/site";
 import { useLocale } from "@/hooks/useLocale";
 import { CT1 } from "@/config/track-record";
@@ -17,6 +18,7 @@ export function Hero() {
 
   return (
     <section aria-labelledby="hero-heading" className="hero-backdrop bg-navy-midnight py-12 md:py-24">
+      <HeroField />
       <Container>
         <div className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_440px] lg:gap-14">
           <div className="max-w-prose">
